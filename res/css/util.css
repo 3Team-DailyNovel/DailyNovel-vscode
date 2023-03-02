@@ -43,6 +43,15 @@
   align-items: center;
 }
 
+.flex-row{
+  flex-direction: row;
+}
+
+.flex-column{
+  flex-direction: column;
+}
+
+
 /* Layout(개별 컨텐츠 레이아웃) */
 .relative{
   position: relative;

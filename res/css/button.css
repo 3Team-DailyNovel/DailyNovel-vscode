@@ -12,6 +12,10 @@
     justify-content: center;
 }
 
+.btn1:hover{
+    background-color: #69BC80;
+    color: #fcfcfc;
+}
 /* .btn1-clr {
     width: 19.5rem;
     height: 5.5rem;
