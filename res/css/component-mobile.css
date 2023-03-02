@@ -15,7 +15,32 @@
 
 
 
+.filter-pos-style {
+    display: flex;
+    justify-content: start;
+    align-items: center;  
+}
 
+.lists {
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+
+.lists > li {
+height: 25%;
+}
+
+.order-btn {
+margin-left: 1rem;
+font-weight: lighter;
+text-align: center;
+font-size: 1rem;
+border-radius: 10px;
+background-color: #69BC80;
+padding: 10px 20px;
+margin-right: 10px;
+}
 
 
 
