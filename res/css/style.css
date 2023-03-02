@@ -1,0 +1,85 @@
+/* -------------------------------------------------------------  */
+
+/* color - 값이 오를수록 진해짐.*/
+
+/* 배경 */
+
+/* 초록색 */
+.color-bg-green-1 { background-color: #9aefb0; }
+.color-bg-green-2 { background-color: #69bc80; }
+.color-bg-green-3 { background-color: #388b53; }
+
+/* 흰 색 */
+.color-bg-white-1 { background-color: #ffffff; }
+.color-bg-white-2 { background-color: #fcfcfc; }
+.color-bg-white-3 { background-color: #fafafa; }
+
+/* 노란색 */
+.color-bg-yellow-1 { background-color: #ffff77; }
+.color-bg-yellow-2 { background-color: #fff241; }
+.color-bg-yellow-3 { background-color: #c8c000; }
+
+/* 색상 */
+
+/* 초록색 */
+.color-green-1 { color: #9aefb0; }
+.color-green-2 { color: #69bc80; }
+.color-green-3 { color: #388b53; }
+
+/* 흰 색 */
+.color-white-1 { color: #ffffff; }
+.color-white-2 { color: #fcfcfc; }
+.color-white-3 { color: #fafafa; }
+
+/* 노란색 */
+.color-yellow-1 { color: #ffff77; }
+.color-yellow-2 { color: #fff241; }
+.color-yellow-3 { color: #c8c000; }
+
+
+/* -------------------------------------------------------------  */
+
+/* font */
+
+/* font 크기 */
+/* .font-size{} */
+
+/* font 굵기 */
+/* .font-weight-normal{ font-weight: 400;}
+.font-weight-bold{ font-weight: 700;} */
+
+
+/* -------------------------------------------------------------  */
+
+/* border */
+
+/* radius */
+.border-r-1{ border-radius: 10px; }
+.border-r-2{border-radius: 20px;}
+.border-r-3{border-radius: 30px;}
+.border-r-3{ border-radius: 40px; }
+.border-r-4{ border-radius: 50px; }
+
+
+.border-style-btm {
+    border-radius: 0px 0px 40px 40px;
+}
+
+.border-style-left1 {
+    border-radius: 10px 0px 0px 10px;
+}
+
+.border-style-top {
+    border-radius: 30px 30px 0px 0px ;
+}
+
+.border-style-top2 {
+    border-radius: 10px 10px 0px 0px ;
+}
+.border-style-btm2 {
+    border-radius: 0px 0px 10px 10px;
+}
+
+/* 박스 쉐도우 */
+.shadow-1 {box-shadow: 0px 3px 13px -5px rgba(0,0,0,0.69);}
+.shadow-2 {box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.153);}

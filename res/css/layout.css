@@ -1,0 +1,62 @@
+/* 컨테이너버전만 갈아 끼면 전체적인 틀은 잡힐 수 있도록 */
+
+/* 가장 큰 틀 */
+/* ------------------------------------ 첫 번째 레이아웃 */
+html{
+    font-size: 16px;
+  }
+  
+  body{
+    margin: 0;
+  }
+  
+  .container-1{
+    /* width: 25.75rem;
+    height: 57.25rem;
+  
+    display: grid;
+    grid-template-rows: 6rem 45.25rem 6rem; 
+    grid-template-columns: 1rem auto 1rem; */
+  
+    /* 일단 뷰포트단위 써보고 아니면 위처럼 단위 해볼게요. */
+    width: 100vw;
+    height: 100vh;
+  
+    display: grid;
+    grid-template-rows: 1fr 7.5fr 1fr; 
+    grid-template-columns: 1fr 23.75fr 1fr;
+  }
+  
+  .container-1 > .header{
+    /* position: sticky; 
+    background-color: brown; */
+    grid-column: 2/3;
+    grid-row:1/2;
+  }
+  
+  .container-1 > .main{
+    grid-column: 2/3;
+    grid-row:2/3;
+  }
+  
+  .container-1 > .footer{
+    /* position: sticky;
+    background-color: brown; */
+    bottom: 0px;
+    grid-column: 2/3;
+    grid-row:3/4;
+  }
+  
+  /* ------------------------------------ 두 번째 레이아웃 */
+  
+  
+  
+  
+  
+  
+  /* 각 페이지 별로 만들고 싶을 때 */
+  /* 로그인, 메인 팀 */
+  
+  /* 일기 작성, 목록 팀 */
+  
+  /* 일기 통계, 설정 팀 */
