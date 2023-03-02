@@ -24,3 +24,69 @@
 
 
 /* 통계, 설정 팀 */
+
+
+/* feeling */
+
+
+
+
+.main-feeling{
+    width: 16em;
+    height: 16em;
+    background-image: url(../img/happiness/happy.png);
+    justify-self: center;
+}
+
+
+.collection-feeling{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 18rem;
+    height: 5rem;
+}
+.feeling1{
+    width: 4rem;
+    height: 4rem;
+    background-image: url(../img/angry/angry64.png);
+    justify-self: center;
+}
+.feeling2{
+    width: 4rem;
+    height: 4rem;
+    background-image: url(../img/awkward/awkward64.png);
+    justify-self: center;
+}
+.feeling3{
+    width: 4rem;
+    height: 4rem;
+    background-image: url(../img/calm/calm64.png);
+    justify-self: center;
+}
+.feeling4{
+    width: 4rem;
+    height: 4rem;
+    background-image: url(../img/disappointed/disappointed64.png);
+    justify-self: center;
+}
+
+/* honesty */
+
+
+.pinoccio{
+    width: 16em;
+    height: 16em;
+    background-image: url(../img/pinoccio/pinocchio.png);
+    justify-self: center;
+}
+/* How */
+
+.How-img{
+    width: 16em;
+    height: 16em;
+    background-image: url(../img/eclipse/Ellipse\ 38.svg);
+    justify-self: center;
+}
