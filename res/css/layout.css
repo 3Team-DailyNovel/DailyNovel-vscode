@@ -40,8 +40,8 @@ html{
   }
   
   .container-1 > .footer{
-    /* position: sticky;
-    background-color: brown; */
+     /* position: sticky; */
+    /*background-color: brown; */
     bottom: 0px;
     grid-column: 2/3;
     grid-row:3/4;
@@ -60,3 +60,20 @@ html{
   /* 일기 작성, 목록 팀 */
   
   /* 일기 통계, 설정 팀 */
+  .C{
+    /* display: flex; */
+    justify-self: center;
+    align-content: center;
+  }
+  .C-m{
+    display: flex;
+    justify-self: space-around;
+    align-content: center;
+    flex-direction: row;
+  }
+  inline{
+    display: inline;
+  }
+  .sticky{
+    position: sticky;
+  }
