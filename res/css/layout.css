@@ -60,20 +60,26 @@ html{
   /* 일기 작성, 목록 팀 */
   
   /* 일기 통계, 설정 팀 */
+
   .C{
-    /* display: flex; */
+    display: grid;
     justify-self: center;
-    align-content: center;
+    align-self: center;
   }
   .C-m{
     display: flex;
-    justify-self: space-around;
-    align-content: center;
+    flex-wrap: wrap;
+    /* align-content: center; */
+    justify-content: center;
     flex-direction: row;
   }
-  inline{
-    display: inline;
+
+  .C-m-w{
   }
-  .sticky{
+
+  /* .inline{
+    display: inline;
+  } */
+  .sticky{   /* 네비게이션에 사용 */
     position: sticky;
   }
