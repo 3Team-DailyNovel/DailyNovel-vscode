@@ -28,8 +28,9 @@ html{
   }
   
   .container-1 > .header{
-    /* position: sticky; 
-    background-color: brown; */
+    position: sticky;    /*추가 -> 이거 살림*/
+    top: 0;
+    background-color: white;  /*추가 -> 이거 살림*/
     grid-column: 2/3;
     grid-row:1/2;
   }
@@ -40,8 +41,8 @@ html{
   }
   
   .container-1 > .footer{
-     /* position: sticky; */
-    /*background-color: brown; */
+     position: sticky;    /*추가 -> 이거 살림*/
+     background-color: white;  /*추가 -> 이거 살림*/
     bottom: 0px;
     grid-column: 2/3;
     grid-row:3/4;
@@ -62,9 +63,13 @@ html{
   /* 일기 통계, 설정 팀 */
 
   .C{
-    display: grid;
+    /* display: grid; */
     justify-self: center;
     align-self: center;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* flex-direction: column; */
   }
   .C-m{
     display: flex;
@@ -73,13 +78,7 @@ html{
     justify-content: center;
     flex-direction: row;
   }
-
-  .C-m-w{
-  }
-
-  /* .inline{
-    display: inline;
-  } */
-  .sticky{   /* 네비게이션에 사용 */
-    position: sticky;
+  .C-m-c{
+    display: flex;
+    flex-direction: row;
   }
