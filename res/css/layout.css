@@ -62,8 +62,9 @@ html{
     height: 100vh;
   
     display: grid;
-    grid-template-rows: 3.75rem 47.5rem 6rem;
+    /* grid-template-rows: 3.75rem 47.5rem 6rem; */
     /* grid-template-rows: 0.625fr 7.91fr 1fr; */
+    grid-template-rows: 1fr 10.4fr 1.3fr;
     grid-template-columns: 1fr 23.75fr 1fr;
   }
   
@@ -96,6 +97,9 @@ html{
   /* 일기 작성, 목록 팀 */
 
   /* register */
-  
+  .reg-header{
+    display: grid;
+    
+  }
   
   /* 일기 통계, 설정 팀 */

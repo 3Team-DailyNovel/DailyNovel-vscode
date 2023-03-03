@@ -29,10 +29,22 @@
 /* -------------------------------------------------------------  */
 
 /* padding */
-
+/* 1 2 3  4  5 */
+/* 4 8 16 24 48 */
 .pd{}
 .pdt{}
 
+.pdl-1{ padding-left: 0.25rem;}
+.pdl-2{ padding-left: 0.5rem;}
+.pdl-3{ padding-left: 1.0rem;}
+.pdl-4{ padding-left: 1.5rem;}
+.pdl-5{ padding-left: 3rem;}
+
+.pdr-1{ padding-right: 0.25rem;}
+.pdr-2{ padding-right: 0.5rem;}
+.pdr-3{ padding-right: 1.0rem;}
+.pdr-4{ padding-right: 1.5rem;}
+.pdr-5{ padding-right: 3rem;}
 
 /* -------------------------------------------------------------  */
 
