@@ -74,11 +74,8 @@
 }
 
 /* 로고 폰트 */
-.main-logo{
-   font-family: 'Niconne';
-   font-size : 4rem;
-   text-align: center;
-}
+
+
 .font-normal{
    font-size:1.5rem;  
 }
@@ -169,6 +166,7 @@
 
 /* 메인 페이지-선유진 */
 
+/* 필요 레이아웃 */
 .horizon-center{
    display:flex;
    flex-direction:column;
@@ -176,11 +174,7 @@
 }
 
 
-.calender{
-   height:15rem;
-}
-
-
+/* 일기 작성 현황(진행 바) */
 .pg-bar{
    appearance:none;
    width: 9rem;
@@ -195,7 +189,7 @@
       border-radius: 20px;
    }
 
-
+/* ???님 오늘의 일기 적으러가볼까요? */
 .hi-txt{
    font-size:1.25rem;
    font-weight: bold;
@@ -210,6 +204,7 @@
 .calender{
    background-color:aqua;
    width: 100%;
+   height:15rem;
 
 }
    .calender >.main ul{
