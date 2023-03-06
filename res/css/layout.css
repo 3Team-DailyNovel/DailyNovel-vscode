@@ -99,7 +99,13 @@ html{
   /* register */
   .reg-header{
     display: grid;
-    
+    grid-template-columns: 1fr 5fr 1fr;
   }
+
+  .reg-main{
+    display: grid;
+    grid-template-rows: 1fr 7fr;
+  }
+  
   
   /* 일기 통계, 설정 팀 */
