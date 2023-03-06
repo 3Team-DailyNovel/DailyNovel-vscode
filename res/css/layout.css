@@ -21,7 +21,7 @@ html{
     /* 일단 뷰포트단위 써보고 아니면 위처럼 단위 해볼게요. */
     width: 100vw;
     height: 100vh;
-  
+      
     display: grid;
     grid-template-rows: 1fr 7.5fr 1fr; 
     grid-template-columns: 1fr 23.75fr 1fr;
@@ -60,7 +60,10 @@ html{
     /* 일단 뷰포트단위 써보고 아니면 위처럼 단위 해볼게요. */
     width: 100vw;
     height: 100vh;
-  
+    
+    /* background-color: black;
+    opacity: 0.5; */
+
     display: grid;
     /* grid-template-rows: 3.75rem 47.5rem 6rem; */
     /* grid-template-rows: 0.625fr 7.91fr 1fr; */
@@ -99,7 +102,7 @@ html{
   /* register */
   .reg-header{
     display: grid;
-    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-columns: 1.5fr 5fr 1.5fr;
   }
 
   .reg-main{

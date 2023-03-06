@@ -32,7 +32,13 @@
 /* 1 2 3  4  5 */
 /* 4 8 16 24 48 */
 .pd{}
-.pdt{}
+
+.pdt-1{ padding-top: 0.25rem;}
+.pdt-2{ padding-top: 0.5rem;}
+.pdt-3{ padding-top: 1.0rem;}
+.pdt-4{ padding-top: 1.5rem;}
+.pdt-5{ padding-top: 3rem;}
+
 
 .pdl-1{ padding-left: 0.25rem;}
 .pdl-2{ padding-left: 0.5rem;}
