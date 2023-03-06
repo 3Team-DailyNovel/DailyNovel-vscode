@@ -1,4 +1,8 @@
 /* 로그인, 메인 팀 ======================================================== */
+
+/* 회원가입 페이지-선유진 */
+
+/* 회원가입 form  */
 .container-form{
     width: 19.5rem; /* 312px */  
     margin:0 auto; 
@@ -13,8 +17,8 @@
 .font-normal{
    font-size:1.5rem;  
 }
-/* 회원가입 form  */
 
+/* 회원가입 form  */
 .form-signup .input-1{
    /* width:100%; */
    border-radius: 10px;
@@ -64,61 +68,14 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-
 }
 
-/* 회원가입 페이지-선유진 */
+
 .container-form{
     width: 19.5rem; /* 312px */  
     margin:0 auto; 
 }
 
-/* 로고 폰트 */
-
-
-.font-normal{
-   font-size:1.5rem;  
-}
-/* 회원가입 form  */
-
-/* 로그인 폼 */
-.form-signup .input-1{
-   /* width:100%; */
-   border-radius: 10px;
-   font-size : 1.05rem;
-   border-style: none;
-   text-indent: 1rem;
-
-}
-
-.form-signup .certi_btn{
-   font-size:1.05rem;
-   width: 10rem;
-}
-
-
-.form-signup .input-btn{
-   
-   font-size : 1.25rem;
-   border-style: none;
-   font-weight: bold;
-   margin: 3rem auto;
-   box-sizing: border-box;
-}
-
-.form-signup > input:focus{
-   border-style:solid;
-   border-color:#9aefb0;
-   outline: none;
-}
-.form-signup > label{
-   display:block;
-}
-.form-link{
-   display: inline-block;
-   width:100%;
-   height: 100%;
-}
 
 /* 인증 버튼 및 인증번호 */
 .certify-form{
