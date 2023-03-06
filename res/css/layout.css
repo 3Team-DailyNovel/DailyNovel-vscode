@@ -28,8 +28,9 @@ html{
   }
   
   .container-1 > .header{
-    /* position: sticky; 
-    background-color: brown; */
+    position: sticky;    /*추가 -> 이거 살림*/
+    top: 0;
+    background-color: white;  /*추가 -> 이거 살림*/
     grid-column: 2/3;
     grid-row:1/2;
   }
@@ -40,8 +41,8 @@ html{
   }
   
   .container-1 > .footer{
-    /* position: sticky;
-    background-color: brown; */
+     position: sticky;    /*추가 -> 이거 살림*/
+     background-color: white;  /*추가 -> 이거 살림*/
     bottom: 0px;
     grid-column: 2/3;
     grid-row:3/4;
@@ -60,14 +61,47 @@ html{
   /* 일기 작성, 목록 팀 */
   
   /* 일기 통계, 설정 팀 */
+
+
   .C{
+    /* display: grid; */
+    justify-self: center;
+    align-self: center;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* flex-direction: column; */
+  }
+  .C-m{
+    display: flex;
+    flex-wrap: wrap;
+    /* align-content: center; */
+    justify-content: center;
+    flex-direction: row;
+  }
+  .C-m-c{
+    display: flex;
+    flex-direction: row;
+  }
+  .C-m-l{
+    display: flex;
+    flex-direction: column;
+    /* align-self: center; */
+    justify-content: center;
+  }
+
+  .C-m-l > .tss{
+    align-self: center;
+  }
+  /* 주형 부분 추후 수정 ------ */
+    .C-joo{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
   }
 
-  .ana-main-layout{
+  .ana-main-layout-joo{
     padding: 3rem 1.5rem 3rem 1.5rem;
     display: flex;
     justify-content: space-between;
@@ -76,6 +110,3 @@ html{
 
   }
 
-  
-
-  
