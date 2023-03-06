@@ -40,22 +40,14 @@ html{
     grid-row:2/3;
   }
   
-  .container-1 > .footer{
-/* register
-    /* position: sticky;
-    background-color: brown; */
-    /* bottom: 0px; */
-    
-     position: sticky;    /*추가 -> 이거 살림*/
-     background-color: white;  /*추가 -> 이거 살림*/
-    bottom: 0px;
-*/
+  .container-1 > .footer{    
+
     grid-column: 2/3;
     grid-row:3/4;
   }
   
   /* ------------------------------------ 두 번째 레이아웃 */
-  /* 작성 창에서 시작됨. */
+  /* 작성(register) 창에서 시작됨. */
   .container-2{
     /* width: 25.75rem;
     height: 57.25rem;
@@ -119,8 +111,7 @@ html{
   
   
   /* 일기 통계, 설정 팀 */
-
-
+  
   .C{
     /* display: grid; */
     justify-self: center;
