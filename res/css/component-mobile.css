@@ -142,13 +142,13 @@
    width: 100%;
 
 }
-   .main ul{
+   .calender >.main ul{
       display: flex;
       flex-direction: row;
       justify-content: space-around;
       flex-wrap: wrap;
    }
-   .main li{
+   .calender .main li{
       height: 2rem;
       line-height: 2rem;
       width:calc(100% / 7);
@@ -156,17 +156,24 @@
       
    }
 
-   .day>li{
+   .calender .day>li{
       color: #00000040;
+      
    }
 
-   .date{
+   .calender  .date{
       display: flex;
       flex-direction: row;
       justify-content: space-around;
    }
+   .calender .date li{
+      background-color: #aaaaaa;
+      border-radius: 50%;
+   }
 
-
+   .calender .inactive {
+      color: #ff0000
+   }
 
 
 /* ---------------공통 수정 제안. ---------------- */
