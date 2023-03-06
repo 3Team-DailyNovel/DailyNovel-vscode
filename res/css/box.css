@@ -121,6 +121,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        text-align: center;   /* 추가 */
     }
 
 
@@ -150,7 +151,7 @@
         color: black;
         width:10.25rem;
         height: 3.75rem;
-        border-radius: 2.5rem;
+        border-radius: 0 2.5rem 2.5rem 0;
         /* content - layout */
         display: flex;
         align-items: center;
@@ -158,5 +159,37 @@
     }
 
 
+
+
+    /* 통계 */
+
+    .box-h1{
+        background-color: #ffffff;
+        width: 15rem; /* 208px */
+        height: 2.25rem; /* 36px */
     
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .box-img{
+        background-color: #ffffff;
+        width: 16rem; /* 254px */
+        height: 16rem; /* 240px */
     
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .box-p{
+        background-color: #ffffff;
+        width: 21rem; /* 336px */
+        height: 5.75rem; /* 92px */
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        text-align: center;
+    }
+
