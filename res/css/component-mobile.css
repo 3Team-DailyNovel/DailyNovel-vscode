@@ -1,27 +1,285 @@
 /* 로그인, 메인 팀 */
+.container-form{
+    width: 19.5rem; /* 312px */  
+    margin:0 auto; 
+}
+
+/* 로고 폰트 */
+.main-logo{
+   font-family: 'Niconne';
+   font-size : 4rem;
+   text-align: center;
+}
+.font-normal{
+   font-size:1.5rem;  
+}
+/* 회원가입 form  */
+
+.form-signup .input-1{
+   /* width:100%; */
+   border-radius: 10px;
+   font-size : 1.05rem;
+   border-style: none;
+   text-indent: 1rem;
+
+}
+
+.form-signup .certi_btn{
+   
+   font-size:1.05rem;
+}
+
+.form-signup .input-btn{
+   
+   font-size : 1.25rem;
+   border-style: none;
+   font-weight: bold;
+   margin: 3rem auto;
+}
+
+.form-signup input:focus{
+   border-style:solid;
+   border-color:#9aefb0;
+   outline: none;
+}
+.form-signup > label{
+   display:block;
+}
+.form-link{
+   display: inline-block;
+   width:100%;
+   height: 100%;
+}
+
+/*  추가한자: 이동형 사유:location 수직 정렬이 필요했기 때문에 정렬정중앙 정렬이 아님 */
+.lc-vertical-alignment{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+  /*  추가한자: 이동형 사유:location 수평 정렬이 필요했기 때문에 정렬정중앙 정렬이 아님 */
+.lc-horizontal-alignment{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* 회원가입 페이지-선유진 */
+.container-form{
+    width: 19.5rem; /* 312px */  
+    margin:0 auto; 
+}
+
+/* 로고 폰트 */
+.main-logo{
+   font-family: 'Niconne';
+   font-size : 4rem;
+   text-align: center;
+}
+.font-normal{
+   font-size:1.5rem;  
+}
+/* 회원가입 form  */
+
+/* 로그인 폼 */
+.form-signup .input-1{
+   /* width:100%; */
+   border-radius: 10px;
+   font-size : 1.05rem;
+   border-style: none;
+   text-indent: 1rem;
+
+}
+
+.form-signup .certi_btn{
+   font-size:1.05rem;
+   width: 10rem;
+}
+
+
+.form-signup .input-btn{
+   
+   font-size : 1.25rem;
+   border-style: none;
+   font-weight: bold;
+   margin: 3rem auto;
+   box-sizing: border-box;
+}
+
+.form-signup > input:focus{
+   border-style:solid;
+   border-color:#9aefb0;
+   outline: none;
+}
+.form-signup > label{
+   display:block;
+}
+.form-link{
+   display: inline-block;
+   width:100%;
+   height: 100%;
+}
+
+/* 인증 버튼 및 인증번호 */
+.certify-form{
+   background-color: #ffffff;
+   width: 19.5rem; /* 312px */
+   height: 3.75rem; /* 60px */
+   border-radius: 10px;
+
+   border-radius: 0.625rem;
+   box-shadow:0 0.25rem 0.25rem rgba(0, 4, 4, 0.1);
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   
+}
+
+   .certify-form > .user-data{
+       
+       height: 100%;
+       
+   }
+       .certify-form > .user-data > .input{
+           display: inline-block;
+           box-sizing: border-box;
+           border-style: none;
+           font-size:1.1rem;
+           text-indent: 1rem;
+           height: 100%;
+           width: 12.5rem;
+
+       }
+
+       .certify-form >  .link{
+           display:inline-block;
+           width:6.5rem;
+           height:100%;
+           background-color:#CAFFBF;
+           box-sizing: border-box;
+           font-weight: bold;
+           line-height: 3.75rem;  /*certify-form의 height 값과 동일해야함 (중앙정렬 위함)*/
+           border-radius: 0 10px 10px 0;
+       }
+
+/* ============================================================================== */
+
+/* 메인 페이지-선유진 */
+
+.horizon-center{
+   display:flex;
+   flex-direction:column;
+   align-items: center;
+}
+
+
+.calender{
+   height:15rem;
+}
+
+
+.pg-bar{
+   appearance:none;
+   width: 9rem;
+   height: 1.25rem;
+}
+   .pg-bar::-webkit-progress-bar{
+      background-color: #EEEEEE;
+      border-radius:20px;
+   }
+   .pg-bar::-webkit-progress-value{
+      background-color: #69BC80;
+      border-radius: 20px;
+   }
+
+
+.hi-txt{
+   font-size:1.25rem;
+   font-weight: bold;
+}
+   .hi-txt > div:nth-child(1){
+      letter-spacing: 0.25rem;
+   }
+   
+
+
+/* 달력 */
+.calender{
+   background-color:aqua;
+   width: 100%;
+
+}
+   .main ul{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      flex-wrap: wrap;
+   }
+   .main li{
+      height: 2rem;
+      line-height: 2rem;
+      width:calc(100% / 7);
+      text-align: center; 
+      
+   }
+
+   .day>li{
+      color: #00000040;
+   }
+
+   .date{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+   }
 
 
 
 
-
-
-
-
+/* ---------------공통 수정 제안. ---------------- */
+/* input Tag에 기본 Padding이 있음 (Reset에서 input태그 추가) */
+    /* 추후 reset.css에 추가 */
+   /* 이거 없으면 input tag 포커스 시 보더 생김 개 찐하게 */
+   input:focus{
+   outline: none;
+}
 
 
 
 /* 일기 작성, 목록 팀 */
+.over-flow {
+    overflow: hidden;
+}
 
+.flex-type1 {
+    display: flex;
+    flex-direction: column;
+}
 
+.filter-pos-style {
+    display: flex;
+    justify-content: start;
+    align-items: center;  
+}
 
+.lists {
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
 
-
-
-
-
-
-
-
+.order-btn {
+margin-left: 1rem;
+font-weight: lighter;
+text-align: center;
+font-size: 1rem;
+border-radius: 10px;
+background-color: #69BC80;
+padding: 10px 20px;
+margin-right: 10px;
 
 /* 통계, 설정 팀 */
 /*설정*/
@@ -35,3 +293,148 @@
     border-radius:5rem;
     box-shadow: 0 0.25rem 0.25rem rgba(0, 4, 4, 0.1);
 }
+/**/
+/* chart */
+
+
+.chart{
+    width: 20rem;
+    height: 25rem;
+    
+}
+
+
+/* feeling */
+
+
+.main-feeling{
+    width: 16em;
+    height: 16em;
+    background-image: url(../img/happiness/happy.png);
+    justify-self: center;
+}
+
+
+.collection-feeling{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 18rem;
+    height: 5rem;
+}
+.feeling1{
+    width: 4rem;
+    height: 4rem;
+    background-image: url(../img/angry/angry64.png);
+    justify-self: center;
+}
+.feeling2{
+    width: 4rem;
+    height: 4rem;
+    background-image: url(../img/awkward/awkward64.png);
+    justify-self: center;
+}
+.feeling3{
+    width: 4rem;
+    height: 4rem;
+    background-image: url(../img/calm/calm64.png);
+    justify-self: center;
+}
+.feeling4{
+    width: 4rem;
+    height: 4rem;
+    background-image: url(../img/disappointed/disappointed64.png);
+    justify-self: center;
+}
+
+/* honesty */
+
+
+.pinoccio{
+    width: 16em;
+    height: 16em;
+    background-image: url(../img/pinoccio/pinocchio.png);
+    justify-self: center;
+}
+/* How */
+
+.How-img{
+    width: 16em;
+    height: 16em;
+    background-image: url(../img/eclipse/Ellipse\ 38.svg);
+    justify-self: center;
+}
+
+.btn1:hover{
+
+    background-color: #69bc80;
+    transition: 2S;
+    transition-timing-function: ease;
+
+}
+
+.font-h:hover	{
+    color: white;
+    transition: 1s;
+    }
+
+.a-btn{
+    width: 19.5rem;
+    height: 5.5rem;
+    border-radius: 2.5rem;
+}
+
+
+/* 네비게이션   */
+
+/* 파악후에 바꿀 예정입니다. */
+.navflex{
+    display: flex;
+
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+
+}
+
+
+.navicon-Box>a{
+    text-decoration: none;
+
+}
+
+.navicon{
+    background-repeat: no-repeat;
+    position: sticky;
+    bottom: 0;
+    width: 1.5rem;
+    height: 1.5rem;
+
+}
+
+.ic-pencil{
+    background-image: url(../img/ic-pencil.svg);
+}
+
+.ic-graph-circle{
+    background-image: url(../img/ic-graph-circle.svg);
+}
+.ic-feed{
+    background-image: url(../img/ic-feed.svg);
+}
+.ic-calendar{
+    background-image: url(../img/ic-calendar.svg);
+}
+.ic-Vector{
+    background-image: url(../img/ic-Vector.svg);
+}
+
+.ic-doubleDown{
+    background-image: url(../img/doubleDown.svg);
+}
+
+
+
+

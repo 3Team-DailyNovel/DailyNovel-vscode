@@ -62,6 +62,7 @@ html{
   
   /* 일기 통계, 설정 팀 */
 
+
   .C{
     /* display: grid; */
     justify-self: center;
@@ -92,3 +93,20 @@ html{
   .C-m-l > .tss{
     align-self: center;
   }
+  /* 주형 부분 추후 수정 ------ */
+    .C-joo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .ana-main-layout-joo{
+    padding: 3rem 1.5rem 3rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+
+  }
+
