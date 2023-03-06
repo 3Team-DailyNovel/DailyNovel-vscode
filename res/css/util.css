@@ -30,6 +30,16 @@
 .mgt-3{ margin-top: 1rem;}
 .mgt-4{ margin-top: 1.5rem;}
 .mgt-5{ margin-top: 3rem;}
+/* 추가한자: 이동형 사유:메인에서 헤더와 메인이 더 벌어졌으면 해서 넣었습니다. */
+.mgt-6{ margin-top: 5rem;}
+/* 추가한자: 이동형 사유:왼쪽 방향도 추가했습니다. */
+.mgl-1{ margin-left: 0.25rem;}
+.mgl-2{ margin-left: 0.5rem;}
+.mgl-3{ margin-left: 1rem;}
+.mgl-4{ margin-left: 1.5rem;}
+.mgl-5{ margin-left: 3rem;}
+
+
 
 /* -------------------------------------------------------------  */
 
@@ -39,6 +49,12 @@
 /* 48px, 24px */
 .pd-top{ padding-top: 3rem;} 
 .pdt{}
+.pdl-1{padding-left: 0.25rem;}
+.pdl-2{padding-left: 0.5rem;}
+.pdl-3{padding-left: 1rem;}
+.pdl-4{padding-left: 1.5rem;}
+.pdl-5{padding-left: 3rem;}
+
 
 
 /* -------------------------------------------------------------  */
@@ -49,7 +65,21 @@
   justify-content: center;
   align-items: center;
 }
+/*  추가한자: 이동형 사유:location 수직 정렬이 필요했기 때문에 정렬정중앙 정렬이 아님 */
+.lc-vertical-alignment{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
+}
+/*  추가한자: 이동형 사유:location 수평 정렬이 필요했기 때문에 정렬정중앙 정렬이 아님 */
+.lc-horizontal-alignment{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+}
 /* Layout(개별 컨텐츠 레이아웃) */
 .relative{
   position: relative;
@@ -68,4 +98,11 @@
   height: 100%;
   width: 100%;
 }
+.input-boder-none{
+  border:0px;
+}
+/* 추가한자: 이동형 사유: input 태그 클릭시 border색변경하기*/
+input:focus{
+  outline: 1px solid #9aefb0;
 
+}
