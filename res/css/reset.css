@@ -54,11 +54,13 @@ table {
 
 a{
 	text-decoration: none;
+	color: black; 
+
 }
 a:active{
   text-decoration: none;
 }
 
-a:hover{
+/* a:hover{
 	text-decoration: none;
-}
+} */
