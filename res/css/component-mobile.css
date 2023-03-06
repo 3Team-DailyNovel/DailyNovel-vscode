@@ -26,9 +26,17 @@
 /* 통계, 설정 팀 */
 
 
+/* chart */
+
+
+.chart{
+    width: 20rem;
+    height: 25rem;
+    
+}
+
+
 /* feeling */
-
-
 
 
 .main-feeling{
@@ -89,4 +97,23 @@
     height: 16em;
     background-image: url(../img/eclipse/Ellipse\ 38.svg);
     justify-self: center;
+}
+
+.btn1:hover{
+
+    background-color: #69bc80;
+    transition: 2S;
+    transition-timing-function: ease;
+
+}
+
+.font-h:hover	{
+    color: white;
+    transition: 1s;
+    }
+
+.a-btn{
+    width: 19.5rem;
+    height: 5.5rem;
+    border-radius: 2.5rem;
 }
