@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+   
+
     <link rel="stylesheet" href="../../../res/css/reset.css">
 
     <link rel="stylesheet" href="../../../res/css/layout.css">
@@ -18,26 +20,37 @@
     <link rel="stylesheet" href="../../../res/css/component-mobile.css">
 </head>
 <body>
+  
     <div class="container-1">
       <div class="header lc-center">
-        <div class="box-large">모아보기</div>
+        <div class="header-title box-large font-weight-bold">모아보기</div>
       </div>
       <div class="main flex-type1">
-        <div class="filter-pos-style">
-          <span>정렬:</span>
-          <div class="mgt-2 order-btns color-white-1 filter-pos-style">
+        <div class="filter-pos-style mgt-3">
+          <span class="order font-weight-bold">정렬:</span>
+          <div class="order-btns color-white-1 filter-pos-style">
 
             <div class="order-btn">how</div>
-            <div class="order-btn">toto</div>
-            <div class="order-btn">wofo</div>
+            <div class="order-btn">기분</div>
+            <div class="order-btn">날짜</div>
           
           </div>
         </div>
-          <div class="content-box flex-type1 over-flow content-box list-container color-bg-green-1 border-r-2">
-            <div class="lc-center list-box">기모찌</div>
+          <div class=" mgt-3 content-box flex-type1 content-box list-container color-bg-green-1 border-r-2">
+            <div class="list-box flex-type1">
+              <div class="card-header lc-center">
+                <div class="feel-img"></div>
+                <div>2022/12/31 (토) </div>
+                <div>15:34</div>
+              </div>
+                <div class="title">제목: ------------</div>
+                <div class="description">내용: -------------------</div>
+              
+            </div>
           </div>
       </div>
       <div class="mgt-2 color-bg-yellow-1 footer "></div>
     </div>
+    <script src="../../../res/js/member/diary/list.js"></script>
 </body>
 </html>
