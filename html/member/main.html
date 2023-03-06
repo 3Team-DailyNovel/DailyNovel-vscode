@@ -5,44 +5,68 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="/res/css/reset.css">
+    <link rel="stylesheet" href="/res/css/layout.css">
+    <link rel="stylesheet" href="/res/css/button.css">
+    <link rel="stylesheet" href="/res/css/box.css">
+    <link rel="stylesheet" href="/res/css/component-mobile.css">
+    <link rel="stylesheet" href="/res/css/style.css">
+    <link rel="stylesheet" href="/res/css/util.css">
 </head>
 <body>
-    <header>
-        <div class="monthly-gauge">
-        <p>Food for thought</p> 
-        <!-- 문장이 아닐 경우에는 p 금지 -->
-        <!-- 제목: h 문장: p 목록 표 폼 -->
-        <p>게이지</p>
-        </div>
-        <div class="login-icon">
-            <p>로그인아이콘</p>
-        </div>
-        <div class="logout-icon">
-            <p>로그아웃아이콘</p>
-        </div>
-        <p class="welcome">
-            000님 오늘은 어떠셨나요?
-        </p>
-    </header>
-    <main>
-        <div class="calender">
-            캘린더 부분
-        </div>
-        <section class="diary-check">
-            <h4>제목</h4>
-            <p>내용 어쩌고 한 2줄하고...</p>
-        </section>
-    </main>
-    <nav class="group-nav">
-        <a class="diary-write"></a>
-        <a class="diary-list"></a>
-        <a class="notice-board"></a>
-        <a class="statistics"></a>
-        <a class="setting"></a>
-    </nav>
+    <div class="container-1 ">
+        <header class="header horizon-center" style="background-color: blueviolet;">
+            <div  class="monthly-gauge mgt-4 horizon-center">
+            <h1>Food for thought</h1> 
+            <!-- 문장이 아닐 경우에는 p 금지 -->
+            <!-- 제목: h 문장: p 목록 표 폼 -->
+            <div class="mgt-4 ">
+                <progress value="60" max="100" class="pg-bar" id="pg-bar"></progress>
+            </div>
+            </div>
 
-    
+            <div class="welcome mgt-4 horizon-center hi-txt">
+                <div>000님,</div>
+                <div class="mgt-2">오늘은 어떠셨나요?</div>
+            </div>
+        </header>
+        <main class="main horizon-center mgt-2" style="background-color: blue;">
+            <div class="calender">
+                <div class="header" id="calendar-header">
+                </div>
+                <div class="main">
+                    <ul class="day">
+                        <li>MON</li>
+                        <li>TUE</li>
+                        <li>WED</li>
+                        <li>THU</li>
+                        <li>FIR</li>
+                        <li>SAT</li>
+                        <li>SUN</li>
+                    </ul>
+                    
+                    <ul class="date" id="calendar-date"></ul>
+                </div>
+                </div>
+                
+                <div class="cur-day" id="current-day"></div>
+            </div>
+            <section class="diary-check mgt-5">
+                <h4>제목</h4>
+                <p>내용 어쩌고 한 2줄하고...</p>
+            </section>
+        </main>
+        <footer class="footer mgt-1" style="background-color: aqua;">
+            <nav class="footer group-nav">
+                <a class="diary-write"></a>
+                <a class="diary-list"></a>
+                <a class="notice-board"></a>
+                <a class="statistics"></a>
+                <a class="setting"></a>
+            </nav>
+        </footer>
+</div>
+    <script src="/res/js/calendar.js"></script>
 </body>
 </html>
 
