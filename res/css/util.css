@@ -129,6 +129,12 @@
   bottom: 0;
 }
 /* 임시 별칭  */
+.top-sticky{
+  position: sticky;    
+  top: 0;
+  background-color: white;  
+}
+
 .bottom-sticky{
   position: sticky;    
   background-color: white;     

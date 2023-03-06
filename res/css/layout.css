@@ -28,9 +28,7 @@ html{
   }
   
   .container-1 > .header{
-    position: sticky;    /*추가 -> 이거 살림*/
-    top: 0;
-    background-color: white;  /*추가 -> 이거 살림*/
+
     grid-column: 2/3;
     grid-row:1/2;
   }
