@@ -21,7 +21,7 @@ html{
     /* 일단 뷰포트단위 써보고 아니면 위처럼 단위 해볼게요. */
     width: 100vw;
     height: 100vh;
-  
+      
     display: grid;
     grid-template-rows: 1fr 7.5fr 1fr; 
     grid-template-columns: 1fr 23.75fr 1fr;
@@ -41,16 +41,62 @@ html{
   }
   
   .container-1 > .footer{
+/* register
+    /* position: sticky;
+    background-color: brown; */
+    /* bottom: 0px; */
+    
      position: sticky;    /*추가 -> 이거 살림*/
      background-color: white;  /*추가 -> 이거 살림*/
     bottom: 0px;
+*/
     grid-column: 2/3;
     grid-row:3/4;
   }
   
   /* ------------------------------------ 두 번째 레이아웃 */
+  /* 작성 창에서 시작됨. */
+  .container-2{
+    /* width: 25.75rem;
+    height: 57.25rem;
   
+    display: grid;
+    grid-template-rows: 6rem 45.25rem 6rem; 
+    grid-template-columns: 1rem auto 1rem; */
   
+    /* 일단 뷰포트단위 써보고 아니면 위처럼 단위 해볼게요. */
+    width: 100vw;
+    height: 100vh;
+    
+    /* background-color: black;
+    opacity: 0.5; */
+
+    display: grid;
+    /* grid-template-rows: 3.75rem 47.5rem 6rem; */
+    /* grid-template-rows: 0.625fr 7.91fr 1fr; */
+    grid-template-rows: 1fr 10.4fr 1.3fr;
+    grid-template-columns: 1fr 23.75fr 1fr;
+  }
+  
+  .container-2 > .header{
+    /* position: sticky; 
+    background-color: brown; */
+    grid-column: 2/3;
+    grid-row:1/2;
+  }
+  
+  .container-2 > .main{
+    grid-column: 2/3;
+    grid-row:2/3;
+  }
+  
+  .container-2 > .footer{
+    /* position: sticky;
+    background-color: brown; */
+    /* bottom: 0px; */
+    grid-column: 2/3;
+    grid-row:3/4;
+  }
   
   
   
@@ -59,6 +105,18 @@ html{
   /* 로그인, 메인 팀 */
   
   /* 일기 작성, 목록 팀 */
+
+  /* register */
+  .reg-header{
+    display: grid;
+    grid-template-columns: 1.5fr 5fr 1.5fr;
+  }
+
+  .reg-main{
+    display: grid;
+    grid-template-rows: 1fr 7fr;
+  }
+  
   
   /* 일기 통계, 설정 팀 */
 

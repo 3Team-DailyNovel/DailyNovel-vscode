@@ -45,10 +45,13 @@
 
 /* padding */
 
+/* 1 2 3  4  5 */
+/* 4 8 16 24 48 */
+
 .pd-a{ padding: 3rem 1.5rem;} 
+
 /* 48px, 24px */
-.pd-top{ padding-top: 3rem;} 
-.pdt{}
+
 .pdl-1{padding-left: 0.25rem;}
 .pdl-2{padding-left: 0.5rem;}
 .pdl-3{padding-left: 1rem;}
@@ -56,6 +59,25 @@
 .pdl-5{padding-left: 3rem;}
 
 
+
+.pdt-1{ padding-top: 0.25rem;}
+.pdt-2{ padding-top: 0.5rem;}
+.pdt-3{ padding-top: 1.0rem;}
+.pdt-4{ padding-top: 1.5rem;}
+.pdt-5{ padding-top: 3rem;}
+
+
+.pdl-1{ padding-left: 0.25rem;}
+.pdl-2{ padding-left: 0.5rem;}
+.pdl-3{ padding-left: 1.0rem;}
+.pdl-4{ padding-left: 1.5rem;}
+.pdl-5{ padding-left: 3rem;}
+
+.pdr-1{ padding-right: 0.25rem;}
+.pdr-2{ padding-right: 0.5rem;}
+.pdr-3{ padding-right: 1.0rem;}
+.pdr-4{ padding-right: 1.5rem;}
+.pdr-5{ padding-right: 3rem;}
 
 /* -------------------------------------------------------------  */
 
@@ -78,8 +100,18 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-
 }
+
+.flex-row{
+  flex-direction: row;
+}
+
+.flex-column{
+  flex-direction: column;
+}
+
+
+
 /* Layout(개별 컨텐츠 레이아웃) */
 .relative{
   position: relative;
@@ -101,6 +133,7 @@
 .input-boder-none{
   border:0px;
 }
+
 /* 추가한자: 이동형 사유: input 태그 클릭시 border색변경하기*/
 
 /* input:focus, textarea:focus{

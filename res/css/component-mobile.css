@@ -4,6 +4,7 @@
     margin:0 auto; 
 }
 
+
 /* 로고 폰트 */
 .main-logo{
    font-family: 'Niconne';
@@ -249,7 +250,9 @@
 
 
 
+
 /* 일기 작성, 목록 팀 */
+/* 일기  */
 .over-flow {
     overflow: hidden;
 }
@@ -280,6 +283,60 @@ border-radius: 10px;
 background-color: #69BC80;
 padding: 10px 20px;
 margin-right: 10px;
+
+/* 일기 작성 */
+
+.flex-spacebtw{
+  display:flex;
+  justify-content: space-between;
+}
+
+.l-box-mini{
+  width:5.25rem;
+  height:5.25rem;
+  background-color: #fafafa;
+  border-radius: 10px;
+
+  display: grid;    
+  grid-template-rows: 1.5rem 3.75rem;
+
+  box-shadow: 0 0.25rem 0.25rem rgba(0, 4, 4, 0.1);
+}
+  .l-box-mini > .name{
+      height: 1.5rem;
+      background-color: #69BC80;
+      border-radius: 10px;       
+  }
+
+.editor-1{
+  width:92%;
+  height: 93%;
+
+  /* padding:0; */
+  border: none;
+  border-width:0;
+  border-radius: 10px;
+  background-color: #f3f3f3; 
+  
+  
+}
+
+/* 추후 수정 ------------------------------- */
+.circle{
+  width: 2.5em;
+  height: 2.5rem;
+  border-radius: 50px;
+  color: white;
+
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.close-btn{
+  background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M17 7L7 17M17 17L7 7' stroke='black' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E%0A");
+}
+/* -------------- 여기까지 팀원들한테 설명하기 */
 
 /* 통계, 설정 팀 */
 /*설정*/
@@ -399,7 +456,6 @@ margin-right: 10px;
 
 }
 
-
 .navicon-Box>a{
     text-decoration: none;
 
@@ -434,6 +490,7 @@ margin-right: 10px;
 .ic-doubleDown{
     background-image: url(../img/doubleDown.svg);
 }
+
 
 
 
