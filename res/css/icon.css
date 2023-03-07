@@ -1,0 +1,28 @@
+/* icon들 담을 그릇 =================================================================== */
+/* 이 친구는 추후에 box로 빠질건지 논의 */
+.circle-box-mini{
+  width: 2.5em;
+  height: 2.5rem;
+  border-radius: 50px;
+  color: white;
+
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  width: 2.25rem;
+  height: 2.25rem;
+  text-indent: -999rem;
+  overflow: hidden;
+  background-repeat: no-repeat;  
+  background-size: cover;  
+}
+
+/* ==================================================================================== */
+/* 실제 이미지들 ======================================================================= */
+
+.close-btn{
+  background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M17 7L7 17M17 17L7 7' stroke='black' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E%0A");
+}
