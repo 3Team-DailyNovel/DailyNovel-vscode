@@ -36,6 +36,11 @@
 .color-yellow-2 { color: #fff241; }
 .color-yellow-3 { color: #c8c000; }
 
+/* 추가한자: 이동형 사유: 빨간색이 필요함 */
+.color-red-1{color:#F08A8A;}
+.color-red-2{color:#d63a3a;}
+.color-red-3{color:#f70000;}
+
 /* 검은색 */
 .color-black-1 { color: #000;}
 
