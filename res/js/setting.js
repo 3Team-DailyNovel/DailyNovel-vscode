@@ -14,15 +14,27 @@ window.addEventListener("load",function(){
         });
         profileBtn.dispatchEvent(event)
     }
-
-    profileBtn.addEventListener("change",()=>{  // 사진을 올리면 프로필 사진이 바뀌게 만들기
-        let reader = new FileReader();
-        reader.readAsDataURL(profileBtn.files[0]);
-        console.log(profileBtn.files[0]);
-        profileTrigerBtn.style.backgroundImage=url(profileBtn.files[0]);
-            
-    
-    })
-
 });
 
+function updateImg(){
+    let proImg = document.querySelector(".pro-img")
+    let imageBG = document.querySelector("section");
+    let file = document.querySelector(".upload-btn").files[0];
+    let reader = new FileReader();
+    reader.onloadend = function () {
+        proImg.style.backgroundImage = "url(" + reader.result + ")";
+        
+    };
+
+    //if (file) reader.readAsDataURL(file);
+    if (file) {
+        reader.readAsDataURL(file);
+        console.log("하하하");
+      }
+    else{ 
+        proImg.style.backgroundImage = "";
+        //proImg.style.backgroundImage = "url()";
+        //proImg.style.backgroundColor = "red";
+        console.log("아아아");
+}
+}
