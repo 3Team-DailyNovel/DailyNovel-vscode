@@ -69,6 +69,30 @@
     justify-content: center;
     align-items: center;
 }
+/* 추가한자: 이동형 사유: 글자를 보이게 안보이게 하기 위한 css 필요*/
+.blind {
+    visibility: hidden;
+}
+/* 추가한자: 이동형 사유:조장이 막 구글 로그인이 이뻐보인다고 하라하네.. 나 하기 싫었는데 어쩔수 없다.. 에휴 까라면 까야지*/
+.outBox-id {padding: 0px;}
+.outBox-id .inputBox {position:relative; height:100%; width:100%; border: 0px;}
+.outBox-id .inputBox input[type="text"] {padding:0 10px; width:100%; height:100%; font-size:14px; box-sizing:border-box; border:0px solid #999; outline:none;}
+.outBox-id .inputBox label {position:absolute; left:0; bottom:0; padding:0 6px; color:#999; font-size:14px; font-weight:normal; background:#fff; transform:scale(1) translate(4px, -18px); transition:all .15s; pointer-events:none;}
+.outBox-id .inputBox input[type="text"]:focus,
+.outBox-id.existence .inputBox input[type="text"] {border:0px solid #69BC80;}
+.outBox-id .inputBox input[type="text"]:focus + label,
+.outBox-id.existence .inputBox label {color:#69BC80; transform:scale(.85) translate(-10px, -48px);}
+
+
+.outBox-pass .inputBox {position:relative; height:100%; width:100%; border: 0px;}
+.outBox-pass .inputBox input[type="password"] {padding:0 10px; width:100%; height:100%; font-size:14px; box-sizing:border-box; border:0px solid #999; outline:none;}
+.outBox-pass .inputBox label {position:absolute; left:0; bottom:0; padding:0 6px; color:#999; font-size:14px; font-weight:normal; background:#fff; transform:scale(1) translate(4px, -18px); transition:all .15s; pointer-events:none;}
+.outBox-pass .inputBox input[type="texpasswordt"]:focus,
+.outBox-pass.existence .inputBox input[type="password"] {border:0px solid #69BC80;}
+.outBox-pass .inputBox input[type="password"]:focus + label,
+.outBox-pass.existence .inputBox label {color:#69BC80; transform:scale(.85) translate(-10px, -48px);}
+
+
 
 
 .container-form{
@@ -79,10 +103,10 @@
 
 /* 인증 버튼 및 인증번호 */
 .certify-form{
-   background-color: #ffffff;
-   width: 19.5rem; /* 312px */
-   height: 3.75rem; /* 60px */
-   border-radius: 10px;
+    background-color: #ffffff;
+    width: 19.5rem; /* 312px */
+    height: 3.75rem; /* 60px */
+    border-radius: 10px;
 
    border-radius: 0.625rem;
    box-shadow:0 0.25rem 0.25rem rgba(0, 4, 4, 0.1);
@@ -345,10 +369,22 @@
 }
 
 
-
-
 /* 일기 작성, 목록 팀 ==================================================== */
 /* 일기 목록 */
+.feel-img {
+    background-image: url("../img/tongue\ .png");
+    width: 36px;
+    height: 36px;
+}
+
+.header-title {
+    font-size: larger;
+}
+
+.order {
+    margin-right: 1rem;
+}
+
 .over-flow {
     overflow: hidden;
 }
@@ -360,19 +396,21 @@
 
 .filter-pos-style {
     display: flex;
-    justify-content: start;
     align-items: center;  
 }
 
-.lists {
-display: flex;
-flex-direction: column;
-justify-content: space-between;
+.list-container {
+    background-color:rgba(136, 206, 111,0.08);
+    box-shadow: 0 8px 8px -8px rgba(0,0,0,0.4);   
+}
+
+.list-box:hover {
+    background-color: #d8d8d88f;
 }
 
 .order-btn {
-margin-left: 1rem;
-font-weight: lighter;
+font-weight: 500;
+margin-right: 0.4rem;
 text-align: center;
 font-size: 1rem;
 border-radius: 10px;
@@ -382,6 +420,7 @@ margin-right: 10px;
 }
 
 /* 일기 작성 */
+
 
 .flex-spacebtw{
   display:flex;
@@ -568,4 +607,16 @@ margin-right: 10px;
 
 .ic-doubleDown{
     background-image: url(../img/doubleDown.svg);
+
+}
+
+.list-box {
+    height: 20%;
+    box-shadow: 0 8px 8px -8px rgba(0,0,0,0.4);   
+    background-color: #F2FFE8;
+    border-radius: 5px;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    transition: background-color .5s;
 }
