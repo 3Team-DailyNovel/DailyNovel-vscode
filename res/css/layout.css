@@ -111,7 +111,7 @@ html{
   /* 일기 통계, 설정 팀 */
   
   .C{
-    /* display: grid; */
+    display: grid;
     justify-self: center;
     align-self: center;
     /* display: flex; */
@@ -126,7 +126,10 @@ html{
     justify-content: center;
     flex-direction: row;
   }
-  .C-m-c{
+    .n{
+      flex-wrap: nowrap;
+    }
+  .C .C-m-c{
     display: flex;
     flex-direction: row;
   }
@@ -137,9 +140,9 @@ html{
     justify-content: center;
   }
 
-  .C-m-l > .tss{
+  /* .C > .tss{                    // 필요 없는 거 같음 일단 지워 둠
     align-self: center;
-  }
+  } */
   /* 주형 부분 추후 수정 ------ */
     .C-joo{
     display: flex;

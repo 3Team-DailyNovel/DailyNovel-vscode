@@ -282,7 +282,8 @@ margin-right: 10px;
 
 
 /* 통계, 설정 팀 ================================================================== */
-/*설정*/
+/*설정 - 유병우 ------------------------------------------------*/
+/* 프로필 사진 */
 .pro-img{
     margin-top: 2.5rem;
     width: 6rem;
@@ -293,6 +294,14 @@ margin-right: 10px;
     border-radius:5rem;
     box-shadow: 0 0.25rem 0.25rem rgba(0, 4, 4, 0.1);
 }
+    .finger{
+        cursor: pointer;
+    }
+
+.feedback-box-size{ /*고객문의 박스 크기 늘려주기 위해 추가*/
+    height: 10rem;
+}
+
 /**/
 /* chart */
 
