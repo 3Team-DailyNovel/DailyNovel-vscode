@@ -314,21 +314,7 @@
         right : 0.625rem;
     }
 /* 나중에 꼭 빼야 할 속성 (배경만) */
-  .preview-slide .item:nth-child(1) {
-    background-color: darkgoldenrod;
-  }
-  .preview-slide .item:nth-child(2) {
-    background-color: aqua;
-  }
-  .preview-slide .item:nth-child(3) {
-    background-color: blueviolet;
-  }
-  .preview-slide .item:nth-child(4) {
-    background-color: burlywood;
-  }
-  .preview-slide .item:nth-child(5) {
-    background-color: cornflowerblue;
-  }
+
   /* 페이지네이션 스타일 */
   .preview-slide ul,
   .preview-slide li {
