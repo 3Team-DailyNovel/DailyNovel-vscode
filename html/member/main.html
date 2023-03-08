@@ -5,22 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/res/css/reset.css">
-    <link rel="stylesheet" href="/res/css/layout.css">
-    <link rel="stylesheet" href="/res/css/button.css">
-    <link rel="stylesheet" href="/res/css/box.css">
-    <link rel="stylesheet" href="/res/css/component-mobile.css">
-    <link rel="stylesheet" href="/res/css/style.css">
-    <link rel="stylesheet" href="/res/css/util.css">
+    <link rel="stylesheet" href="../../res/css/reset.css">
+    <link rel="stylesheet" href="../../res/css/button.css">
+    <link rel="stylesheet" href="../../res/css/box.css">
+    <link rel="stylesheet" href="../../res/css/navigation.css">
+    <link rel="stylesheet" href="../../res/css/layout.css">
+    <link rel="stylesheet" href="../../res/css/util.css">
+    <link rel="stylesheet" href="../../res/css/style.css">
+    <link rel="stylesheet" href="../../res/css/component-mobile.css">
 </head>
 <body>
     <div class="container-1 ">
-        <header class="header horizon-center" style="background-color: blueviolet;">
+        <!-- 헤더 -->
+        <header class="header horizon-center">
             <div  class="monthly-gauge mgt-4 horizon-center">
-            <h1>Food for thought</h1> 
+            <h1 class="h5">Food for thought</h1> 
             <!-- 문장이 아닐 경우에는 p 금지 -->
             <!-- 제목: h 문장: p 목록 표 폼 -->
-            <div class="mgt-4 ">
+            <div class="mgt-2">
                 <progress value="60" max="100" class="pg-bar" id="pg-bar"></progress>
             </div>
             </div>
@@ -30,12 +32,17 @@
                 <div class="mgt-2">오늘은 어떠셨나요?</div>
             </div>
         </header>
-        <main class="main horizon-center mgt-2" style="background-color: blue;">
-            <div class="calender">
+        <!-- 메인 -->
+        <main class="main main-pg-2Layers mgt-3" >
+            <!-- 달력 -->
+            <div class="calender ib">
                 <div class="header" id="calendar-header">
+                    <div class="prev-month" id ="prev-btn">&#60;</div>
+                    <div class="" id ="date-config"></div>
+                    <div class="next-month" id = "next-btn">&#62;</div>
                 </div>
                 <div class="main">
-                    <ul class="day">
+                    <ul class="day mgt-4">
                         <li>SUN</li>
                         <li>MON</li>
                         <li>TUE</li>
@@ -47,26 +54,65 @@
                     
                     <ul class="date" id="calendar-date"></ul>
                 </div>
-                </div>
-                
-                <div class="cur-day" id="current-day"></div>
             </div>
-            <section class="diary-check mgt-5">
-                <h4>제목</h4>
-                <p>내용 어쩌고 한 2줄하고...</p>
-            </section>
+            <!-- 일기 미리보기
+            <article class="diary-preview-box border-r-1 shadow-2">
+                <div class="h2">제목</div>
+                <div class="h4">내용 어쩌고 한 2줄하고...</div>
+                <div>...</div>
+            </article> -->
+
+            <article class="preview-slide slide_wrap border-r-2">
+                <div class="item">1</div>
+                <div class="item">2</div>
+                <div class="item">3</div>
+                <div class="item">4</div>
+                <div class="item">5</div>
+                <div class="prev-btn btn">◀</div>
+                <div class="next-btn btn">▶</div>
+                <ul class="pagination"></ul>
+            </article>
+
         </main>
-        <footer class="footer mgt-1" style="background-color: aqua;">
-            <nav class="footer group-nav">
-                <a class="diary-write"></a>
-                <a class="diary-list"></a>
-                <a class="notice-board"></a>
-                <a class="statistics"></a>
-                <a class="setting"></a>
+        <!-- 푸터 -->
+        <footer class="footer mgt-1">
+            <nav class="disflex">
+                <div class="navicon-Box">
+                    <a href="" class="black">
+                    <div class="ic-pencil  navicon"></div>
+                    <div class="p1 margin-top-1 ">쓰 기</div>
+                    </a>
+                </div>
+
+                <div class="navicon-Box">
+                    <a href="" class="black">
+                    <div class="ic-feed  navicon"></div>
+                    <div class="p1 margin-top-1">목 록</div>
+                    </a>
+                </div>
+                <div class="navicon-Box ">
+                    <a href="../analysis/main.html" class="black">
+                    <div class="ic-graph-circle  navicon ic-color-green"></div>
+                    <div class="p1  margin-top-1">통 계</div>
+                    </a>
+                </div>
+                <div class="navicon-Box ">
+                    <a href="" class="black">
+                    <div class="ic-calendar  navicon"></div>
+                    <div class="p1  margin-top-1">게 시 판</div>
+                    </a>
+                </div>
+                <div class="navicon-Box">
+                    <a href="" class="black">
+                    <div class="ic-Vector  navicon"></div>
+                    <div class="p1 margin-top-1 ">설 정</div>
+                    </a>
+                </div>
             </nav>
         </footer>
-</div>
+    </div>
     <script src="/res/js/calendar.js"></script>
+    <script src="/res/js/slide.js"></script>
 </body>
 </html>
 

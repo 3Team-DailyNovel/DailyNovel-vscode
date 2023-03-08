@@ -49,23 +49,25 @@
 /* font */
 
 /* font 크기 */
-
+/* 작은 크기 더 추가했습니다. - 이재준(03.07)*/
+/* 32px 24px 20px 16px 14px */
+.h1 { font-size: 2rem; }
+.h2 { font-size: 1.5rem; }
+.h3 { font-size: 1.125rem; }
+.h4 { font-size: 1rem; }
+.h5 { font-size: 0.875rem;}
 .font-size30{font-size: 1.875rem;}
 .font-size20{font-size: 1.25rem;}
 /* 30 = 1.875 */
 
-
-.h1 { font-size: 2rem; }
-.h2 { font-size: 1.5rem; }
-.h3 { font-size: 1.1rem; }
-.h4 { font-size: 1rem; }
-
 /* font 굵기 */
-.font-weight-normal{ font-weight: 400;}
-.font-weight-bold{ font-weight: 700;}
 /* .font-weight-normal{ font-weight: 400;} */
 .font-weight-700{ font-weight: 700;}
 .font-weight-bolder {font-weight: bolder;}
+
+.font-bold{ font-weight : bold;}
+.font-normal{ font-weight: normal;}
+.font-light{ font-weight: lighter;}
 
 /* text-align */
 
