@@ -158,7 +158,7 @@
 /* 일기 작성 현황(진행 바) */
 .pg-bar{
    appearance:none;
-   width: 9rem;
+   width: 6rem;
    height: 1.25rem;
 }
    .pg-bar::-webkit-progress-bar{
