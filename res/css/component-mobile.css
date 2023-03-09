@@ -172,7 +172,7 @@
 
 /* ???님 오늘의 일기 적으러가볼까요? */
 .hi-txt{
-   font-size:1.25rem;
+   font-size:1.5rem;
    font-weight: bold;
 }
    .hi-txt > div:nth-child(1){
@@ -181,17 +181,11 @@
    
 /* 달력과 미리보기 레이아웃 */
 .main-pg-2Layers{
-    display:flex;
-    flex-direction: column;
-    
+    display:grid;
+    grid-template-rows: 2fr 1fr;
+    row-gap: 0.5rem;
+    box-sizing: border-box;
 }
-    .main-pg-2Layers > .calender{
-        flex-grow:1;
-    }
-
-    .main-pg-2Layers > .preview-slide{
-        flex-grow: 1;
-    }
 
 /* 달력 */
 .calender{
@@ -266,26 +260,72 @@
 
     /* 텍스트 고르지 못하게 /링크는 고를 수 있다.*/
     user-select: none;
+    
 }
 
 /* 아이템 스타일 나중에 일기(쓰러가기/미리보기) 두 부분으로 나눠져야함*/
     .preview-slide .item{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        
-        position: relative;
-        left : 0;
-
         width:100%;
         height: 100%;
 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        position: relative;
+
+        left : 0;
+        box-sizing: border-box;
+
+        /* max-height: 30%; */
         /* 기본값 1이라서, 무조건 한페이지 안에 다 나타내려함 */
         flex-shrink:0;
 
         /* 실제 슬라이드로 동작 할 친구!! */
         transition: left 0.15s;
     }
+    .preview-slide .item div:nth-child(1){
+        position: relative;
+        top: 20%;
+        width: 70%;
+        text-align: center;
+    }
+    .preview-slide .item div:nth-child(2){
+        position: relative;
+        top: 30%;
+        width: 70%;
+        
+        text-align: center;
+        font-size: large;
+        
+        white-space: normal;
+        display:-webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient:vertical;
+        overflow:hidden;
+    }
+    .preview-slide .write-btn{
+        background-color: #99999920;
+        text-align: center;
+        /* border-radius: 100%; */
+    }
+
+    .preview-slide .go-register{
+        display:inline-block;
+        width:3rem;
+        height: 3rem;
+        box-sizing: border-box;
+    }
+
+        .preview-slide  .go-register .ic-add-diary{
+            width:48px;
+            height: 48px;
+            background-image: url("/res/img/DiaryMainPage/add.svg");
+            background-size: contain;
+            background-repeat: no-repeat;
+            
+            /* font-size:100px */
+        }
     /* 버튼 스타일 */
     .preview-slide .btn {
         display: flex;

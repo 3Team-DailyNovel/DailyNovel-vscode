@@ -27,20 +27,25 @@
             </div>
             </div>
 
-            <div class="welcome mgt-4 horizon-center hi-txt">
-                <div>000님,</div>
-                <div class="mgt-2">오늘은 어떠셨나요?</div>
+            <div class="welcome mgt-3 horizon-center hi-txt" id="add-hello">
+                <div>000님</div>
+                <!-- <div class="mgt-2">즐거운 하루였나요?</div> -->
+
+                
             </div>
         </header>
         <!-- 메인 -->
-        <main class="main main-pg-2Layers mgt-3" >
+        <main class="main main-pg-2Layers mgt-3 pdb-4" >
             <!-- 달력 -->
-            <div class="calender ib">
+            
+            <div class="calender">
+            
                 <div class="header" id="calendar-header">
                     <div class="prev-month" id ="prev-btn">&#60;</div>
-                    <div class="" id ="date-config"></div>
+                    <div class="h3 lc-center" id ="date-config"></div>
                     <div class="next-month" id = "next-btn">&#62;</div>
                 </div>
+            
                 <div class="main">
                     <ul class="day mgt-4">
                         <li>SUN</li>
@@ -62,12 +67,18 @@
                 <div>...</div>
             </article> -->
 
-            <article class="preview-slide slide_wrap border-r-2">
-                <div class="item">
-                    <div>팝 업</div>        
-                    <div>팝 업</div>        
+            <article class="preview-slide slide_wrap border-r-2 shadow-1">
+                <div class="item lc-center">
+                    <a href="/html/member/diary/register.html" 
+                    class="go-register lc-center">
+                        <div class="ic-add-diary"></div>
+                    </a>
+                    <!-- <div class="ic-add-diary"></div> -->
                 </div>
-                <div class="item">두번째</div>
+                <div class="item">
+                    <div class="h2">2023년 3월 9일</div>        
+                    <div>이거 진짜 3줄 이후로 안나옴?? 이거 진짜 3줄 이후로 안나옴?? 이거 진짜 3줄 이후로 안나옴?? 이거 진짜 3줄 이후로 안나옴?? 이거 진짜 3줄 이후로 안나옴?? 이거 진짜 3줄 이후로 안나옴??</div>
+                </div>
                 <div class="item">세번째</div>
                 <div class="item">네번째</div>
                 <div class="item">다섯번째</div>
@@ -116,6 +127,7 @@
     </div>
     <script src="/res/js/calendar.js"></script>
     <script src="/res/js/slide.js"></script>
+    <script src="/res/js/mainLetter.js"></script>
 </body>
 </html>
 
