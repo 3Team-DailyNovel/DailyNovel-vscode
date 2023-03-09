@@ -438,7 +438,23 @@ margin-right: 10px;
   border: none;
   border-width:0;
   border-radius: 10px;
-  background-color: #f3f3f3; 
+
+
+.swiper-bullets{
+    display: flex;
+    justify-content: space-around;
+
+}
+    .swiper-bullets > .active {
+        background-color: #69BC80;
+    }
+
+.swiper-bullet{
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50px;
+    background-color: #cecece;
+
 }
 
 

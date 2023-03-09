@@ -118,6 +118,10 @@ html{
     grid-template-rows: 1fr 7fr;
   }
   
+  .guide-main{
+    display: grid;
+    grid-template-rows: 1fr 1fr 5.54fr;
+  }
   
   /* 일기 통계, 설정 팀 */
   
