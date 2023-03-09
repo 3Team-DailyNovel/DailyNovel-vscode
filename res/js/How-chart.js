@@ -5,15 +5,15 @@ let ctx = document.getElementById('myChart').getContext('2d');
 
         
 
-        labels: ['자유롭게', '간편일기', '영화', '여행',],
+        labels: ['자유롭게', '간편일기', '영화', '여행'],
 
         datasets: [{
-            data: [5, 8, 7, 4, 5],
+            data: [5, 8, 7, 4,],
             backgroundColor: [
                 '#49b8a5', //행복
                 '#f2c1c1', //들뜸
                 '#99e6ff', //감동
-                '#c1ff83', //화남
+                '#c1ff83' //화남
             ],
 
         }]
