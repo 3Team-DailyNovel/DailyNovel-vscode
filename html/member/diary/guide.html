@@ -38,8 +38,54 @@
         <div class="swiper-bullet">5</div>
       </div>
       <div id="guide-index"></div>
-      <div id="guide-content"></div>
-      <!-- <div>
+      <div id="guide-content"></div>      
+
+
+    </div>
+    <div class="footer lc-center">
+      <a href="" style="text-align: center;">바로 작성을 하고 싶으신가요?<br>여기를 클릭하세요.</a>
+    </div>
+
+  </div>  
+  <script>
+    let mousedownX = 0;
+    let mouseupX = 0;
+    const main = document.querySelector('.guide-main');
+    const swiper = document.getElementById("swiper");
+    
+    main.addEventListener('mousedown', (e)=>{  
+      mousedownX = e.offsetX;    
+      console.log("마우스를 눌렀을 때 좌표 :" + e.offsetX);
+    });
+
+    main.addEventListener('mousemove', (e)=>{
+      mouseupX = e.offsetX;
+      console.log("x 움직이는 중~  :" + e.offsetX);
+    });
+
+    main.addEventListener('mouseup', (e)=>{      
+      let curactivebullet = document.querySelector('.swiper-bullets > .active');
+      let nextactivebullet = document.querySelector('.swiper-bullets > .active + .swiper-bullet');
+
+      curactivebullet.classList.remove('active');
+      nextactivebullet.classList.add('active');
+      mouseupX = e.offsetX;
+      console.log(`땟을때 좌표 : ${e.offsetX}`);
+
+      if((mousedownX > mouseupX) && (mousedownX-mouseupX)>100 ){
+        curactivebullet.classList.remove('active');
+        nextactivebullet.classList.add('active');
+      } 
+
+      mousedownX = 0;
+      mouseupX = 0;
+    })    
+  
+  </script>
+</body>
+</html>
+
+<!-- <div>
         <div>
           <p class="text-center h1">Q1.</p>
         </div>
@@ -55,31 +101,3 @@
           <p class="text-center h1">오늘은 어떤 하루였는지<br>떠올려볼까요?</p> 
         </div>
       </div> -->
-
-
-    </div>
-    <div class="footer lc-center">
-      <a href="" style="text-align: center;">바로 작성을 하고 싶으신가요?<br>여기를 클릭하세요.</a>
-    </div>
-
-  </div>  
-  <script>
-    let mousedownX;
-    let mouseupX;
-    const main = document.querySelector('.guide-main');
-    const swiper = document.getElementById("swiper");
-    
-    main.addEventListener('mousedown', (e)=>{      
-      console.log("클릭할 때 좌표 :" + e.clientX);
-    })
-
-    main.addEventListener('mouseup', (e)=>{      
-      console.log(`땟을때 좌표 : ${e.offsetX}`);
-    })
-    
-
-    
-  
-  </script>
-</body>
-</html>
