@@ -76,8 +76,8 @@
 /* 추가한자: 이동형 사유:조장이 막 구글 로그인이 이뻐보인다고 하라하네.. 나 하기 싫었는데 어쩔수 없다.. 에휴 까라면 까야지*/
 .outBox-id {padding: 0px;}
 .outBox-id .inputBox {position:relative; height:100%; width:100%; border: 0px;}
-.outBox-id .inputBox input[type="text"] {padding:0 10px; width:100%; height:100%; font-size:14px; box-sizing:border-box; border:0px solid #999; outline:none;}
-.outBox-id .inputBox label {position:absolute; left:0; bottom:0; padding:0 6px; color:#999; font-size:14px; font-weight:normal; background:#fff; transform:scale(1) translate(4px, -18px); transition:all .15s; pointer-events:none;}
+.outBox-id .inputBox input[type="text"] {padding:10px 10px; width:100%; height:120%; font-size:1.2rem; box-sizing:border-box; border:0px solid #999; outline:none;}
+.outBox-id .inputBox label {position:absolute; left:0; bottom:0; padding:0 6px; color:#999; font-size:1rem; font-weight:normal; background:#fff; transform:scale(1) translate(4px, -18px); transition:all .15s; pointer-events:none;}
 .outBox-id .inputBox input[type="text"]:focus,
 .outBox-id.existence .inputBox input[type="text"] {border:0px solid #69BC80;}
 .outBox-id .inputBox input[type="text"]:focus + label,
@@ -85,8 +85,8 @@
 
 
 .outBox-pass .inputBox {position:relative; height:100%; width:100%; border: 0px;}
-.outBox-pass .inputBox input[type="password"] {padding:0 10px; width:100%; height:100%; font-size:14px; box-sizing:border-box; border:0px solid #999; outline:none;}
-.outBox-pass .inputBox label {position:absolute; left:0; bottom:0; padding:0 6px; color:#999; font-size:14px; font-weight:normal; background:#fff; transform:scale(1) translate(4px, -18px); transition:all .15s; pointer-events:none;}
+.outBox-pass .inputBox input[type="password"] {padding:10px 10px; width:100%; height:120%; font-size:1.2rem; box-sizing:border-box; }
+.outBox-pass .inputBox label {position:absolute; left:0; bottom:0; padding:0 6px; color:#999; font-size:1rem; font-weight:normal; background:#fff; transform:scale(1) translate(4px, -18px); transition:all .15s; pointer-events:none;}
 .outBox-pass .inputBox input[type="texpasswordt"]:focus,
 .outBox-pass.existence .inputBox input[type="password"] {border:0px solid #69BC80;}
 .outBox-pass .inputBox input[type="password"]:focus + label,
