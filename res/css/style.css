@@ -36,6 +36,11 @@
 .color-yellow-2 { color: #fff241; }
 .color-yellow-3 { color: #c8c000; }
 
+/* 추가한자: 이동형 사유: 빨간색이 필요함 */
+.color-red-1{color:#F08A8A;}
+.color-red-2{color:#d63a3a;}
+.color-red-3{color:#f70000;}
+
 /* 검은색 */
 .color-black-1 { color: #000;}
 
@@ -45,19 +50,19 @@
 
 /* font 크기 */
 
+
 .font-size30{font-size: 1.875rem;}
 .font-size20{font-size: 1.25rem;}
 /* 30 = 1.875 */
 
 /* 작은 크기 더 추가했습니다. - 이재준(03.07)*/
+
 /* 32px 24px 20px 16px 14px */
 .h1 { font-size: 2rem; }
 .h2 { font-size: 1.5rem; }
 .h3 { font-size: 1.125rem; }
 .h4 { font-size: 1rem; }
 .h5 { font-size: 0.875rem;}
-
-
 
 /* font 굵기 */
 /* .font-weight-normal{ font-weight: 400;} */
@@ -69,7 +74,6 @@
 .font-bold{ font-weight : bold;}
 .font-normal{ font-weight: normal;}
 .font-light{ font-weight: lighter;}
-
 
 /* text-align */
 

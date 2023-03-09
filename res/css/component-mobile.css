@@ -69,6 +69,30 @@
     justify-content: center;
     align-items: center;
 }
+/* 추가한자: 이동형 사유: 글자를 보이게 안보이게 하기 위한 css 필요*/
+.blind {
+    visibility: hidden;
+}
+/* 추가한자: 이동형 사유:조장이 막 구글 로그인이 이뻐보인다고 하라하네.. 나 하기 싫었는데 어쩔수 없다.. 에휴 까라면 까야지*/
+.outBox-id {padding: 0px;}
+.outBox-id .inputBox {position:relative; height:100%; width:100%; border: 0px;}
+.outBox-id .inputBox input[type="text"] {padding:10px 10px; width:100%; height:120%; font-size:1.2rem; box-sizing:border-box; border:0px solid #999; outline:none;}
+.outBox-id .inputBox label {position:absolute; left:0; bottom:0; padding:0 6px; color:#999; font-size:1rem; font-weight:normal; background:#fff; transform:scale(1) translate(4px, -18px); transition:all .15s; pointer-events:none;}
+.outBox-id .inputBox input[type="text"]:focus,
+.outBox-id.existence .inputBox input[type="text"] {border:0px solid #69BC80;}
+.outBox-id .inputBox input[type="text"]:focus + label,
+.outBox-id.existence .inputBox label {color:#69BC80; transform:scale(.85) translate(-10px, -48px);}
+
+
+.outBox-pass .inputBox {position:relative; height:100%; width:100%; border: 0px;}
+.outBox-pass .inputBox input[type="password"] {padding:10px 10px; width:100%; height:120%; font-size:1.2rem; box-sizing:border-box; }
+.outBox-pass .inputBox label {position:absolute; left:0; bottom:0; padding:0 6px; color:#999; font-size:1rem; font-weight:normal; background:#fff; transform:scale(1) translate(4px, -18px); transition:all .15s; pointer-events:none;}
+.outBox-pass .inputBox input[type="texpasswordt"]:focus,
+.outBox-pass.existence .inputBox input[type="password"] {border:0px solid #69BC80;}
+.outBox-pass .inputBox input[type="password"]:focus + label,
+.outBox-pass.existence .inputBox label {color:#69BC80; transform:scale(.85) translate(-10px, -48px);}
+
+
 
 
 .container-form{
@@ -79,10 +103,10 @@
 
 /* 인증 버튼 및 인증번호 */
 .certify-form{
-   background-color: #ffffff;
-   width: 19.5rem; /* 312px */
-   height: 3.75rem; /* 60px */
-   border-radius: 10px;
+    background-color: #ffffff;
+    width: 19.5rem; /* 312px */
+    height: 3.75rem; /* 60px */
+    border-radius: 10px;
 
    border-radius: 0.625rem;
    box-shadow:0 0.25rem 0.25rem rgba(0, 4, 4, 0.1);
@@ -155,47 +179,171 @@
       letter-spacing: 0.25rem;
    }
    
+/* 달력과 미리보기 레이아웃 */
+.main-pg-2Layers{
+    display:flex;
+    flex-direction: column;
+    
+}
+    .main-pg-2Layers > .calender{
+        flex-grow:1;
+    }
 
+    .main-pg-2Layers > .preview-slide{
+        flex-grow: 1;
+    }
 
 /* 달력 */
 .calender{
-   background-color:aqua;
    width: 100%;
-   height:15rem;
-
+   padding: 1rem;
+   box-sizing: border-box;
+   display:flex;
+   flex-direction: column;
 }
-   .calender >.main ul{
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      flex-wrap: wrap;
-   }
-   .calender .main li{
-      height: 2rem;
-      line-height: 2rem;
-      width:calc(100% / 7);
-      text-align: center; 
-      
+    
+    .calender > .header{
+        display: flex;
+        justify-content: space-between;
+        font-size: 1.5rem;
+    }
+    .calender > .main{
+        flex-grow:1;
+        display:flex;
+        flex-direction: column;
+    }
+        .calender >.main ul{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            flex-grow: 1;
+        }
+        .calender > .main > .date{
+            height: 100%;
+        }
+        .calender .main li{
+            /* height: 3rem; */
+            /* line-height: 2rem; */
+            flex-grow: 1;
+            width:calc(100% / 7);
+            text-align: center;    
    }
 
    .calender .day>li{
-      color: #00000040;
-      
+      font-size:0.75rem;
+      color: #00000040;     
    }
-
    .calender  .date{
       display: flex;
       flex-direction: row;
       justify-content: space-around;
+
    }
    .calender .date li{
-      background-color: #aaaaaa;
       border-radius: 50%;
+
+   }
+   .calender .date li:nth-child(-n+7){
+    margin-top:0;
+    
    }
 
    .calender .inactive {
       color: #ff0000
    }
+
+/* 슬라이드 */
+.preview-slide{
+    /* 옆으로 넘기는 슬라이드 */
+    display:flex;
+    flex-wrap: nowrap;
+    /* 튀어나온거 제거(스크롤바 생기는것도 제거) */
+    overflow:hidden;
+
+    /* 자식 absolute 지정시, 이 박스를 기준으로 지정할 수 있도록 만들기 */
+    position:relative;
+
+    /* 텍스트 고르지 못하게 /링크는 고를 수 있다.*/
+    user-select: none;
+}
+
+/* 아이템 스타일 나중에 일기(쓰러가기/미리보기) 두 부분으로 나눠져야함*/
+    .preview-slide .item{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        position: relative;
+        left : 0;
+
+        width:100%;
+        height: 100%;
+
+        /* 기본값 1이라서, 무조건 한페이지 안에 다 나타내려함 */
+        flex-shrink:0;
+
+        /* 실제 슬라이드로 동작 할 친구!! */
+        transition: left 0.15s;
+    }
+    /* 버튼 스타일 */
+    .preview-slide .btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        /* position */
+        position: absolute; /*부모가 relative 라서 부모 기준으로 absolute가 먹는다*/
+        /* 버튼이 중앙에 위치하게 하기위해 계산 */
+        top: 50%;
+        transform: translateY(-50%);
+    
+        /* size */
+        width: 1.75rem;
+        height: 1.75rem;
+    
+        /* style */
+        border-radius: 100%;
+        background-color: #cccccc40;
+        cursor: pointer;
+    }
+    .preview-slide .prev-btn{
+        left : 0.625rem;
+    }
+    .preview-slide .next-btn{
+        right : 0.625rem;
+    }
+/* 나중에 꼭 빼야 할 속성 (배경만) */
+
+  /* 페이지네이션 스타일 */
+  .preview-slide ul,
+  .preview-slide li {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  .preview-slide .pagination {
+    /* layout */
+    display: flex;
+    gap: 1rem;
+  
+    /* position */
+    position: absolute;
+    bottom: 0;
+    /* left:50%, translateX(-50%)를 하면 가로 가운데로 위치시킬 수 있다. */
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .preview-slide .pagination > li {
+    /* 현재 슬라이드가 아닌 것은 투명도 부여 */
+    color: #7fb5ff88;
+    cursor: pointer;
+    font-size: 25px;
+  }
+  .preview-slide .pagination > li.active {
+    /* 현재 슬라이드 색상은 투명도 없이 */
+    color: #7fb5ff;
+  }
 
 
 /* ---------------공통 수정 제안. ---------------- */
@@ -207,10 +355,22 @@
 }
 
 
-
-
 /* 일기 작성, 목록 팀 ==================================================== */
 /* 일기 목록 */
+.feel-img {
+    background-image: url("../img/tongue\ .png");
+    width: 36px;
+    height: 36px;
+}
+
+.header-title {
+    font-size: larger;
+}
+
+.order {
+    margin-right: 1rem;
+}
+
 .over-flow {
     overflow: hidden;
 }
@@ -222,19 +382,21 @@
 
 .filter-pos-style {
     display: flex;
-    justify-content: start;
     align-items: center;  
 }
 
-.lists {
-display: flex;
-flex-direction: column;
-justify-content: space-between;
+.list-container {
+    background-color:rgba(136, 206, 111,0.08);
+    box-shadow: 0 8px 8px -8px rgba(0,0,0,0.4);   
+}
+
+.list-box:hover {
+    background-color: #d8d8d88f;
 }
 
 .order-btn {
-margin-left: 1rem;
-font-weight: lighter;
+font-weight: 500;
+margin-right: 0.4rem;
 text-align: center;
 font-size: 1rem;
 border-radius: 10px;
@@ -244,6 +406,7 @@ margin-right: 10px;
 }
 
 /* 일기 작성 */
+
 
 .flex-spacebtw{
   display:flex;
@@ -275,8 +438,7 @@ margin-right: 10px;
   border: none;
   border-width:0;
   border-radius: 10px;
-  background-color: #f3f3f3;  
-}
+
 
 .swiper-bullets{
     display: flex;
@@ -292,6 +454,7 @@ margin-right: 10px;
     height: 1rem;
     border-radius: 50px;
     background-color: #cecece;
+
 }
 
 
@@ -321,13 +484,80 @@ margin-right: 10px;
 /* feeling */
 
 
+
+.btn-feeling {
+    font-size: 1.1rem;
+    width: 10rem;
+    height: 3rem;
+
+    background-color: #fcfcfc;
+    border-radius: 2.5rem;
+    box-shadow: 0 0.25rem 0.25rem rgba(0, 4, 4, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-h1{
+    background-color: #ffffff;
+    width: 16rem; /* 208px */
+    height: 2.25rem; /* 36px */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box-img{
+    background-color: #ffffff;
+    width: 18rem;; /* 254px */
+    height: 16rem; /* 240px */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box-p{
+    background-color: #ffffff;
+    width: 21rem; /* 336px */
+    height: 5.75rem; /* 92px */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+}
+
+.lc-space-between-alignment{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+
 .main-feeling{
     width: 16em;
     height: 16em;
     background-image: url(../img/happiness/happy.png);
     justify-self: center;
 }
+.lc-feeling-view-alignment{
+    display: flex;
+    width: 20rem;
+    height: 20rem;
+    flex-direction: column;
+    align-items: center;
+  
+  }
 
+.lc-space-around{
+    display: flex;
+    width: 22rem;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
 
 .collection-feeling{
     display: flex;
@@ -338,31 +568,61 @@ margin-right: 10px;
     width: 18rem;
     height: 5rem;
 }
-.feeling1{
+.feeling-angry{
     width: 4rem;
     height: 4rem;
     background-image: url(../img/angry/angry64.png);
     justify-self: center;
 }
-.feeling2{
+.feeling-awkward{
     width: 4rem;
     height: 4rem;
     background-image: url(../img/awkward/awkward64.png);
     justify-self: center;
 }
-.feeling3{
+.feeling-calm{
     width: 4rem;
     height: 4rem;
     background-image: url(../img/calm/calm64.png);
     justify-self: center;
 }
-.feeling4{
+.feeling-disappointed{
     width: 4rem;
     height: 4rem;
     background-image: url(../img/disappointed/disappointed64.png);
     justify-self: center;
 }
+.feeling-anxiety{
+    width: 4rem;
+    height: 4rem;
+    background-image: url(../img/anxiety/anxiety64.png);
+    justify-self: center;
+}
+.feeling-happiness{
+    width: 4rem;
+    height: 4rem;
+    background-image: url(../img/happiness/happy64.png);
+    justify-self: center;
+}
 
+.feeling-sadness{
+    width: 4rem;
+    height: 4rem;
+    background-image: url(../img/sadness/sad64.png);
+    justify-self: center;
+}
+.feeling-touched{
+    width: 4rem;
+    height: 4rem;
+    background-image: url(../img/touched/touched64.png);
+    justify-self: center;
+}
+.feeling-excitement{
+    width: 4rem;
+    height: 4rem;
+    background-image: url(../img/excitement/excited64.png);
+    justify-self: center;
+}
 /* honesty */
 
 
@@ -381,7 +641,20 @@ margin-right: 10px;
     justify-self: center;
 }
 
-.btn1:hover{
+.analysis-main-btn1 {
+    width: 19.5rem;
+    height: 5.5rem;
+    font-size: 1.5rem;
+   
+    background-color: #fcfcfc;
+    border-radius: 2.5rem;
+    box-shadow: 0 0.25rem 0.25rem rgba(0, 4, 4, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.analysis-main-btn1:hover{
 
     background-color: #69bc80;
     transition: 2S;
@@ -399,7 +672,13 @@ margin-right: 10px;
     height: 5.5rem;
     border-radius: 2.5rem;
 }
+/* 
+feeling view
+*/
 
+.pdb-feelingview{ padding-bottom: 7rem;}
+
+/* ===================== */
 
 /* 네비게이션   */
 
@@ -446,9 +725,16 @@ margin-right: 10px;
 
 .ic-doubleDown{
     background-image: url(../img/doubleDown.svg);
+
 }
 
-
-
-
-
+.list-box {
+    height: 20%;
+    box-shadow: 0 8px 8px -8px rgba(0,0,0,0.4);   
+    background-color: #F2FFE8;
+    border-radius: 5px;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    transition: background-color .5s;
+}
