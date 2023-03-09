@@ -468,13 +468,80 @@ margin-right: 10px;
 /* feeling */
 
 
+
+.btn-feeling {
+    font-size: 1.1rem;
+    width: 10rem;
+    height: 3rem;
+
+    background-color: #fcfcfc;
+    border-radius: 2.5rem;
+    box-shadow: 0 0.25rem 0.25rem rgba(0, 4, 4, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-h1{
+    background-color: #ffffff;
+    width: 16rem; /* 208px */
+    height: 2.25rem; /* 36px */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box-img{
+    background-color: #ffffff;
+    width: 18rem;; /* 254px */
+    height: 16rem; /* 240px */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box-p{
+    background-color: #ffffff;
+    width: 21rem; /* 336px */
+    height: 5.75rem; /* 92px */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+}
+
+.lc-space-between-alignment{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+
 .main-feeling{
     width: 16em;
     height: 16em;
     background-image: url(../img/happiness/happy.png);
     justify-self: center;
 }
+.lc-feeling-view-alignment{
+    display: flex;
+    width: 20rem;
+    height: 20rem;
+    flex-direction: column;
+    align-items: center;
+  
+  }
 
+.lc-space-around{
+    display: flex;
+    width: 22rem;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
 
 .collection-feeling{
     display: flex;
@@ -485,31 +552,61 @@ margin-right: 10px;
     width: 18rem;
     height: 5rem;
 }
-.feeling1{
+.feeling-angry{
     width: 4rem;
     height: 4rem;
     background-image: url(../img/angry/angry64.png);
     justify-self: center;
 }
-.feeling2{
+.feeling-awkward{
     width: 4rem;
     height: 4rem;
     background-image: url(../img/awkward/awkward64.png);
     justify-self: center;
 }
-.feeling3{
+.feeling-calm{
     width: 4rem;
     height: 4rem;
     background-image: url(../img/calm/calm64.png);
     justify-self: center;
 }
-.feeling4{
+.feeling-disappointed{
     width: 4rem;
     height: 4rem;
     background-image: url(../img/disappointed/disappointed64.png);
     justify-self: center;
 }
+.feeling-anxiety{
+    width: 4rem;
+    height: 4rem;
+    background-image: url(../img/anxiety/anxiety64.png);
+    justify-self: center;
+}
+.feeling-happiness{
+    width: 4rem;
+    height: 4rem;
+    background-image: url(../img/happiness/happy64.png);
+    justify-self: center;
+}
 
+.feeling-sadness{
+    width: 4rem;
+    height: 4rem;
+    background-image: url(../img/sadness/sad64.png);
+    justify-self: center;
+}
+.feeling-touched{
+    width: 4rem;
+    height: 4rem;
+    background-image: url(../img/touched/touched64.png);
+    justify-self: center;
+}
+.feeling-excitement{
+    width: 4rem;
+    height: 4rem;
+    background-image: url(../img/excitement/excited64.png);
+    justify-self: center;
+}
 /* honesty */
 
 
@@ -528,7 +625,20 @@ margin-right: 10px;
     justify-self: center;
 }
 
-.btn1:hover{
+.analysis-main-btn1 {
+    width: 19.5rem;
+    height: 5.5rem;
+    font-size: 1.5rem;
+   
+    background-color: #fcfcfc;
+    border-radius: 2.5rem;
+    box-shadow: 0 0.25rem 0.25rem rgba(0, 4, 4, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.analysis-main-btn1:hover{
 
     background-color: #69bc80;
     transition: 2S;
@@ -546,7 +656,13 @@ margin-right: 10px;
     height: 5.5rem;
     border-radius: 2.5rem;
 }
+/* 
+feeling view
+*/
 
+.pdb-feelingview{ padding-bottom: 7rem;}
+
+/* ===================== */
 
 /* 네비게이션   */
 
