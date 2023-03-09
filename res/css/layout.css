@@ -87,12 +87,23 @@ html{
     grid-column: 2/3;
     grid-row:3/4;
   }
+
+  /*만든이: 이동형 사유:네비게이션 바 레이아웃 */
+.container-nav{
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr 1.5fr 1fr 1fr ;
+  grid-row: 16px 80px;
+  column-gap: 1fr;
   
-  
+}
+
   
   
   /* 각 페이지 별로 만들고 싶을 때 */
   /* 로그인, 메인 팀 */
+
   
   /* 일기 작성, 목록 팀 */
 
