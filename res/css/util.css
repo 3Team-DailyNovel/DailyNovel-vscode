@@ -132,12 +132,10 @@
 .top-sticky{
   position: sticky;    
   top: 0;
-  background-color: white;  
 }
 
 .bottom-sticky{
   position: sticky;    
-  background-color: white;     
   bottom: 0px; 
 }
 .ib{
