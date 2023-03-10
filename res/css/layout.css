@@ -150,6 +150,10 @@ html{
     grid-template-rows: 1fr 7fr;
   }
   
+  .guide-main{
+    display: grid;
+    grid-template-rows: 1fr 1fr 5.54fr;
+  }
   
   /* 일기 통계, 설정 팀 */
   
@@ -191,12 +195,4 @@ html{
     flex-direction: column;
   }
 
-  .ana-main-layout-joo{
-    padding: 3rem 1.5rem 3rem 1.5rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-
-  }
 

@@ -12,11 +12,6 @@
     justify-content: center;
 }
 
-.btn1:hover{
-    background-color: #69BC80;
-    color: #fcfcfc;
-}
-
 .btn2 {
     width: 13.75rem;
     height: 3.5rem;

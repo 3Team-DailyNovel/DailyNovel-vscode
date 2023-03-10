@@ -1,5 +1,5 @@
-const ctx = document.getElementById('myChart').getContext('2d');
-const myChart = new Chart(ctx, {
+let ctx = document.getElementById('myChart').getContext('2d');
+;let myChart = new Chart(ctx, {
     type: 'doughnut',
     data: {
 
@@ -8,7 +8,6 @@ const myChart = new Chart(ctx, {
         labels: ['행복', '들뜸', '감동', '화남', '불안', '실망', '슬픔', '평온', '난감'],
 
         datasets: [{
-            label: '# emotion',
             data: [10, 10, 10, 10, 10, 10, 10, 10, 10],
             backgroundColor: [
                 '#A593E0', //행복
