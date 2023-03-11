@@ -9,20 +9,39 @@
   <link rel="stylesheet" href="../../../res/css/layout.css">
   <link rel="stylesheet" href="../../../res/css/util.css">
   <link rel="stylesheet" href="../../../res/css/style.css">
+  <link rel="stylesheet" href="../../../res/css/icon.css">
   <link rel="stylesheet" href="../../../res/css/component-mobile.css">
   <link rel="stylesheet" href="../../../res/css/button.css">
   <link rel="stylesheet" href="../../../res/css/box.css">
+
+
 </head>
+
 <body>
+
   <div class="container-1">
-    <div class="header">
+
+    <div class="header" >
+      
+      <div class="icon close-btn"></div>    
       <div class="swiper"></div>
-      <div></div>
+
+    <div></div>
+
     </div>
-    <div class="main lc-center flex-column">
-      <div>
+    <div class="main guide-main">   
+      <div id="swiper" class="swiper-bullets">
+        <div class="swiper-bullet active">1</div>
+        <div class="swiper-bullet">2</div>
+        <div class="swiper-bullet">3</div>
+        <div class="swiper-bullet">4</div>
+        <div class="swiper-bullet">5</div>
+      </div>
+      <div id="guide-index"></div>
+      <div id="guide-content"></div>
+      <!-- <div>
         <div>
-          <p class="h2">Q1.</p>
+          <p class="text-center h1">Q1.</p>
         </div>
         <div>
           <p class="text-center h1">오늘은 어떤 하루였는지<br>떠올려볼까요?</p> 
@@ -35,7 +54,7 @@
         <div>
           <p class="text-center h1">오늘은 어떤 하루였는지<br>떠올려볼까요?</p> 
         </div>
-      </div>
+      </div> -->
 
 
     </div>
@@ -43,36 +62,24 @@
       <a href="" style="text-align: center;">바로 작성을 하고 싶으신가요?<br>여기를 클릭하세요.</a>
     </div>
 
-  </div>
-<!-- 
-  <header>
-    <div class="slider">
-      <div class="slider-bullet-active"></div>
-      <div class="slider-bullet"></div>
-      <div class="slider-bullet"></div>
-    </div>
-    <div class="close-btn"></div>
-  </header>
+  </div>  
+  <script>
+    let mousedownX;
+    let mouseupX;
+    const main = document.querySelector('.guide-main');
+    const swiper = document.getElementById("swiper");
+    
+    main.addEventListener('mousedown', (e)=>{      
+      console.log("클릭할 때 좌표 :" + e.clientX);
+    })
+
+    main.addEventListener('mouseup', (e)=>{      
+      console.log(`땟을때 좌표 : ${e.offsetX}`);
+    })
+    
+
+    
   
-  <main>
-    <div class="question-idx">
-      <div class="idx">Q1.</div>
-    </div>
-    <div class="question-txt">
-      오늘은 어떤 하루였는지<br>떠올려볼까요?
-    </div>
-    <div class="change-btn">
-      <button type="button" onclick="location.href='../diary/select-tmp.html'">글 쓰러 가기</button>      
-    </div>
-  </main>
-
-  <footer>
-    <a href="../diary/select-tmp.html">
-      바로 작성을 하고 싶으신가요?<br>여기를 클릭하세요.
-    </a>    
-  </footer> -->
-
-  
-
+  </script>
 </body>
 </html>
