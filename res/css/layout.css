@@ -127,7 +127,8 @@ html{
     flex-direction: row;
   }
     .n{
-      flex-wrap: nowrap;
+      flex-direction: row;
+      /* flex-wrap: nowrap; */
     }
   .C .C-m-c{
     display: flex;
