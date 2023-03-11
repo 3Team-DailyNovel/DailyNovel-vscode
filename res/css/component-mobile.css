@@ -68,6 +68,7 @@
 /* 추가한자: 이동형 사유: 글자를 보이게 안보이게 하기 위한 css 필요*/
 .blind {
   visibility: hidden;
+
 }
 /* 추가한자: 이동형 사유:조장이 막 구글 로그인이 이뻐보인다고 하라하네.. 나 하기 싫었는데 어쩔수 없다.. 에휴 까라면 까야지*/
 .outBox-id {padding: 0px;}
@@ -78,6 +79,7 @@
 .outBox-id.existence .inputBox input[type="text"] {
   border: 0px solid #69bc80;
 }
+
 .outBox-id .inputBox input[type="text"]:focus + label,
 .outBox-id.existence .inputBox label {color:#69BC80; transform:scale(.85) translate(-10px, -48px);}
 
@@ -153,6 +155,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+
 }
 
 .certify-form > .user-data {
@@ -390,6 +393,7 @@
 }
 /* 나중에 꼭 빼야 할 속성 (배경만) */
 
+
 /* 페이지네이션 스타일 */
 .preview-slide ul,
 .preview-slide li {
@@ -531,6 +535,7 @@ input:focus {
 }
 
 /* 통계, 설정 팀 ================================================================== */
+
 /*설정 - 유병우 ------------------------------------------------*/
 /* 프로필 사진 */
 .pro-img{
@@ -640,8 +645,7 @@ input:focus {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-
-  }
+}
 
 .main-feeling{
     width: 16em;
