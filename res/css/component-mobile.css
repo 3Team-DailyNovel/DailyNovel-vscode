@@ -621,9 +621,14 @@ input:focus {
  .color-bg-gray-1 { background-color: #d3d3d3; }
  .l-box-short .color-bg-gray-1{ background-color: #d3d3d3; }
 
-.t-layout-size-adjust{
+/* .t-layout-size-adjust{
     grid-template-row: minmax(5.5rem,auto) auto minmax(5.5rem,auto);
+} */
+.test{
+  background-color: #f1f1f1;
+  border-radius: 1px;
 }
+
 
 /**/
 /* chart */

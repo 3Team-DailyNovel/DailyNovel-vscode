@@ -156,12 +156,6 @@ html{
   }
   
   /* 일기 통계, 설정 팀 */
-  
-  .C{
-    display: grid;
-    justify-self: center;
-    align-self: center;
-  }
 
   /* 주형 부분 추후 수정 ------ */
     .C-joo{
