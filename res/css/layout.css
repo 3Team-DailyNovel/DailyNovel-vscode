@@ -158,7 +158,7 @@ html{
   /* 일기 통계, 설정 팀 */
   
   .C{
-    /* display: grid; */
+    display: grid;
     justify-self: center;
     align-self: center;
     /* display: flex; */
@@ -173,7 +173,11 @@ html{
     justify-content: center;
     flex-direction: row;
   }
-  .C-m-c{
+    .n{
+      flex-direction: row;
+      /* flex-wrap: nowrap; */
+    }
+  .C .C-m-c{
     display: flex;
     flex-direction: row;
   }
@@ -184,9 +188,6 @@ html{
     justify-content: center;
   }
 
-  .C-m-l > .tss{
-    align-self: center;
-  }
   /* 주형 부분 추후 수정 ------ */
     .C-joo{
     display: flex;
@@ -195,4 +196,11 @@ html{
     flex-direction: column;
   }
 
+  .ana-main-layout-joo{
+    padding: 3rem 1.5rem 3rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
 
+  }
