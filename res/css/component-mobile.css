@@ -514,8 +514,10 @@ input:focus {
   border: none;
   border-width: 0;
   border-radius: 10px;
-
 }
+
+/* -- 작성 - guide.html */
+
 .swiper-bullets{
     display: flex;
     justify-content: space-around;
