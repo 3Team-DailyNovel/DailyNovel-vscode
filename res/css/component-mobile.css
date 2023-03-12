@@ -332,13 +332,13 @@
   /* 실제 슬라이드로 동작 할 친구!! */
   transition: left 0.15s;
 }
-.preview-slide .item div:nth-child(1) {
+.preview-slide .item-diary div:nth-child(1) {
   position: relative;
   top: 20%;
   width: 70%;
   text-align: center;
 }
-.preview-slide .item div:nth-child(2) {
+.preview-slide .item-diary div:nth-child(2) {
   position: relative;
   top: 30%;
   width: 70%;
@@ -358,22 +358,14 @@
   /* border-radius: 100%; */
 }
 
-.preview-slide .go-register {
-  display: inline-block;
-  width: 3rem;
-  height: 3rem;
-  box-sizing: border-box;
-}
-
-.preview-slide .go-register .ic-add-diary {
-  width: 48px;
-  height: 48px;
-  background-image: url("/res/img/DiaryMainPage/add.svg");
-  background-size: contain;
+.preview-slide .icon-plus{
+  width:3rem;
+  height:3rem;
   background-repeat: no-repeat;
-
-  /* font-size:100px */
+  background-image: url(/res/img/DiaryMainPage/add.svg);
+  
 }
+
 /* 버튼 스타일 */
 .preview-slide .btn {
   display: flex;
