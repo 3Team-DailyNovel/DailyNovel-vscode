@@ -161,31 +161,6 @@ html{
     display: grid;
     justify-self: center;
     align-self: center;
-    /* display: flex; */
-    /* justify-content: center; */
-    /* align-items: center; */
-    /* flex-direction: column; */
-  }
-  .C-m{
-    display: flex;
-    flex-wrap: wrap;
-    /* align-content: center; */
-    justify-content: center;
-    flex-direction: row;
-  }
-    .n{
-      flex-direction: row;
-      /* flex-wrap: nowrap; */
-    }
-  .C .C-m-c{
-    display: flex;
-    flex-direction: row;
-  }
-  .C-m-l{
-    display: flex;
-    flex-direction: column;
-    /* align-self: center; */
-    justify-content: center;
   }
 
   /* 주형 부분 추후 수정 ------ */

@@ -585,9 +585,6 @@ input:focus {
   box-shadow: inset 0 0 0.5rem rgba(0,0,0,0.5);
 
 }
-  .box-check:checked{
-    /* background-color: #69BC80; */
-  }
   .box-check:before{
   content:'';
   position: absolute;
@@ -596,9 +593,8 @@ input:focus {
   top: -0.2rem;
   left: 0rem;
   border-radius:2rem;
-  /* border: solid; */
   background-color: #fff;
-  box-shadow: inset 0 0 0.5rem rgba(0,0,0,0.5);
+  box-shadow: inset 0 0 0.3rem rgba(0,0,0,0.5);
   transform: scale(1.1);
   border-color: black;
       transition: 0.1s;
@@ -606,21 +602,18 @@ input:focus {
   .box-check:checked:before{
     left: 1.7rem;
     background-color: #69BC80;
-    /* background-color: #388b53; */
     transition: 0.1s;
   }
 
-/* 폰트선택박스 */
-.font-box{
+/* 라디오 선택박스 */
+.font-box{ /*라디오 선택용 작은 박스*/ 
   width: 5rem;
 }
-.radio-btn:checked .font-box{
-  border-color: #69BC80;
-}
+
 .radio-btn:checked + .font-box{
-  border-color: #69BC80;
-  background-color: red;
+  border: 0.1rem solid #69BC80;
 }
+
 
 /* 유병우 테스트용, 테스트 확인 후 삭제할 예정 */
 .mgt-4-s{ margin-top: 4rem;}
@@ -631,7 +624,6 @@ input:focus {
 .t-layout-size-adjust{
     grid-template-row: minmax(5.5rem,auto) auto minmax(5.5rem,auto);
 }
-
 
 /**/
 /* chart */
