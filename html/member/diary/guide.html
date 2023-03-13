@@ -19,26 +19,42 @@
 
 <body>
 
-  <div class="container-1">
+  <div class="container-1" style="overflow: hidden;">
 
-    <div class="header" >
+    <div class="header lc-center" >
       
       <div class="icon close-btn"></div>    
-      <div class="swiper"></div>
+      
 
     <div></div>
 
     </div>
-    <div class="main guide-main">   
-      <div id="swiper" class="swiper-bullets">
-        <div class="swiper-bullet active">1</div>
-        <div class="swiper-bullet">2</div>
-        <div class="swiper-bullet">3</div>
-        <div class="swiper-bullet">4</div>
-        <div class="swiper-bullet">5</div>
-      </div>
+    <div class="main guide-main">
+      <div class="lc-center">
+        <div id="swiper" class="swiper-bullets">
+          <div class="swiper-bullet active">1</div>
+          <div class="swiper-bullet">2</div>
+          <div class="swiper-bullet">3</div>
+          <div class="swiper-bullet">4</div>
+          <div class="swiper-bullet">5</div>
+        </div>
+      </div>      
       <div id="guide-index"></div>
-      <div id="guide-content"></div>      
+      <div id="guide-content" class="guide-content">
+        <div class="ty6">
+          오늘은 어떤 하루였는지 떠올려볼까요?
+          <!-- <p class="text-center h1"></p>  -->
+        </div>
+        <div class="ty6">
+          <p class="text-center h1">1.오늘은 어떤 하루였는지<br>떠올려볼까요?</p> 
+        </div>
+        <div class="ty6">
+          <p class="text-center h1">2.오늘은 어떤 하루였는지<br>떠올려볼까요?</p> 
+        </div>
+        <div class="ty6">
+          <p class="text-center h1">3.오늘은 어떤 하루였는지<br>떠올려볼까요?</p> 
+        </div>
+      </div>      
 
 
     </div>
@@ -83,10 +99,7 @@
       mouseupX = 0;
     })    
 
-    main.addEventListener('touchstart', (e)=>{
-      
-    })
-
+    
     main.addEventListener("touchstart",  (e) => {
       // Iterate through the touch points and log each screenX/Y coordinate.
       // The unit of each coordinate is CSS pixels.
@@ -96,9 +109,18 @@
     },
     false
   );
+  const guideText = document.querySelector(".guide-content");
+  const texts = document.querySelectorAll(".guide-content > div");
+  let gwidth = guideText.clientWidth;
+  let left = guideText.offsetLeft;
+  
+  const conta = document.querySelector(".container-1");
+  let width = conta.clientWidth;
+  let left2 = conta.clientLeft;
+
 
     main.addEventListener("touchend", (e)=>{
-      
+
       let curactivebullet = document.querySelector('.swiper-bullets > .active');
       let nextactivebullet = document.querySelector('.swiper-bullets > .active + .swiper-bullet');
 
@@ -107,13 +129,21 @@
       }
 
       if((touchstartX > touchendX) && (touchstartX-touchendX)>100 ){
+        // 다음 속성 없으면 유지.
+        if(nextactivebullet == null){
+          return;
+        }
         curactivebullet.classList.remove('active');
         nextactivebullet.classList.add('active');
+        // left = left - gwidth;
+        texts.forEach((i) => {          
+          i.setAttribute("style", `left: -50px`);
+        });
+        
+        // texts.setAttribute("style",`left: ${-gwidth}px`);
       } 
     })
     
-    
-  
   </script>
 </body>
 </html>
