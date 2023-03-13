@@ -50,6 +50,8 @@
   <script>
     let mousedownX = 0;
     let mouseupX = 0;
+    let touchstartX = 0;
+    let touchendX = 0;
     const main = document.querySelector('.guide-main');
     const swiper = document.getElementById("swiper");
     
@@ -67,8 +69,8 @@
       let curactivebullet = document.querySelector('.swiper-bullets > .active');
       let nextactivebullet = document.querySelector('.swiper-bullets > .active + .swiper-bullet');
 
-      curactivebullet.classList.remove('active');
-      nextactivebullet.classList.add('active');
+      // curactivebullet.classList.remove('active');
+      // nextactivebullet.classList.add('active');
       mouseupX = e.offsetX;
       console.log(`땟을때 좌표 : ${e.offsetX}`);
 
@@ -80,6 +82,37 @@
       mousedownX = 0;
       mouseupX = 0;
     })    
+
+    main.addEventListener('touchstart', (e)=>{
+      
+    })
+
+    main.addEventListener("touchstart",  (e) => {
+      // Iterate through the touch points and log each screenX/Y coordinate.
+      // The unit of each coordinate is CSS pixels.
+      for (let i = 0; i < e.touches.length; i++) {
+        touchstartX = e.touches[i].pageX; 
+      }
+    },
+    false
+  );
+
+    main.addEventListener("touchend", (e)=>{
+      
+      let curactivebullet = document.querySelector('.swiper-bullets > .active');
+      let nextactivebullet = document.querySelector('.swiper-bullets > .active + .swiper-bullet');
+
+      for (let i = 0; i < e.touches.length; i++) {
+        touchendX = e.touches[i].pageX;
+      }
+
+      if((touchstartX > touchendX) && (touchstartX-touchendX)>100 ){
+        curactivebullet.classList.remove('active');
+        nextactivebullet.classList.add('active');
+      } 
+    })
+    
+    
   
   </script>
 </body>
