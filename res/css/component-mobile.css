@@ -570,17 +570,61 @@ input:focus {
     border-radius:5rem;
 }
 
+/*체크박스*/
+.box-check{
+  position: relative;
+  width: 3.5rem;
+  height: 1.7rem;
+  border-radius: 2.5rem;
+  -webkit-appearance: none;
+  background-color: #d3d3d3;
+  cursor: pointer;
+  box-shadow: inset 0 0 0.5rem rgba(0,0,0,0.5);
+}
+  .box-check:before{
+  content:'';
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  top: -0.2rem;
+  left: 0rem;
+  border-radius:2rem;
+  background-color: #fff;
+  box-shadow: inset 0 0 0.3rem rgba(0,0,0,0.5);
+  transform: scale(1.1);
+  border-color: black;
+      transition: 0.1s;
+  }  
+  .box-check:checked:before{
+    left: 1.7rem;
+    background-color: #69BC80;
+    transition: 0.1s;
+  }
+
+/* 라디오 선택박스 */
+.font-box{ /*라디오 선택용 작은 박스*/ 
+  width: 5rem;
+}
+
+.radio-btn:checked + .font-box{
+  border: 0.1rem solid #69BC80;
+}
+
+
 /* 유병우 테스트용, 테스트 확인 후 삭제할 예정 */
 .mgt-4-s{ margin-top: 4rem;}
- .t-overflow{  /* 반영할 듯 공간 유지시키기*/
-   overflow: auto;
- }
+
  .color-bg-gray-1 { background-color: #d3d3d3; }
  .l-box-short .color-bg-gray-1{ background-color: #d3d3d3; }
-
-.t-layout-size-adjust{
-    grid-template-row: minmax(5.5rem,auto) auto minmax(5.5rem,auto);
+.out{/*회원탈퇴*/
+  color: red;
+  border: solid 1px red;
 }
+.test{
+  background-color: #f1f1f1;
+  border-radius: 1px;
+}
+
 
 /**/
 /* chart */

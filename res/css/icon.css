@@ -25,22 +25,15 @@
   background-size: cover;  
 }
 
+
+
 .nav-icon{
-  width: 1.875rem;
+  width: 2rem;
   height: 1.5rem;
   overflow: hidden;
   background-repeat: no-repeat; 
-  background-position: center;
+  background-position: center; 
 }
-
-.nav-main-icon{
-  width: 5rem;
-  height: 4rem;
-  overflow: hidden;
-  background-repeat: no-repeat;  
-  background-position: center;
-}
-
 
 /* ==================================================================================== */
 /* 실제 이미지들 ======================================================================= */
