@@ -109,10 +109,8 @@
     },
     false
   );
-  const guideText = document.querySelector(".guide-content");
-  const texts = document.querySelectorAll(".guide-content > div");
-  let gwidth = guideText.clientWidth;
-  let left = guideText.offsetLeft;
+
+  
   
   const conta = document.querySelector(".container-1");
   let width = conta.clientWidth;
@@ -120,6 +118,10 @@
 
 
     main.addEventListener("touchend", (e)=>{
+      const guideText = document.querySelector(".guide-content");
+      const texts = document.querySelectorAll(".guide-content > div");
+      let gwidth = guideText.clientWidth;
+      let left = guideText.offsetLeft;
 
       let curactivebullet = document.querySelector('.swiper-bullets > .active');
       let nextactivebullet = document.querySelector('.swiper-bullets > .active + .swiper-bullet');
@@ -137,7 +139,7 @@
         nextactivebullet.classList.add('active');
         // left = left - gwidth;
         texts.forEach((i) => {          
-          i.setAttribute("style", `left: -50px`);
+          i.setAttribute("style", `left: ${-gwidth}px`);
         });
         
         // texts.setAttribute("style",`left: ${-gwidth}px`);
