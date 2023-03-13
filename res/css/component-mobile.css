@@ -427,23 +427,20 @@ input:focus {
 
 /* 일기 작성, 목록 팀 ==================================================== */
 /* 일기 목록 */
-.feel-img {
-  background-image: url("../img/tongue\ .png");
-  width: 36px;
-  height: 36px;
+
+.list-feel-img {
+    background-image: url("../img/tongue\ .png");
+    width: 36px;
+    height: 36px;
 }
 
-.header-title {
-  font-size: larger;
+.list-header-title {
+    font-size: larger;
 }
 
-.order {
-  margin-right: 1rem;
-}
 
-.over-flow {
-  overflow: hidden;
-}
+
+
 
 .flex-type1 {
   display: flex;
@@ -464,16 +461,16 @@ input:focus {
   background-color: #d8d8d88f;
 }
 
-.order-btn {
-  font-weight: 500;
-  margin-right: 0.4rem;
-  text-align: center;
-  font-size: 1rem;
-  border-radius: 10px;
-  background-color: #69bc80;
-  padding: 10px 20px;
-  margin-right: 10px;
-}
+
+.list-order-header {
+margin-right: 0.4rem;
+text-align: center;
+font-size: 1rem;
+border-radius: 10px;
+background-color: #69BC80;
+padding: 10px 20px;
+margin-right: 10px;
+
 
 /* 일기 작성 */
 
