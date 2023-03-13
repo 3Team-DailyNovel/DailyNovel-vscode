@@ -23,6 +23,7 @@ let ctx = document.getElementById('myChart').getContext('2d');
       responsive : true,
         plugins: {
             legend: {
+                display: false,
                 position: 'bottom'
             }
         }
