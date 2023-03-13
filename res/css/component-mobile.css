@@ -507,6 +507,8 @@ input:focus {
   border: none;
   border-width: 0;
   border-radius: 10px;
+
+  background-color: #f3f3f3;
 }
 
 /* -- 작성 - guide.html */
