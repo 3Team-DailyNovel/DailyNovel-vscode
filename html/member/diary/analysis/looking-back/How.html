@@ -13,28 +13,30 @@
     <link rel="stylesheet" type="text/css" href="../../../../../res/css/util.css">
     <link rel="stylesheet" type="text/css" href="../../../../../res/css/style.css">
     <link rel="stylesheet" type="text/css" href="../../../../../res/css/component-mobile.css">
+    
+
+    
 </head>
 <body class="container-1">
     
-        <header class="header C">
-            <div class="box-large color-bg-green-2 font-size30 font-weight-bold color-white-1 ">How</div>
+        <header class="header lc-center">
+            <div class="box-large color-bg-green-2 h1 font-weight-bold color-white-1 ">How</div>
         </header>
 
-        <div class="main ana-main-layout">
-               <h1 class="box-h1 font-size30 font-weight-bolder">이달의 How은..</h1>
+        <div class="main pd-a lc-space-between-alignment">
+               <h1 class="box-h1 h1 font-weight-bolder">이달의 How는..</h1>
                
                
-               <div class="box-img"><div class="How-img"></div></div>
-               
-               
-               <div class="box-p font-size20 font-weight-bolder"><p>
-                감사일기였어요!<br>
-                얼마나 많은 분들께 감사인사를<br>
-                남기고 계셨나요??</p></div>
+               <div class="main C">
+                <div class ="chart">
+                    <canvas id="myChart" width="3rem" height="3rem"></canvas>
+                
+                </div>
                 
                 
-                <div class="btn3 C color-bg-green-2 color-bg-green-2 color-white-1 font-size20">보러가기</div>
-                
+                <div class="lc-space-around mgt-6">
+                    <div class="btn-feeling"><a class="" href="../main.html"> 이전</a></div>
+                </div>                
              
 
                 </div>
@@ -75,7 +77,13 @@
                 </div>
             </nav>
         </div>
-    
+
 
 </body>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
+<script>
+	Chart.register(ChartDataLabels); //전역으로 플러그인 등록
+</script>
+<script src="../../../../../res/js/How-chart.js"></script>
 </html>
