@@ -150,6 +150,10 @@ html{
   .reg-main{
     display: grid;
     grid-template-rows: 1fr 7fr;
+
+    box-sizing: border-box;
+
+    overflow: hidden;
   }
   
   .guide-main{

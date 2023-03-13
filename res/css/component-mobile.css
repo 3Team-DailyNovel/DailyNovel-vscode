@@ -499,9 +499,20 @@ input:focus {
   border-radius: 10px;
 }
 
-.editor-1 {
-  width: 92%;
-  height: 93%;
+.editor-title{
+    width: 90%;
+    height: 5%;
+
+    border: none;
+    border-width: 0;
+    border-radius: 10px;
+  
+    background-color: #f3f3f3;
+}
+
+.editor-base {
+  width: 90%;
+  height: 85%;
 
   /* padding:0; */
   border: none;
@@ -509,6 +520,9 @@ input:focus {
   border-radius: 10px;
 
   background-color: #f3f3f3;
+
+  
+  /* background-color: #cecece; */
 }
 
 /* -- 작성 - guide.html */
@@ -527,8 +541,7 @@ input:focus {
     height: 1rem;
     border-radius: 50px;
     background-color: #cecece;
-
-  background-color: #f3f3f3;
+  
 }
 
 /* 통계, 설정 팀 ================================================================== */
