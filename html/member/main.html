@@ -1,61 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="../../res/css/reset.css">
-    <link rel="stylesheet" href="../../res/css/button.css">
-    <link rel="stylesheet" href="../../res/css/box.css">
-    <link rel="stylesheet" href="../../res/css/layout.css">
-    <link rel="stylesheet" href="../../res/css/util.css">
-    <link rel="stylesheet" href="../../res/css/style.css">
-    <link rel="stylesheet" href="../../res/css/icon.css">
-    <link rel="stylesheet" href="../../res/css/component-mobile.css">
-</head>
-<body>
-    <div class="container-1 ">
-        <!-- 헤더 -->
-        <header class="header horizon-center">
-            <div  class="monthly-gauge mgt-4 horizon-center">
-            <h1 class="h5">Food for thought</h1> 
-            <!-- 문장이 아닐 경우에는 p 금지 -->
-            <!-- 제목: h 문장: p 목록 표 폼 -->
-            <div class="mgt-2">
-                <progress value="60" max="100" class="pg-bar" id="pg-bar"></progress>
-            </div>
-            </div>
+    
+    <link rel="stylesheet" href="../../res/css/reset.css" />
+    <link rel="stylesheet" href="../../res/css/button.css" />
+    <link rel="stylesheet" href="../../res/css/box.css" />
+    <link rel="stylesheet" href="../../res/css/navigation.css" />
+    <link rel="stylesheet" href="../../res/css/layout.css" />
+    <link rel="stylesheet" href="../../res/css/util.css" />
+    <link rel="stylesheet" href="../../res/css/style.css" />
+    <link rel="stylesheet" href="../../res/css/component-mobile.css" />
+  </head>
+  <body>
+    <div class="container-1">
+      <!-- 헤더 -->
+      <header class="header horizon-center">
+        <div class="monthly-gauge mgt-4 horizon-center">
+          <h1 class="h5">Food for thought</h1>
+          <!-- 문장이 아닐 경우에는 p 금지 -->
+          <!-- 제목: h 문장: p 목록 표 폼 -->
+          <div class="mgt-2">
+            <progress value="60" max="100" class="pg-bar" id="pg-bar"></progress>
+          </div>
+        </div>
+      </header>
+      <!-- 메인 -->
+      <main class="main main-pg-2Layers mgt-3 pdb-4">
+        <div class="welcome horizon-center hi-txt" id="add-hello">
+          <div>000님</div>
+          <!-- <div class="mgt-2">즐거운 하루였나요?</div> -->
+        </div>
 
-            <div class="welcome mgt-4 horizon-center hi-txt">
-                <div>000님,</div>
-                <div class="mgt-2">오늘은 어떠셨나요?</div>
-            </div>
-        </header>
-        <!-- 메인 -->
-        <main class="main main-pg-2Layers mgt-3" >
-            <!-- 달력 -->
-            <div class="calender ib">
-                <div class="header" id="calendar-header">
-                    <div class="prev-month" id ="prev-btn">&#60;</div>
-                    <div class="" id ="date-config"></div>
-                    <div class="next-month" id = "next-btn">&#62;</div>
-                </div>
-                <div class="main">
-                    <ul class="day mgt-4">
-                        <li>SUN</li>
-                        <li>MON</li>
-                        <li>TUE</li>
-                        <li>WED</li>
-                        <li>THU</li>
-                        <li>FIR</li>
-                        <li>SAT</li> 
-                    </ul>
-                    
-                    <ul class="date" id="calendar-date"></ul>
-                </div>
-            </div>
-            <!-- 일기 미리보기
+        <!-- 달력 -->
+        <div class="calender">
+          <div class="header" id="calendar-header">
+            <div class="prev-month" id="prev-btn">&#60;</div>
+            <div class="h3 lc-center" id="date-config"></div>
+            <div class="next-month" id="next-btn">&#62;</div>
+          </div>
+
+          <div class="main">
+            <ul class="day mgt-4">
+              <li>SUN</li>
+              <li>MON</li>
+              <li>TUE</li>
+              <li>WED</li>
+              <li>THU</li>
+              <li>FIR</li>
+              <li>SAT</li>
+            </ul>
+
+            <ul class="date" id="calendar-date"></ul>
+          </div>
+        </div>
+        <!-- 일기 미리보기
             <article class="diary-preview-box border-r-1 shadow-2">
                 <div class="h2">제목</div>
                 <div class="h4">내용 어쩌고 한 2줄하고...</div>
@@ -111,14 +113,21 @@
                     <div class="h6 mgt-2">설정하기</div>
                 </a>
                 </div>
-            </div>
-        </footer>
-    </div>
+ 
+        <article class="preview-slide slide_wrap border-r-2 shadow-1">
+          <div class="item lc-center">
+            <div class="icon-plus" onClick="location.href='/html/member/diary/register.html'"></div>
+            <!-- <div class="ic-add-diary"></div> -->
+          </div>
+          <div class="item item-diary">
+            <div class="h2">2023년 3월 9일</div>
+            <div>
+              이거 진짜 3줄 이후로 안나옴?? 이거 진짜 3줄 이후로 안나옴?? 이거 진짜 3줄 이후로 안나옴?? 이거 진짜 3줄
+              이후로 안나옴?? 이거 진짜 3줄 이후로 안나옴?? 이거 진짜 3줄 이후로 안나옴??
+              
+
     <script src="/res/js/calendar.js"></script>
     <script src="/res/js/slide.js"></script>
-</body>
+    <script src="/res/js/mainLetter.js"></script>
+  </body>
 </html>
-
-
-
-
