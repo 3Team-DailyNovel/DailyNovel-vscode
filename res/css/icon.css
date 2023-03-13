@@ -20,30 +20,14 @@
   background-size: cover;  
 }
 
-.mainnav-bg{
-  width: 6rem;
-  height: 6rem;
-  background-color: #69BC80;
-  overflow: hidden;
-  border-radius: 15px;
-  box-sizing:  border-box;
-}
 
-.mainnav-icon{
-  width: 3.75rem;
-  height: 3.75rem;
-  background-repeat: no-repeat;  
-  background-size: cover;
-  background-position: center; 
-}
 
 .nav-icon{
-
-  width: 1.875rem;
+  width: 2rem;
   height: 1.5rem;
   overflow: hidden;
   background-repeat: no-repeat; 
-
+  background-position: center; 
 }
 
 
