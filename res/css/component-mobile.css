@@ -2,6 +2,14 @@
 
 /* 회원가입 페이지-선유진 */
 
+/* 배경이미지 */
+.main-bg{
+  position:absolute;
+  width:100vw;
+  height: 100vh;
+  z-index: -1;
+  opacity: 0.8;
+}
 /* 회원가입 form  */
 .container-form {
   width: 19.5rem; /* 312px */

@@ -1,4 +1,4 @@
-const HITEXT = ["안녕하세요!", "하루를 정리해주세요","오길 기다렸어요", "이야기를 들려주세요","어서오고","반갑고"]
+const HITEXT = ["당신의 하루를 들려주세요","내가 그린 기림은 긴 기린 그림","경찰청 강철 철창살은 긴 청찰살","짜잔 내가 돌아왔다"]
 
 let addHello = document.querySelector("#add-hello");
 // console.log(Math.floor(Math.random() * HITEXT.length))
