@@ -644,9 +644,45 @@ margin-right: 10px;
   border: 0.1rem solid #69BC80;
 }
 
+/* 모달창 스타일 */
+.modal {
+  display: none; /* 모달창 초기 상태: 숨김 */
+  position: fixed;
+  /* width: 100vw;
+  height: 100vh; */
+  z-index: inherit;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  /* margin: center auto; */
+  padding: 1rem;
+  border: 1px solid #888;
+  border-radius: 1rem;
+  width: 18rem;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 
 /* 유병우 테스트용, 테스트 확인 후 삭제할 예정 */
-.mgt-4-s{ margin-top: 4rem;}
+.mgt-4-s{margin-top: 4rem;}
+.mgl-6-f{margin-left: 1.25rem;}
 
  .color-bg-gray-1 { background-color: #d3d3d3; }
  .l-box-short .color-bg-gray-1{ background-color: #d3d3d3; }
@@ -734,8 +770,7 @@ margin-right: 10px;
     height: 20rem;
     flex-direction: column;
     align-items: center;
-  
-  }
+}
 
 .lc-space-around{
     display: flex;
@@ -749,10 +784,10 @@ margin-right: 10px;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-
   width: 18rem;
   height: 5rem;
 }
+
 .feeling-angry{
     width: 4rem;
     height: 4rem;
