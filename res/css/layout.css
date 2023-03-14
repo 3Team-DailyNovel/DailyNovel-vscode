@@ -150,11 +150,16 @@ html{
   .reg-main{
     display: grid;
     grid-template-rows: 1fr 7fr;
+
+    box-sizing: border-box;
+
+    overflow: hidden;
   }
   
   .guide-main{
-    display: grid;
+    display: grid;    
     grid-template-rows: 1fr 1fr 5.54fr;
+    
   }
   
   /* 일기 통계, 설정 팀 */

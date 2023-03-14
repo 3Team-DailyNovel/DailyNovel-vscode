@@ -87,6 +87,8 @@ window.addEventListener('wheel', function(e) {
     });
 });
 
+
+
   // 스크롤 애니메이션 함수
 function scrollTo(element, to, duration, callback) {
     if (duration <= 0) {
@@ -105,5 +107,3 @@ function scrollTo(element, to, duration, callback) {
     scrollTo(element, to, duration - 10, callback);
     }, 10);
 }
-
-
