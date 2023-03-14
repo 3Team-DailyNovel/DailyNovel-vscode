@@ -439,9 +439,6 @@ input:focus {
 }
 
 
-
-
-
 .flex-type1 {
   display: flex;
   flex-direction: column;
@@ -461,16 +458,23 @@ input:focus {
   background-color: #d8d8d88f;
 }
 
+.lists-filter {
+  border-bottom: 1px solid #C5C5C5;
+  padding-bottom: 2rem;
+}
 
-.list-order-header {
+.lists-filter > span {
+  margin-right: 1rem;
+}
+.lists-filter > div {
 margin-right: 0.4rem;
 text-align: center;
 font-size: 1rem;
-border-radius: 10px;
+border-radius: 1rem;
 background-color: #69BC80;
-padding: 10px 20px;
-margin-right: 10px;
-
+padding: 0.5rem 1.5rem;
+margin-right: 1rem;
+}
 
 /* 일기 작성 */
 
@@ -889,12 +893,10 @@ feeling view
 }
 
 .list-box {
-  height: 20%;
-  box-shadow: 0 8px 8px -8px rgba(0, 0, 0, 0.4);
-  background-color: #f2ffe8;
+  box-shadow: 0px 4px 4px 0px #DFDFDF;
+  background-color: #FCFCFC;
   border-radius: 5px;
   margin-top: 1rem;
   margin-left: 1rem;
   margin-right: 1rem;
-  transition: background-color 0.5s;
 }
