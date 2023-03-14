@@ -477,11 +477,6 @@ input:focus {
 
 /* 일기 작성 */
 
-.flex-spacebtw {
-  display: flex;
-  justify-content: space-between;
-}
-
 .l-box-mini {
   width: 5.25rem;
   height: 5.25rem;
