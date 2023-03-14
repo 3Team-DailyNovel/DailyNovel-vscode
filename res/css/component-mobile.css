@@ -139,7 +139,7 @@
   transition: all 0.15s;
   pointer-events: none;
 }
-.outBox-pass .inputBox input[type="texpasswordt"]:focus,
+.outBox-pass .inputBox input[type="password"]:focus,
 .outBox-pass.existence .inputBox input[type="password"] {
   border: 0px solid #69bc80;
 }
@@ -185,7 +185,7 @@
   display: inline-block;
   width: 6.5rem;
   height: 100%;
-  background-color: #caffbf;
+  border: 1px solid #69bc80;
   box-sizing: border-box;
   font-weight: bold;
   line-height: 3.75rem; /*certify-form의 height 값과 동일해야함 (중앙정렬 위함)*/
