@@ -95,6 +95,8 @@
   align-items: center;
 }
 
+
+
 .flex-row{
   flex-direction: row;
 }
@@ -108,6 +110,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  align-content: center;
 
 }
 /*  추가한자: 이동형 사유:location 수평 정렬이 필요했기 때문에 정렬정중앙 정렬이 아님 */
@@ -117,6 +120,8 @@
   justify-content: center;
   align-items: center;
 }
+
+
 
 
 
@@ -138,7 +143,7 @@
 .bottom-sticky{
   position: sticky;    
   background-color: white;     
-  bottom: 0px; 
+  bottom: 0px;
 }
 .ib{
   display: inline-block;
@@ -152,10 +157,4 @@
 }
 .input-boder-none{
   border:0px;
-}
-
-/* 추가한자: 이동형 사유: input 태그 클릭시 border색변경하기*/
-/* 이름 변경 후에 style.css로 넣겠습니다~ */
-/* input:focus, textarea:focus{
-  outline: 1px solid #9aefb0; 
 }
