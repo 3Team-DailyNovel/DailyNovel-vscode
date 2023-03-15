@@ -471,6 +471,7 @@ text-align: center;
 font-size: 1rem;
 border-radius: 1rem;
 background-color: #69BC80;
+
 padding: 0.5rem 1.5rem;
 margin-right: 1rem;
 color: white;
@@ -573,6 +574,7 @@ color: white;
 
 /*설정 - 유병우 ------------------------------------------------*/
 /* 프로필 사진 */
+
 .pro-img{
     width: 6rem;
     height: 6rem;
@@ -640,11 +642,11 @@ color: white;
   }
 
 /* 라디오 선택박스 */
-.font-box{ /*라디오 선택용 작은 박스*/ 
+.font-s-box{ /*라디오 선택용 작은 박스*/ 
   width: 5rem;
 }
 
-.radio-btn:checked + .font-box{
+.radio-btn:checked + .font-s-box{
   border: 0.1rem solid #69BC80;
 }
 
@@ -652,9 +654,7 @@ color: white;
 .modal {
   display: none; /* 모달창 초기 상태: 숨김 */
   position: fixed;
-  /* width: 100vw;
-  height: 100vh; */
-  z-index: inherit;
+  z-index:1;
   width: 100%;
   height: 100%;
   background-color: rgba(0,0,0,0.4);
@@ -662,11 +662,11 @@ color: white;
 
 .modal-content {
   background-color: #fefefe;
-  /* margin: center auto; */
+  margin: 40vh auto;
   padding: 1rem;
   border: 1px solid #888;
   border-radius: 1rem;
-  width: 18rem;
+  width: 10rem;
 }
 
 .close {
@@ -688,8 +688,8 @@ color: white;
 .mgt-4-s{margin-top: 4rem;}
 .mgl-6-f{margin-left: 1.25rem;}
 
- .color-bg-gray-1 { background-color: #d3d3d3; }
- .l-box-short .color-bg-gray-1{ background-color: #d3d3d3; }
+.color-bg-gray-1 { background-color: #d3d3d3; }
+.l-box-short .color-bg-gray-1{ background-color: #d3d3d3; }
 .out{/*회원탈퇴*/
   color: red;
   border: solid 1px red;
