@@ -471,7 +471,7 @@ background-color: #69BC80;
 padding: 10px 20px;
 margin-right: 10px;
 
-
+}
 /* 일기 작성 */
 
 .flex-spacebtw {
@@ -888,7 +888,6 @@ margin-right: 10px;
     width: 19.5rem;
     height: 5.5rem;
     font-size: 1.5rem;
-   
     background-color: #fcfcfc;
     border-radius: 2.5rem;
     box-shadow: 0 0.25rem 0.25rem rgba(0, 4, 4, 0.1);
@@ -917,45 +916,6 @@ feeling view
   width: 19.5rem;
   height: 5.5rem;
   border-radius: 2.5rem;
-}
-
-/* 네비게이션   */
-
-/* 파악후에 바꿀 예정입니다. */
-.navflex {
-  display: flex;
-
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-
-.navicon-Box > a {
-  text-decoration: none;
-}
-
-.navicon {
-  background-repeat: no-repeat;
-  position: sticky;
-  bottom: 0;
-  width: 1.5rem;
-  height: 1.5rem;
-}
-
-.ic-pencil {
-  background-image: url(../img/ic-pencil.svg);
-}
-
-.ic-graph-circle {
-  background-image: url(../img/ic-graph-circle.svg);
-}
-.ic-feed {
-  background-image: url(../img/ic-feed.svg);
-}
-.ic-calendar {
-  background-image: url(../img/ic-calendar.svg);
-}
-.ic-Vector {
-  background-image: url(../img/ic-Vector.svg);
 }
 
 .ic-doubleDown {
