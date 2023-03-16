@@ -680,6 +680,15 @@ color: white;
   text-decoration: none;
   cursor: pointer;
 }
+/* 메인블럭 overflow:auto를 하기위한 설정 */
+.main-size{
+  min-height: 100px; max-height: auto; 
+  padding-bottom: 0.5rem;
+}
+.overflow-auto{
+  overflow: auto;
+}
+.mgb-1{margin-bottom: 0.1rem;}
 
 
 /* 유병우 테스트용, 테스트 확인 후 삭제할 예정 */
