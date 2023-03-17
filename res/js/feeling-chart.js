@@ -40,8 +40,15 @@ let myChart = new Chart(ctx, {
       responsive : true,
         plugins: {
             legend: {
-                position: 'bottom'
-            }
-        }
-      }
-});
+                position: 'bottom',
+                align : 'center',
+
+                    labels: {
+                        padding:20
+                            
+                        
+                    }
+                }
+             }
+          }
+        });
