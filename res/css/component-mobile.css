@@ -688,7 +688,11 @@ color: white;
 .overflow-auto{
   overflow: auto;
 }
-.mgb-1{margin-bottom: 0.1rem;}
+
+/* 폰트 사이즈 변경 */
+.font-size-js{
+  font-size: 1rem;
+}
 
 
 /* 유병우 테스트용, 테스트 확인 후 삭제할 예정 */
