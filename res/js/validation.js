@@ -61,6 +61,24 @@ loginInputBoxPass.addEventListener('keyup', function(){
 
 
 
+class inputForm{
+    constructor(selector) {
+        this.doc = document.querySelector(selector);
+
+
+    this.doc.addEventListener('keyup', function(){
+        if(!loginInputBoxPass.value == ''){
+            //빈 값이 아닌 경우
+            loginBoxPass.classList.add('existence');   
+        }else{
+            //빈 값인 경우
+            loginBoxPass.classList.remove('existence');   
+        }
+    });
+    }
+
+    
+}
 ////////////스크롤 이벤트/////////////////////
 let html = document.querySelector("html");
 var page = 1;
