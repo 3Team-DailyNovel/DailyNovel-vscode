@@ -1,6 +1,38 @@
 /* 로그인, 메인 팀 ======================================================== */
 
 /* 회원가입 페이지-선유진 */
+.opacity-0{
+  opacity: 0;
+  
+}
+
+.fade-in-text{
+  animation: fadein 3s 
+}
+
+@keyframes fadein{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+.fade-out-text{
+  animation: fadeout 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeout {
+  from{
+    opacity: 1;
+  }
+  to{
+    opacity: 0;
+  }
+}
+
 
 /* 회원가입 form  */
 .container-form {
@@ -437,9 +469,6 @@ input:focus {
 .list-header-title {
     font-size: larger;
 }
-
-
-
 
 
 .flex-type1 {
