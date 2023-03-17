@@ -92,3 +92,22 @@ window.addEventListener("load", function() {
       modal.style.display = "block";
     }
   });
+
+// 폰트크기 및 폰트사이즈----------------------------------------------------
+window.addEventListener("load", function() {
+  let s1 = document.querySelector("section");
+  let adjuster = s1.querySelector(".font-size-adjuster")
+
+  adjuster.onclick = function(e){
+    console.log("ddd");
+  };
+});
+
+
+
+
+
+
+
+
+
