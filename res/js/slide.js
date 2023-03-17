@@ -1,6 +1,8 @@
 // https://devinus.tistory.com/46
 
 
+
+
 // 슬라이크 전체 크기(width 구하기)
 const slide = document.querySelector(".preview-slide");
 let slideWidth = slide.clientWidth;

@@ -183,8 +183,12 @@ html{
   
   .guide-main{
     display: grid;    
-    grid-template-rows: 1fr 1fr 5.54fr;
-    
+    grid-template-rows: 1fr 1fr 5.54fr;    
+  }
+
+  .tmp-main{
+    display: grid;
+    grid-template-rows: 1fr 3.5fr;
   }
   
   /* 일기 통계, 설정 팀 */

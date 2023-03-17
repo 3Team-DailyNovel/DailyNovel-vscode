@@ -95,6 +95,19 @@
   align-items: center;
 }
 
+
+/* 이재준 : space-between 간격 조절 추가했습니다. (03/14) */
+.flex-jty-spacebtw {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-jfy-speven{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
 .flex-row{
   flex-direction: row;
 }

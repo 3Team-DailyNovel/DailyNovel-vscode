@@ -34,6 +34,14 @@
 }
 
 
+/* 배경이미지 */
+.main-bg{
+  position:absolute;
+  width:100vw;
+  height: 100vh;
+  z-index: -1;
+  opacity: 0.8;
+}
 /* 회원가입 form  */
 .container-form {
   width: 19.5rem; /* 312px */
@@ -42,9 +50,9 @@
 
 /* 로고 폰트 */
 .main-logo {
-  font-family: "Niconne";
-  font-size: 4rem;
-  text-align: center;
+  font-family: "Niconne" !important;
+  font-size: 4rem !important;
+  text-align: center !important;
 }
 .font-normal {
   font-size: 1.5rem;
@@ -110,7 +118,7 @@
 .outBox-id .inputBox label {position:absolute; left:0; bottom:0; padding:0 6px; color:#999; font-size:1rem; font-weight:normal; background:#fff; transform:scale(1) translate(4px, -18px); transition:all .15s; pointer-events:none;}
 .outBox-id .inputBox input[type="text"]:focus,
 .outBox-id.existence .inputBox input[type="text"] {
-  border: 0px solid #69bc80;
+  border: 1px solid #69bc80;
 }
 
 .outBox-id .inputBox input[type="text"]:focus + label,
@@ -161,7 +169,7 @@
   transition: all 0.15s;
   pointer-events: none;
 }
-.outBox-pass .inputBox input[type="texpasswordt"]:focus,
+.outBox-pass .inputBox input[type="password"]:focus,
 .outBox-pass.existence .inputBox input[type="password"] {
   border: 0px solid #69bc80;
 }
@@ -208,7 +216,7 @@
   display: inline-block;
   width: 6.5rem;
   height: 100%;
-  background-color: #caffbf;
+  border: 1px solid #69bc80;
   box-sizing: border-box;
   font-weight: bold;
   line-height: 3.75rem; /*certify-form의 height 값과 동일해야함 (중앙정렬 위함)*/
@@ -470,8 +478,8 @@ input:focus {
     font-size: larger;
 }
 
+.list-main-flex-col{
 
-.flex-type1 {
   display: flex;
   flex-direction: column;
 }
@@ -480,33 +488,36 @@ input:focus {
   display: flex;
   align-items: center;
 }
-
-.list-container {
-  background-color: rgba(136, 206, 111, 0.08);
-  box-shadow: 0 8px 8px -8px rgba(0, 0, 0, 0.4);
+.lists {
+  height: 100%;
 }
+
 
 .list-box:hover {
   background-color: #d8d8d88f;
 }
 
+.lists-filter {
+  border-bottom: 1px solid #C5C5C5;
+  padding-bottom: 2rem;
+}
 
-.list-order-header {
+.lists-filter > span {
+  margin-right: 1rem;
+}
+.lists-filter > div {
 margin-right: 0.4rem;
 text-align: center;
 font-size: 1rem;
-border-radius: 10px;
+border-radius: 1rem;
 background-color: #69BC80;
-padding: 10px 20px;
-margin-right: 10px;
+padding: 0.5rem 1.5rem;
+margin-right: 1rem;
+color: white;
+}
 
 }
 /* 일기 작성 */
-
-.flex-spacebtw {
-  display: flex;
-  justify-content: space-between;
-}
 
 .l-box-mini {
   width: 5.25rem;
@@ -594,10 +605,14 @@ margin-right: 10px;
     /* box-sizing: border-box; */
 }
 
+/* select-tmp.html */
+.btn1 .tmp{}
+
 /* 통계, 설정 팀 ================================================================== */
 
 /*설정 - 유병우 ------------------------------------------------*/
 /* 프로필 사진 */
+
 .pro-img{
     width: 6rem;
     height: 6rem;
@@ -665,11 +680,11 @@ margin-right: 10px;
   }
 
 /* 라디오 선택박스 */
-.font-box{ /*라디오 선택용 작은 박스*/ 
+.font-s-box{ /*라디오 선택용 작은 박스*/ 
   width: 5rem;
 }
 
-.radio-btn:checked + .font-box{
+.radio-btn:checked + .font-s-box{
   border: 0.1rem solid #69BC80;
 }
 
@@ -677,9 +692,7 @@ margin-right: 10px;
 .modal {
   display: none; /* 모달창 초기 상태: 숨김 */
   position: fixed;
-  /* width: 100vw;
-  height: 100vh; */
-  z-index: inherit;
+  z-index:1;
   width: 100%;
   height: 100%;
   background-color: rgba(0,0,0,0.4);
@@ -687,11 +700,11 @@ margin-right: 10px;
 
 .modal-content {
   background-color: #fefefe;
-  /* margin: center auto; */
+  margin: 40vh auto;
   padding: 1rem;
   border: 1px solid #888;
   border-radius: 1rem;
-  width: 18rem;
+  width: 10rem;
 }
 
 .close {
@@ -707,14 +720,27 @@ margin-right: 10px;
   text-decoration: none;
   cursor: pointer;
 }
+/* 메인블럭 overflow:auto를 하기위한 설정 */
+.main-size{
+  min-height: 100px; max-height: auto; 
+  padding-bottom: 0.5rem;
+}
+.overflow-auto{
+  overflow: auto;
+}
+
+/* 폰트 사이즈 변경 */
+.font-size-js{
+  font-size: 1rem;
+}
 
 
 /* 유병우 테스트용, 테스트 확인 후 삭제할 예정 */
 .mgt-4-s{margin-top: 4rem;}
 .mgl-6-f{margin-left: 1.25rem;}
 
- .color-bg-gray-1 { background-color: #d3d3d3; }
- .l-box-short .color-bg-gray-1{ background-color: #d3d3d3; }
+.color-bg-gray-1 { background-color: #d3d3d3; }
+.l-box-short .color-bg-gray-1{ background-color: #d3d3d3; }
 .out{/*회원탈퇴*/
   color: red;
   border: solid 1px red;
@@ -951,13 +977,14 @@ feeling view
   background-image: url(../img/doubleDown.svg);
 }
 
+
+
 .list-box {
-  height: 20%;
-  box-shadow: 0 8px 8px -8px rgba(0, 0, 0, 0.4);
-  background-color: #f2ffe8;
+  box-shadow: 0px 4px 4px 0px #DFDFDF;
+  background-color: #FCFCFC;
   border-radius: 5px;
   margin-top: 1rem;
   margin-left: 1rem;
   margin-right: 1rem;
-  transition: background-color 0.5s;
+  height: 17%
 }
