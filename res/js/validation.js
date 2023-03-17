@@ -1,5 +1,4 @@
 //Javascript
-
 let loginBoxId = document.querySelector(".outBox-id");
 let loginBoxPass = document.querySelector(".outBox-pass");
 let loginInputBoxId = document.querySelector(".sample-id");
@@ -32,7 +31,7 @@ loginbtn.addEventListener('click', ()=>{
         }
     }
     else {
-      
+
             loginbtn.type ="reset";
             idmiss.classList.remove('blind');
             passwordmiss.classList.add('blind');

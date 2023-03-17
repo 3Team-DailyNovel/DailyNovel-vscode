@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="../../../../res/css/component-mobile.css">
     <link rel="stylesheet" href="../../../../res/css/util.css">
 
+    <style src="../../../../res/js/setting.js"></style>
 </head>
 <body>
     <section class="container-1">
@@ -22,42 +23,42 @@
             <div class="box-large color-bg-green-2 h1 mgt-3">폰트</div>
         </header>
 
-        <section class="main lc-center flex-column">
-            <div class="l-box-middle mgt-5">
+        <section class="main lc-center flex-column main-size">
+            <div class="main-size overflow-auto">
+                <div class="mgt-4 l-box-middle">
                     <div class="name">미리보기</div>
-                    <div class="content">바람소리와 스산한 빗소리가 사무실 창밖을 때린다.<br> 폭풍전야. 블라인드에서 서든2를 비웃던, 지금도 비웃는 이들에게 반박글을 달지 않았다.</div>
+                    <div class="content font-size-js">바람소리와 스산한 빗소리가 사무실 창밖을 때린다.</div>
+                </div>
+
+
+                <div class="mgt-4 flex-jfy-center flex-row">
+                    <h1 class="d-none">글꼴설정</h1>
+                    <form action="">
+                        <div class="flex-jfy-center" style="width:288px; flex-wrap: wrap;">
+                            <input class="radio-btn d-none" type="radio" name="font" id="font-1" value="돋움" checked>
+                            <label class="box-short font-s-box" for="font-1">돋움</label>
+                            <input class="radio-btn d-none" type="radio" name="font" id="font-2" value="굴림">
+                            <label class="box-short font-s-box mgl-2" for="font-2">굴림</label>
+                            <input class="radio-btn d-none" type="radio" name="font" id="font-3" value="궁서">
+                            <label class="box-short font-s-box mgl-2" for="font-3">궁서</label>
+                            <input class="radio-btn d-none" type="radio" name="font" id="font-4" value="바탕">
+                            <label class="box-short font-s-box mgl-2" for="font-4">이름이엄청긴글씨체-102</label>
+                        </div>
+                        <div class="l-box-short mgt-4">
+                            <h1 class="name">글꼴크기</h1>
+                            <input type="range" min="1" max="100" value="16" class="font-size-adjuster">
+                        </div>
+
+                        <div class="mgt-4 lc-center">
+                            <input class="btn3" type="submit" value="적용">
+                            <input class="btn3 font-s-box mgl-6-f" type="reset" value="초기화">
+                        </div>   
+                    </form>
                 </div>
             </div>
-
-            <div class="mgt-5">
-                <h1 class="d-none">글꼴</h1>
-                <form action="" class="flex-jfy-center flex-row" style="width:288px; flex-wrap: wrap;">
-                    <input class="radio-btn d-none" type="radio" name="font" id="font-1" value="돋움" checked>
-                    <label class="box-short font-s-box" for="font-1">돋움</label>
-                    <input class="radio-btn d-none" type="radio" name="font" id="font-2" value="굴림">
-                    <label class="box-short font-s-box mgl-2" for="font-2">굴림</label>
-                    <input class="radio-btn d-none" type="radio" name="font" id="font-3" value="궁서">
-                    <label class="box-short font-s-box mgl-2" for="font-3">궁서</label>
-                    <input class="radio-btn d-none" type="radio" name="font" id="font-4" value="바탕">
-                    <label class="box-short font-s-box mgl-2" for="font-4">이름이엄청긴글씨체-102</label>
-
-
-                    <div class="l-box-short mgt-5">
-                        <h1 class="name">글꼴크기</h1>
-                        <input type="range" name="" id="" min="1" max="100" value="16">
-                    </div>
-
-
-                    <div class="mgt-5 lc-center">
-                        <input class="btn3" type="submit" value="적용">
-                        <input class="btn3 font-s-box mgl-6-f" type="reset" value="초기화">
-                    </div>   
-                </form>
-            </div>
-
         </section>
 
-        <div class="footer mgt-5 bottom-sticky" style="background-color: white;">
+        <div class="footer">
             <div class="container-nav color-white-1">
                 
                 <div class="nav-1 lc-center">
