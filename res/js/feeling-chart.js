@@ -1,5 +1,5 @@
 let ctx = document.getElementById('myChart').getContext('2d');
-;let myChart = new Chart(ctx, {
+let myChart = new Chart(ctx, {
     type: 'doughnut',
     data: {
 
@@ -40,8 +40,15 @@ let ctx = document.getElementById('myChart').getContext('2d');
       responsive : true,
         plugins: {
             legend: {
-                position: 'bottom'
-            }
-        }
-      }
-});
+                position: 'bottom',
+                align : 'center',
+
+                    labels: {
+                        padding:20
+                            
+                        
+                    }
+                }
+             }
+          }
+        });
