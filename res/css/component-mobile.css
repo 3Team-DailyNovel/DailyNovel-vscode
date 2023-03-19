@@ -1,27 +1,36 @@
 /* 로그인, 메인 팀 ======================================================== */
 
-/* 회원가입 페이지-선유진 */
+/* index페이지: 이동형*/
 .opacity-0{
   opacity: 0;
-  
+}
+.scroll-event{
+
+  animation: fadein 3s ;
 }
 
-.fade-in-text{
-  animation: fadein 3s 
+.overflow-hidden{
+  overflow: hidden;
+}
+
+.fade-in{
+  animation: fadein 3s ;
 }
 
 @keyframes fadein{
+  
   from{
     opacity: 0;
   }
   to{
     opacity: 1;
+    
   }
+  
 }
 
-.fade-out-text{
+.fade-out{
   animation: fadeout 3s;
-  animation-fill-mode: forwards;
 }
 
 @keyframes fadeout {
@@ -33,6 +42,7 @@
   }
 }
 
+/*회원가입:선유진*/
 
 /* 배경이미지 */
 .main-bg{
@@ -516,7 +526,7 @@ margin-right: 1rem;
 color: white;
 }
 
-}
+
 /* 일기 작성 */
 
 .l-box-mini {
