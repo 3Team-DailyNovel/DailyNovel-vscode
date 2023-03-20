@@ -607,18 +607,32 @@ color: white;
 
 /* select-tmp.html */
 .tmp-select-box{
-  display: grid;
-  grid-template-rows: 1fr 3fr;
-
+  display:flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
   width: 19.5rem;
-  
+  height: 10rem;
+  overflow-y: auto;
   background-color: #f3f3f3;
+  
   border-radius: 2.5rem;
 }
 
 .tmp-select-box .active{
-  height: 4rem;
+  display:inherit;
 }
+
+.tmp-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 50rem;
+  overflow: scroll;
+}
+
+
 
 .tmp-btn1{
     width: 19.5rem;
@@ -633,7 +647,10 @@ color: white;
     justify-content: center;
 }
 
-
+.tmp-of-scroll{
+  min-height: 300px;
+  overflow-y: auto;
+}
 
 
 /* 통계, 설정 팀 ================================================================== */
