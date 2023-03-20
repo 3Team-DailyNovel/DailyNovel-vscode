@@ -25,8 +25,8 @@
       </div>
       <div class="tmp-section">
         <a href=""><div class="btn1">자유롭게</div></a>
-        <div id="simple-tmp" class="tmp-btn1 color-bg-green-2">간편일기</div>
-        <div class="tmp-select-box pdt-5 d-none">
+        <div id="simple-tmp" class="tmp-btn1">간편일기</div>
+        <div class="tmp-select-box d-none">
           <div class="box-short color-bg-yellow-1">감사일기</div>
           <div class="box-short color-bg-yellow-1">밥블로그</div>
           <div class="box-short color-bg-yellow-1">질문일기</div>
@@ -48,6 +48,7 @@
     const simpleTmp = document.querySelector("#simple-tmp");
     simpleTmp.addEventListener('click', ()=>{
       box.classList.toggle("d-none");
+      simpleTmp.classList.toggle("color-bg-green-2");
     })
 
   </script>
