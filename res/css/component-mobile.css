@@ -1,11 +1,15 @@
 /* 로그인, 메인 팀 ======================================================== */
 
 /* index페이지: 이동형*/
+.box-sizing{
+  box-sizing: border-box;
+}
+
 .opacity-0{
   opacity: 0;
 }
-.scroll-event{
 
+.scroll-event{
   animation: fadein 3s ;
 }
 
