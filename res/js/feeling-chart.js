@@ -41,7 +41,6 @@ let myChart = new Chart(ctx, {
         plugins: {
             legend: {
                 position: 'bottom',
-                align : 'center',
 
                     labels: {
                         padding:20
