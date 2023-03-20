@@ -1,6 +1,52 @@
 /* 로그인, 메인 팀 ======================================================== */
 
-/* 회원가입 페이지-선유진 */
+/* index페이지: 이동형*/
+.box-sizing{
+  box-sizing: border-box;
+}
+
+.opacity-0{
+  opacity: 0;
+}
+
+.scroll-event{
+  animation: fadein 3s ;
+}
+
+.overflow-hidden{
+  overflow: hidden;
+}
+
+.fade-in{
+  animation: fadein 3s ;
+}
+
+@keyframes fadein{
+  
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+    
+  }
+  
+}
+
+.fade-out{
+  animation: fadeout 3s;
+}
+
+@keyframes fadeout {
+  from{
+    opacity: 1;
+  }
+  to{
+    opacity: 0;
+  }
+}
+
+/*회원가입:선유진*/
 
 /* 배경이미지 */
 .main-bg{
@@ -446,8 +492,8 @@ input:focus {
     font-size: larger;
 }
 
-
 .list-main-flex-col{
+
   display: flex;
   flex-direction: column;
 }
@@ -696,7 +742,11 @@ color: white;
 .overflow-auto{
   overflow: auto;
 }
-.mgb-1{margin-bottom: 0.1rem;}
+
+/* 폰트 사이즈 변경 */
+.font-size-js{
+  font-size: 1rem;
+}
 
 
 /* 유병우 테스트용, 테스트 확인 후 삭제할 예정 */
@@ -789,7 +839,7 @@ color: white;
 }
 .lc-feeling-view-alignment{
     display: flex;
-    width: 20rem;
+    width: 18em;
     height: 20rem;
     flex-direction: column;
     align-items: center;
@@ -797,7 +847,7 @@ color: white;
 
 .lc-space-around{
     display: flex;
-    width: 22rem;
+    width: 20rem;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
@@ -911,7 +961,6 @@ color: white;
     width: 19.5rem;
     height: 5.5rem;
     font-size: 1.5rem;
-   
     background-color: #fcfcfc;
     border-radius: 2.5rem;
     box-shadow: 0 0.25rem 0.25rem rgba(0, 4, 4, 0.1);
@@ -940,45 +989,6 @@ feeling view
   width: 19.5rem;
   height: 5.5rem;
   border-radius: 2.5rem;
-}
-
-/* 네비게이션   */
-
-/* 파악후에 바꿀 예정입니다. */
-.navflex {
-  display: flex;
-
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-
-.navicon-Box > a {
-  text-decoration: none;
-}
-
-.navicon {
-  background-repeat: no-repeat;
-  position: sticky;
-  bottom: 0;
-  width: 1.5rem;
-  height: 1.5rem;
-}
-
-.ic-pencil {
-  background-image: url(../img/ic-pencil.svg);
-}
-
-.ic-graph-circle {
-  background-image: url(../img/ic-graph-circle.svg);
-}
-.ic-feed {
-  background-image: url(../img/ic-feed.svg);
-}
-.ic-calendar {
-  background-image: url(../img/ic-calendar.svg);
-}
-.ic-Vector {
-  background-image: url(../img/ic-Vector.svg);
 }
 
 .ic-doubleDown {
