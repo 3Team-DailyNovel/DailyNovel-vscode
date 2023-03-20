@@ -9,12 +9,12 @@
 .outBox .inputBox img {
   /* background-color: #69BC80; */
   right: 5%;
-  top:50%;
+  top:60%;
   padding: 0;
   position: absolute;
   display: inline-block;
-  height: 70%;
-  transform: translateY(-50%);
+  height: 60%;
+  transform: translateY(-60%);
   color: #fe2
   
 }
