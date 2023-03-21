@@ -37,7 +37,7 @@ function updateImg(){
         //proImg.style.backgroundColor = "red";
         console.log("파일 미 선택");
 }
-}
+};
 
 
 // 모달-----------------------------------------------------
@@ -91,16 +91,31 @@ window.addEventListener("load", function() {
       textInput.value = targetP.innerText;
       modal.style.display = "block";
     }
-  });
+});
 
 // 폰트크기 및 폰트사이즈----------------------------------------------------
 window.addEventListener("load", function() {
-  let s1 = document.querySelector("section");
-  let adjuster = s1.querySelector(".font-size-adjuster")
+  let fontAdjuster = document.querySelector(".font-adjuster");
+  let content = document.querySelector(".content");
+  let fontApply = document.querySelector("input[type=submit]");
+  let fontInit = document.querySelector("input[type=reset]");
 
-  adjuster.onclick = function(e){
-    console.log("ddd");
+  fontAdjuster.oninput = function(e){
+    console.log(fontAdjuster.value);
+    content.style.fontSize=fontAdjuster.value+"px";
   };
+
+  fontApply.onclick=function(){
+
+    content.style.fontSize=fontAdjuster.value+"px";
+    console.log("tlqk")
+  }
+
+  fontInit.onclick=function(){
+
+    content.style.fontSize=16+"px";
+    console.log("초기화")
+  }
 });
 
 
