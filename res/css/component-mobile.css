@@ -682,33 +682,41 @@ color: white;
 }
 
 /* select-tmp.html */
+
+.tmp-section{
+  display: flex;
+  justify-content: center;
+  /* flex-direction: column; */
+  /* align-items: center; */
+  
+  max-height: auto;
+  overflow-x: hidden;
+
+
+  /* overflow-y :scroll; */
+  /* height: fit-content; */
+}
+
+.tmps{  
+  display: flex;
+  flex-direction: column;  
+  /* height: 40rem; */
+  height: fit-content;
+  gap: 2.5rem;
+}
+
 .tmp-select-box{
   display:flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
   width: 19.5rem;
-  min-height: 10rem;
-  max-height: auto;
-  overflow-y: auto;
+  height: 15rem;
   background-color: #f3f3f3;
   
   border-radius: 2.5rem;
 }
 
-.tmp-select-box .active{
-  display:inherit;
-}
-
-.tmp-section{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  min-height: 100px;
-  max-height: auto;
-  overflow: auto;
-}
 
 
 

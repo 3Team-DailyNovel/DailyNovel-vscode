@@ -35,7 +35,9 @@ html{
   
   .container-1 > .main{
     grid-column: 2/3;
-    grid-row:2/3;
+    grid-row:2/3;    
+
+    overflow: hidden;
   }
   
   .container-1 > .footer{    
@@ -191,6 +193,7 @@ html{
     min-height: 100px;
     max-height: auto ;
     
+    overflow: hidden;
   }
   
   /* 일기 통계, 설정 팀 */
