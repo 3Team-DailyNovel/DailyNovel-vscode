@@ -12,22 +12,12 @@
   <link rel="stylesheet" href="../../../res/css/component-mobile.css">
   <link rel="stylesheet" href="../../../res/css/style.css">
   <link rel="stylesheet" href="../../../res/css/util.css">
-  <!-- <script src="../../../res/js/" type="text/javascript"></script> -->
-  <script>
 
-// function addURL(url_, flag){
-//   let url = url_;
-//   url + "?" + "..va";
-//   return url;
-// }
-
-  </script>
   <title>일기 작성</title>
 </head>
 <body>
 
   <div class="container-2" >
-
     <div class="header reg-header">
       <div class="lc-center">
         <div class="icon question-mark">?</div>
@@ -57,19 +47,53 @@
       </div>
 
       <div class="mgt-3">
-        <div>
-          <div>제목</div>
+        <div class="reg-title-section">
+          <div class="lc-center font-bold">제목</div>
           <input type="text" class="editor-title pdt-3 pdl-3 pdr-3">
         </div>
         <textarea class="editor-base mgt-2 pdt-3 pdl-3 pdr-3" placeholder="여기에서 일기를 작성하세요."></textarea>
-
       </div>
     
-    </div>
+    </div> 
 
     <div class="footer lc-center">
       <div class="btn3 color-bg-green-2">저장하기</div>
     </div>
   </div>
+
+  
+  <div class="reg-select-modal">
+    <div class="tmp-section">
+      <div class="tmps" style="margin-bottom: 1rem;">
+
+            <div class="btn1">자유롭게</div>
+    
+            <div id="simple-tmp" class="btn1">간편일기</div>      
+            <div class="tmp-select-box d-none" style="margin-top: -1.5rem;">
+              <div class="box-short color-bg-yellow-1">감사일기</div>
+              <div class="box-short color-bg-yellow-1">밥블로그</div>
+              <div class="box-short color-bg-yellow-1">질문일기</div>
+            </div>        
+    
+            <div class="btn1">영화</div>
+            <div class="btn1">여행</div>
+          </div>
+    </div>
+    <div class="circle-box-modal color-bg-green-2 close-btn-white">모달 종료 버튼</div>
+  </div>
+  
+  <script>
+    const box = document.querySelector(".tmp-select-box");
+    // box.addEventListener('click', ()=>{box.classList.toggle("active");}    
+    // )
+
+    const simpleTmp = document.querySelector("#simple-tmp");
+    simpleTmp.addEventListener('click', ()=>{
+      box.classList.toggle("d-none");
+      box.classList.toggle("active");
+      simpleTmp.classList.toggle("color-bg-green-2");
+    })
+
+  </script>
 </body>
 </html>
