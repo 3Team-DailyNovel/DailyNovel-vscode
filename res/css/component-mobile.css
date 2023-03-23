@@ -775,7 +775,7 @@ color: white;
 
 /* feeling */
 
-.big-box{
+.feeling-big-box{
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
@@ -784,28 +784,156 @@ color: white;
   height: 25rem;
 }
 
-.mini-box{
+.feeling-box{
   display: grid;
   grid-template-rows: 2fr 1fr;
   
 }
 
-.mini-box > .div1{
+.feeling-box > .anxiety{
   background-image: url(../img/anxiety/anxiety64.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
 }
 
-.mini-box > .div2{
+.feeling-box > .angry{
+  background-image: url(../img/angry/angry64.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.feeling-box > .disappointed{
+  background-image: url(../img/disappointed/disappointed64.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.feeling-box > .happy{
+  background-image: url(../img/happiness/happy64.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.feeling-box > .calm{
+  background-image: url(../img/calm/calm64.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.feeling-box > .excitement{
+  background-image: url(../img/excitement/excited64.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.feeling-box > .touched{
+  background-image: url(../img/anxiety/anxiety64.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.feeling-box > .awkward{
+  background-image: url(../img/awkward/awkward64.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.feeling-box > .sadness{
+  background-image: url(../img/sadness/sad64.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.feeling-box > .count-box{
   
+}
+
+.collection-feeling {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 18rem;
+  height: 5rem;
+}
+
+.lc-space-around{
+    display: flex;
+    width: 20rem;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .f-pdt-7{
   padding-top: 4.5rem;
 
 }
+.feeling-angry{
+    width: 4rem;
+    height: 4rem;
+    background-image: url(../img/angry/angry64.png);
+    justify-self: center;
+}
+.feeling-awkward{
+    width: 4rem;
+    height: 4rem;
+    background-image: url(../img/awkward/awkward64.png);
+    justify-self: center;
+}
+.feeling-calm{
+    width: 4rem;
+    height: 4rem;
+    background-image: url(../img/calm/calm64.png);
+    justify-self: center;
+}
+.feeling-disappointed{
+    width: 4rem;
+    height: 4rem;
+    background-image: url(../img/disappointed/disappointed64.png);
+    justify-self: center;
+}
 
+.feeling-anxiety{
+    width: 4rem;
+    height: 4rem;
+    background-image: url(../img/anxiety/anxiety64.png);
+    justify-self: center;
+}
+.feeling-happiness{
+    width: 4rem;
+    height: 4rem;
+    background-image: url(../img/happiness/happy64.png);
+    justify-self: center;
+}
+
+.feeling-sadness{
+    width: 4rem;
+    height: 4rem;
+    background-image: url(../img/sadness/sad64.png);
+    justify-self: center;
+}
+.feeling-touched{
+    width: 4rem;
+    height: 4rem;
+    background-image: url(../img/touched/touched64.png);
+    justify-self: center;
+}
+.feeling-excitement{
+    width: 4rem;
+    height: 4rem;
+    background-image: url(../img/excitement/excited64.png);
+    justify-self: center;
+}
 .btn-feeling {
     font-size: 1.1rem;
     width: 10rem;
