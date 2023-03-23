@@ -621,6 +621,7 @@ color: white;
 
     text-indent: -999rem;  
 }
+
 /* select-tmp.html */
 
 .tmp-section{
@@ -657,10 +658,10 @@ color: white;
   height: 15rem;
   border-radius: 2.5rem;  
   
-  visibility: hidden;
+  /* visibility: hidden;
   height: 0rem;
   
-  transition: all 5s;  
+  transition: all 5s;   */
 }
 
 .tmp-select-box .active{
