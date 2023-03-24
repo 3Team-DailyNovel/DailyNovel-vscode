@@ -14,6 +14,106 @@
   <link rel="stylesheet" href="../../../res/css/util.css">
 
   <title>일기 작성</title>
+  <script>
+  window.addEventListener('load',()=>{
+    const tmpSelectBox = document.querySelector(".tmp-select-box");   
+    const simpleTmp = document.querySelector("#simple-tmp");
+    const container = document.querySelector(".container-2");
+    const tmpBox = document.querySelector("#tmp-value");
+    const feelBox = document.querySelector("#feel-value");
+    const weatherBox = document.querySelector("#weather-value");
+
+    // 모달 관련
+    const regTmpModal = document.querySelector("#reg-tmp-modal");
+    // const modalCloseBtn = document.querySelector("#modal-close-btn");
+    // const modal = document.querySelector(".reg-select-modal");
+
+    let popupOpend = null;
+
+    const tmpModalHtml = 
+              `<div id="reg-tmp-modal"  class="reg-select-modal">
+                <div class="tmp-section">
+                    <div class="tmps" style="margin-bottom: 1rem;">
+
+                          <div class="btn1">자유롭게</div>
+                  
+                          <div id="simple-tmp" class="btn1">간편일기</div>      
+                          <div class="tmp-select-box d-none" style="margin-top: -1.5rem;">
+                            <div class="box-short color-bg-yellow-1">감사일기</div>
+                            <div class="box-short color-bg-yellow-1">밥블로그</div>
+                            <div class="box-short color-bg-yellow-1">질문일기</div>
+                          </div>        
+                  
+                          <div class="btn1">영화</div>
+                          <div class="btn1">여행</div>
+                          <div id="modal-close-btn" class="circle-box-modal color-bg-green-2 close-btn-white">모달 종료 버튼</div>
+                    </div>
+                </div>
+              </div>`;  
+    
+
+    
+    tmpBox.addEventListener('click', ()=>{
+      document.body.insertAdjacentHTML('beforeend',tmpModalHtml);
+      let pointer = `pointer-events`;
+      container.style.pointer = "none";
+
+      popupOpend = true;
+
+
+      const modalCloseBtn = document.querySelector("#modal-close-btn");
+      // const modal = document.querySelector(".reg-select-modal");
+      modalCloseBtn.onclick = (e)=>{
+        // console.log("current", e.currentTarget);
+        // console.log("target", e.target);
+
+        // console.log("target", e.target.parentElement.parentElement);
+        // let target = e.target;
+
+
+        // if(!target.contains("circle-box-modal")) return;
+        
+        popupClose(e);
+    };
+
+    })
+
+
+
+
+    // if(popupOpend == true){
+    //   console.log("클릭이다");
+    // }
+
+
+      // modalCloseBtn.onclick = function(){
+      //   console.log("클릭이다");
+      // };
+
+
+    function popupClose(e){
+
+      let modal = e.target.parentElement.parentElement.parentElement;
+      // console.log(modal);
+      modal.remove();
+    }
+
+    // modalCloseBtn.addEventListener('click', ()=>{
+    //     modal.style.display="none";
+    // })
+
+    // simpleTmp.addEventListener('click', ()=>{
+    //   tmpSelectBox.classList.toggle("d-none");
+    //   tmpSelectBox.classList.toggle("active");
+    //   simpleTmp.classList.toggle("color-bg-green-2");
+    // })
+    
+
+    
+  })      
+    
+
+  </script>
 </head>
 <body>
 
@@ -62,49 +162,5 @@
   </div>
 
   
-  <div id="reg-tmp-modal"  class="reg-select-modal">
-    <div class="tmp-section">
-        <div class="tmps" style="margin-bottom: 1rem;">
-
-              <div class="btn1">자유롭게</div>
-      
-              <div id="simple-tmp" class="btn1">간편일기</div>      
-              <div class="tmp-select-box d-none" style="margin-top: -1.5rem;">
-                <div class="box-short color-bg-yellow-1">감사일기</div>
-                <div class="box-short color-bg-yellow-1">밥블로그</div>
-                <div class="box-short color-bg-yellow-1">질문일기</div>
-              </div>        
-      
-              <div class="btn1">영화</div>
-              <div class="btn1">여행</div>
-              <div id="modal-close-btn" class="circle-box-modal color-bg-green-2 close-btn-white">모달 종료 버튼</div>
-        </div>
-    </div>
-  </div>
-  
-  <script>
-    // 작성 페이지 속성
-    // const 
-
-    // 
-    const tmpSelectBox = document.querySelector(".tmp-select-box");   
-    const simpleTmp = document.querySelector("#simple-tmp");
-    
-    // 모달 관련
-    const regTmpModal = document.querySelector("#reg-tmp-modal");
-    const modalCloseBtn = document.querySelector("#modal-close-btn");
-    const modal = document.querySelector(".reg-select-modal");
-    
-    simpleTmp.addEventListener('click', ()=>{
-      tmpSelectBox.classList.toggle("d-none");
-      tmpSelectBox.classList.toggle("active");
-      simpleTmp.classList.toggle("color-bg-green-2");
-    })
-
-    modalCloseBtn.addEventListener('click', ()=>{
-      modal.style.display="none";
-    })
-
-  </script>
 </body>
 </html>
