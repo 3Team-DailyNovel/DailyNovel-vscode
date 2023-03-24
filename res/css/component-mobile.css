@@ -790,6 +790,55 @@ color: white;
   
 }
 
+.feeling-rank-box{
+  display: grid;
+  grid-template-rows: 3fr 1fr;
+  width: 20rem;
+  height: 25rem;
+  
+}
+
+.feeling-rank-box > .first-feeling{
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-image: url(../img/happiness/happy.png);
+}
+
+.feeling-rank-box > .sub-feeling{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem;
+}
+
+.sub-feeling > .anxiety{
+  background-image: url(../img/anxiety/anxiety64.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.sub-feeling > .angry{
+  background-image: url(../img/angry/angry64.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  
+}
+
+.sub-feeling > .disappointed{
+  background-image: url(../img/disappointed/disappointed64.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.sub-feeling > .excitement{
+  background-image: url(../img/excitement/excited64.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
 .feeling-box > .anxiety{
   background-image: url(../img/anxiety/anxiety64.png);
   background-repeat: no-repeat;
@@ -857,14 +906,14 @@ color: white;
   
 }
 
-.collection-feeling {
+/* .collection-feeling {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
   width: 18rem;
   height: 5rem;
-}
+} */
 
 .lc-space-around{
     display: flex;
@@ -984,12 +1033,7 @@ color: white;
     align-items: center;
 }
 
-.main-feeling{
-    width: 16em;
-    height: 16em;
-    background-image: url(../img/happiness/happy.png);
-    justify-self: center;
-}
+
 .lc-feeling-view-alignment{
     display: flex;
     width: 18em;
