@@ -579,11 +579,12 @@ color: white;
 .reg-title-section{
   display: flex;
   width: 100%;
+  height: 5%;
   justify-content: space-around;
 }
 .editor-title{
     width: 80%;
-    height: 5%;
+    height: 100%;
 
     border: none;
     border-width: 0;
@@ -614,9 +615,11 @@ color: white;
 
   display: none; /* 모달창 초기 상태: 숨김 */
 
+  display:flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  
+  gap: 2.5rem;
   background-color: rgba(0,0,0,0.4);
 
   position: absolute;
@@ -624,10 +627,7 @@ color: white;
   left:0;
 }
 
-/* .reg-select-modal > *{
-  display: none;
-  z-index:1;
-} */
+
 
 /* -- 작성 - guide.html */
 /* 없어질지도 모름(현재 안씀) */
@@ -668,7 +668,8 @@ color: white;
 
 .tmps{  
   display: flex;
-  flex-direction: column;  
+  flex-direction: column;
+  align-items: center;  
   /* height: 40rem; */
   height: fit-content;
   gap: 2.5rem;

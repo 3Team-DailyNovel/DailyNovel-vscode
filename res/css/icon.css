@@ -27,11 +27,8 @@
   overflow: hidden;
   background-repeat: no-repeat;  
   background-position: center;
-  background-size: 67%;  
+    
 
-  display:flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .icon {
@@ -61,7 +58,7 @@
 }
 
 .close-btn-white{
-  background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M28.3333 11.666L11.6666 28.3327M28.3333 28.3327L11.6666 11.666' stroke='white' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E%0A");
+  background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M18.3333 1.66602L1.66663 18.3327M18.3333 18.3327L1.66663 1.66601' stroke='white' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E%0A");
 }
 
 

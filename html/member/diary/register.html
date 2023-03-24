@@ -34,22 +34,22 @@
       <div class="flex-jty-spacebtw pdl-3 pdr-3">
         <div class="l-box-mini">
           <div class="name lc-center color-white-1">HOW</div>
-          <div class="value"></div>
+          <div id="tmp-value" class="value"></div>
         </div>
         <div class="l-box-mini">
           <div class="name lc-center color-white-1">기분</div>
-          <div class="value"></div>
+          <div id="feel-value" class="value"></div>
         </div>
         <div class="l-box-mini">
           <div class="name lc-center color-white-1">날씨</div>
-          <div class="value"></div>
+          <div id="weather-value" class="value"></div>
         </div>
       </div>
 
       <div class="mgt-3">
         <div class="reg-title-section">
           <div class="lc-center font-bold">제목</div>
-          <input type="text" class="editor-title pdt-3 pdl-3 pdr-3">
+          <input type="text" class="editor-title pdl-3 pdr-3">
         </div>
         <textarea class="editor-base mgt-2 pdt-3 pdl-3 pdr-3" placeholder="여기에서 일기를 작성하세요."></textarea>
       </div>
@@ -62,36 +62,47 @@
   </div>
 
   
-  <div class="reg-select-modal">
+  <div id="reg-tmp-modal"  class="reg-select-modal">
     <div class="tmp-section">
-      <div class="tmps" style="margin-bottom: 1rem;">
+        <div class="tmps" style="margin-bottom: 1rem;">
 
-            <div class="btn1">자유롭게</div>
-    
-            <div id="simple-tmp" class="btn1">간편일기</div>      
-            <div class="tmp-select-box d-none" style="margin-top: -1.5rem;">
-              <div class="box-short color-bg-yellow-1">감사일기</div>
-              <div class="box-short color-bg-yellow-1">밥블로그</div>
-              <div class="box-short color-bg-yellow-1">질문일기</div>
-            </div>        
-    
-            <div class="btn1">영화</div>
-            <div class="btn1">여행</div>
-          </div>
+              <div class="btn1">자유롭게</div>
+      
+              <div id="simple-tmp" class="btn1">간편일기</div>      
+              <div class="tmp-select-box d-none" style="margin-top: -1.5rem;">
+                <div class="box-short color-bg-yellow-1">감사일기</div>
+                <div class="box-short color-bg-yellow-1">밥블로그</div>
+                <div class="box-short color-bg-yellow-1">질문일기</div>
+              </div>        
+      
+              <div class="btn1">영화</div>
+              <div class="btn1">여행</div>
+              <div id="modal-close-btn" class="circle-box-modal color-bg-green-2 close-btn-white">모달 종료 버튼</div>
+        </div>
     </div>
-    <div class="circle-box-modal color-bg-green-2 close-btn-white">모달 종료 버튼</div>
   </div>
   
   <script>
-    const box = document.querySelector(".tmp-select-box");
-    // box.addEventListener('click', ()=>{box.classList.toggle("active");}    
-    // )
+    // 작성 페이지 속성
+    // const 
 
+    // 
+    const tmpSelectBox = document.querySelector(".tmp-select-box");   
     const simpleTmp = document.querySelector("#simple-tmp");
+    
+    // 모달 관련
+    const regTmpModal = document.querySelector("#reg-tmp-modal");
+    const modalCloseBtn = document.querySelector("#modal-close-btn");
+    const modal = document.querySelector(".reg-select-modal");
+    
     simpleTmp.addEventListener('click', ()=>{
-      box.classList.toggle("d-none");
-      box.classList.toggle("active");
+      tmpSelectBox.classList.toggle("d-none");
+      tmpSelectBox.classList.toggle("active");
       simpleTmp.classList.toggle("color-bg-green-2");
+    })
+
+    modalCloseBtn.addEventListener('click', ()=>{
+      modal.style.display="none";
     })
 
   </script>
