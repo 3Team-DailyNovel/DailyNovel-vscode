@@ -31,6 +31,11 @@
 
 }
 
+/* 추가 이재준 이유 : 클릭된 상태인지 알아야 하기 때문에 적용. */
+.circle-box-modal:active{
+  background-color: #388b53;
+}
+
 .icon {
   width: 2.25rem;
   height: 2.25rem;
