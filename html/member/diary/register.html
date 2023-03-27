@@ -13,50 +13,10 @@
   <link rel="stylesheet" href="../../../res/css/style.css">
   <link rel="stylesheet" href="../../../res/css/util.css">
 
+  <script src="../../../res/js/modal.js"></script>
+  
   <title>일기 작성</title>
-  <script>
-  window.addEventListener('load',()=>{
-    const tmpSelectBox = document.querySelector(".tmp-select-box");   
-    const simpleTmp = document.querySelector("#simple-tmp");
-    const container = document.querySelector(".container-2");
-
-    const tmpBox = document.querySelector("#tmp-value");
-    const feelBox = document.querySelector("#feel-value");
-    const weatherBox = document.querySelector("#weather-value");
-
-    // 모달 관련
-    const regTmpModal = document.querySelector("#reg-tmp-modal");
-    const modalCloseBtn = document.querySelector("#modal-close-btn");
-    const modal = document.querySelector(".reg-select-modal");
-
-   
-    tmpBox.addEventListener('click', ()=> {
-      regTmpModal.classList.add('m-active');
-      regTmpModal.classList.toggle('pointer-e-none');
-      container.classList.toggle("pointer-e-none");
-      container.classList.toggle("test-fixed");      
-    })   
-
-    modalCloseBtn.addEventListener('click', ()=>{
-      regTmpModal.classList.remove("m-active");
-      regTmpModal.classList.toggle('pointer-e-none');
-      container.classList.toggle("pointer-e-none");
-      container.classList.toggle("test-fixed");      
-    })
-
-    simpleTmp.addEventListener('click', ()=>{
-      tmpSelectBox.classList.toggle("d-none");
-      tmpSelectBox.classList.toggle("active");
-      simpleTmp.classList.toggle("color-bg-green-2");
-      
-    })
-    
-
-    
-  })      
-    
-
-  </script>
+  
 </head>
 
 <body> 
@@ -100,12 +60,12 @@
     
     </div> 
 
-    <div class="footer lc-center">
+    <div class="footer lc-center pdb-2">
       <div class="btn3 color-bg-green-2">저장하기</div>
     </div>
   </div>
   
-  <div id="reg-tmp-modal"  class="reg-select-modal pointer-e-none">
+  <div id="reg-tmp-modal"  class="reg-select-modal pointer-none">
     <div class="tmp-section">
         <div class="tmps" style="margin-bottom: 1rem;">
 
@@ -124,5 +84,13 @@
         </div>
     </div>
   </div>
+
+  <div id="reg-feel-modal" class="reg-select-modal pointer-none">
+    <div class="feel-section">      
+    
+    
+    </div>
+  </div>
+
 </body>
 </html>
