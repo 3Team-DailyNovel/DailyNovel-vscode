@@ -627,12 +627,12 @@ color: white;
   
   visibility: hidden;
   opacity: 0;  
-  transition: all 0.5s;
+  transition: all 0.3s;
 }
 
 .reg-select-modal.active{  
   opacity : 1;
-  transition: all 0.5s;
+  transition: all 0.3s;
   visibility: visible;
 }
 
@@ -640,6 +640,34 @@ color: white;
   position: fixed;
   top:0;
   left:0;
+}
+
+.reg-feel-select-box{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0.5rem;
+
+  width: fit-content;
+  height: fit-content;  
+  /* background-color: ; */
+}
+
+.feel-circle-box{
+  background-color: #f3f3f3;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 80%;
+  border-radius: 15px;
+  width:7rem;
+  height:7rem;
+
+  transition: all 0.2s;
+}
+
+.feel-circle-box:active{
+  border-radius: 50px;
+  background-color: #fff241;
 }
 
 /* -- 작성 - guide.html */

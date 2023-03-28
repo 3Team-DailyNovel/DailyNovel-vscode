@@ -24,11 +24,9 @@ window.addEventListener('load',()=>{
   for(let e of modalCloseBtn){
     e.addEventListener('click', ()=> {
       let activeModal = document.querySelector(".reg-select-modal.active");
-      activeModal.addEventListener('click', ()=> {
-        console.log("ghkrls");
-      })
+      
       modalClose(activeModal,container);
-      modalClose(regmodal,container);  
+      // modalClose(regmodal,container);  
     })
   }
 /*
