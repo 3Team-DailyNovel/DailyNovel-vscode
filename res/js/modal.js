@@ -7,9 +7,12 @@ window.addEventListener('load',()=>{
   const feelBox = document.querySelector("#feel-value");
   const weatherBox = document.querySelector("#weather-value");
 
+  const simpleTmpBox = document.querySelectorAll(".tmp-select-box > *");
+
   // 모달 관련
   const regTmpModal = document.querySelector("#reg-tmp-modal");
   const regFeelModal = document.querySelector("#reg-feel-modal");
+  const regWeatherModal = document.querySelector("#reg-weather-modal");
   const modalCloseBtn = document.querySelectorAll("#modal-close-btn");
   const regmodal = document.querySelector(".reg-select-modal");
 
@@ -19,6 +22,10 @@ window.addEventListener('load',()=>{
 
   feelBox.addEventListener('click', ()=>{
     modalOpen(regFeelModal,container);
+  })
+
+  weatherBox.addEventListener('click', ()=>{
+    modalOpen(regWeatherModal,container);
   })
 
   for(let e of modalCloseBtn){
@@ -53,6 +60,10 @@ window.addEventListener('load',()=>{
   simpleTmp.addEventListener('click', ()=>{
     // tmpSelectBox.classList.toggle("d-none");
     tmpSelectBox.classList.toggle("active");
+    for(let e of simpleTmpBox){
+      e.classList.toggle("active");
+    }
+    // simpleTmpBox.classList.toggle("active");
     simpleTmp.classList.toggle("color-bg-green-2");
     
   })
