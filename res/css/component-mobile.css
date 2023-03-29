@@ -930,26 +930,6 @@ color: white;
   gap: 0.5rem;
 }
 
-.sub-feeling > .anxiety{
-  background-image: url(../img/anxiety/anxiety64.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-}
-
-.sub-feeling > .angry{
-  background-image: url(../img/angry/angry64.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  
-}
-
-.sub-feeling > .view-detail{
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-}
 
 .feeling-box > .view-detail{
   background-repeat: no-repeat;
@@ -959,7 +939,8 @@ color: white;
 
 
 .feeling-box > .count-box{
-  
+  gap: 0.2rem;
+
 }
 
 /* .collection-feeling {
