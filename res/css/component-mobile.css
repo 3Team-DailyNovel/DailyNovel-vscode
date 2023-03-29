@@ -575,11 +575,18 @@ color: white;
   background-color: #69bc80;
   border-radius: 10px;
 }
+.l-box-mini > .value {
+  height: 3.75rem;
+  
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 
 .reg-title-section{
   display: flex;
   width: 100%;
-  height: 7%;
+  height: 3rem;
   justify-content: space-around;
 }
 .editor-title{
@@ -690,6 +697,19 @@ color: white;
 
 .weather-box:active{
   transform : translate(0,-4rem);  
+}
+
+.reg-honesty-section{
+  width: 20rem;
+  height: 30rem;
+  border-radius: 10px;
+
+  display: flex;
+  justify-content: space-evenly;  
+  align-items: center;
+  flex-direction: column;
+
+  background-color: #ffffff;
 }
 
 /* -- 작성 - guide.html */
