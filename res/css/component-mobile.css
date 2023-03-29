@@ -1,5 +1,43 @@
 /* 로그인, 메인 팀 ======================================================== */
 
+
+
+/* 폰트 */
+@font-face {
+  font-family: 'KCCChassam';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/KCCChassam.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*  */
+/* 회원가입 페이지-선유진 */
+/* 실험실 */
+.outBox {padding: 0px;}
+.outBox .inputBox {position:relative; height:100%; width:100%; border: 0px;}
+.outBox .inputBox input {padding:10px 10px; width:100%; height:120%; font-size:1.2rem; box-sizing:border-box; border:0px solid #999; outline:none;}
+.outBox .inputBox label {position:absolute; left:0; bottom:0; padding:0 6px; color:#999; font-size:1rem; font-weight:normal; background:#fff; transform:scale(1) translate(4px, -18px); transition:all .15s; pointer-events:none;}
+.outBox .inputBox img {
+  /* background-color: #69BC80; */
+  right: 2%;
+  top:50%;
+  padding: 0;
+  position: absolute;
+  display: inline-block;
+  height: 50%;
+  transform: translateY(-50%);
+}
+
+
+.outBox .inputBox input:focus,
+.outBox.existence .inputBox input {
+  border: 0px solid #69bc80;
+}
+
+.outBox .inputBox input:focus + label,
+.outBox.existence .inputBox label {color:#69BC80; transform:scale(.85) translate(-3px, -48px);}
+/* 실험실 끝 */
+
 /* index페이지: 이동형*/
 .box-sizing{
   box-sizing: border-box;
@@ -132,7 +170,7 @@
 .outBox-id .inputBox label {position:absolute; left:0; bottom:0; padding:0 6px; color:#999; font-size:1rem; font-weight:normal; background:#fff; transform:scale(1) translate(4px, -18px); transition:all .15s; pointer-events:none;}
 .outBox-id .inputBox input[type="text"]:focus,
 .outBox-id.existence .inputBox input[type="text"] {
-  border: 1px solid #69bc80;
+  border: 0px solid #69bc80;
 }
 
 .outBox-id .inputBox input[type="text"]:focus + label,
@@ -146,52 +184,6 @@
 .outBox-pass.existence .inputBox input[type="password"] {border:0px solid #69BC80;}
 .outBox-pass .inputBox input[type="password"]:focus + label,
 .outBox-pass.existence .inputBox label {color:#69BC80; transform:scale(.85) translate(-10px, -48px);}
-
-
-
-
-.container-form{
-    width: 19.5rem; /* 312px */  
-    margin:0 auto; 
-}
-
-.outBox-pass .inputBox {
-  position: relative;
-  height: 100%;
-  width: 100%;
-  border: 0px;
-}
-.outBox-pass .inputBox input[type="password"] {
-  padding: 0 10px;
-  width: 100%;
-  height: 100%;
-  font-size: 14px;
-  box-sizing: border-box;
-  border: 0px solid #999;
-  outline: none;
-}
-.outBox-pass .inputBox label {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  padding: 0 6px;
-  color: #999;
-  font-size: 14px;
-  font-weight: normal;
-  background: #fff;
-  transform: scale(1) translate(4px, -18px);
-  transition: all 0.15s;
-  pointer-events: none;
-}
-.outBox-pass .inputBox input[type="password"]:focus,
-.outBox-pass.existence .inputBox input[type="password"] {
-  border: 0px solid #69bc80;
-}
-.outBox-pass .inputBox input[type="password"]:focus + label,
-.outBox-pass.existence .inputBox label {
-  color: #69bc80;
-  transform: scale(0.85) translate(-10px, -48px);
-}
 
 .container-form {
   width: 19.5rem; /* 312px */
@@ -230,11 +222,13 @@
   display: inline-block;
   width: 6.5rem;
   height: 100%;
-  border: 1px solid #69bc80;
+  border: 0px solid #69bc80;
   box-sizing: border-box;
   font-weight: bold;
+  text-align: center;
+  font-size: 0.9rem;
   line-height: 3.75rem; /*certify-form의 height 값과 동일해야함 (중앙정렬 위함)*/
-  border-radius: 0 10px 10px 0;
+  background-color: #C5C5C550;
 }
 
 /* ============================================================================== */
@@ -252,6 +246,7 @@
   flex-direction: column;
   justify-content: space-around;
 }
+
 /* 일기 작성 현황(진행 바) */
 .pg-bar {
   appearance: none;
@@ -273,24 +268,40 @@
   font-weight: bold;
 }
 .hi-txt > div:nth-child(1) {
-  letter-spacing: 0.25rem;
+  /* letter-spacing: 0.25rem; */
+  font-family: 'KCCChassam';
 }
 
 /* 달력과 미리보기 레이아웃 */
 .main-pg-2Layers {
   display: grid;
-  grid-template-rows: 1fr 4fr 2fr;
+  grid-template-rows: 1fr 7fr 3fr;
   row-gap: 0.5rem;
   box-sizing: border-box;
 }
 
 /* 달력 */
 .calender {
+  position:relative;
   width: 100%;
   padding: 1rem;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
+}
+.calender::before{
+  /* 달력 배경 넣기 */
+  content:"";
+  position:absolute;
+  /* background-image: url("/res/img/DiaryMainPage/jojang.jpg"); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  opacity: 30%;
+  pointer-events: none;;
 }
 
 .calender > .header {
@@ -333,16 +344,19 @@
 .calender .date li {
   border-radius: 50%;
 }
+/* .calender .date li:hover{
+  transform: translateY(-10px);
+} */
 .calender .date li:nth-child(-n + 7) {
   margin-top: 0;
 }
 
 .calender .inactive {
-  color: #ff0000;
+  color: #dadada;
 }
 
 /* 슬라이드 */
-.preview-slide {
+.slider {
   /* 옆으로 넘기는 슬라이드 */
   display: flex;
   flex-wrap: nowrap;
@@ -357,14 +371,14 @@
 }
 
 /* 아이템 스타일 나중에 일기(쓰러가기/미리보기) 두 부분으로 나눠져야함*/
-.preview-slide .item {
+.slider .item {
   width: 100%;
   height: 100%;
 
   display: flex;
   flex-direction: column;
   align-items: center;
-
+  
   position: relative;
 
   left: 0;
@@ -377,13 +391,24 @@
   /* 실제 슬라이드로 동작 할 친구!! */
   transition: left 0.15s;
 }
-.preview-slide .item-diary div:nth-child(1) {
+/* guide 부분 페이지 UI  */
+
+.slider .item-guide div:nth-child(1){
+  margin-top: 13vh;
+}
+.slider .item-guide div:nth-child(2){
+  margin-top: 15vh;
+}
+/* guide 부분 페이지 UI 끝 */
+
+/* main page에서 일기 미리보기 */
+.slider .item-diary div:nth-child(1) {
   position: relative;
   top: 20%;
   width: 70%;
   text-align: center;
 }
-.preview-slide .item-diary div:nth-child(2) {
+.slider .item-diary div:nth-child(2) {
   position: relative;
   top: 30%;
   width: 70%;
@@ -397,22 +422,22 @@
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
-.preview-slide .write-btn {
+/* mainpage 미리보기 부분 끝 */
+.slider .write-btn {
   background-color: #99999920;
   text-align: center;
   /* border-radius: 100%; */
 }
 
-.preview-slide .icon-plus{
+.slider .icon-plus{
   width:3rem;
   height:3rem;
   background-repeat: no-repeat;
   background-image: url(/res/img/DiaryMainPage/add.svg);
-  
 }
 
 /* 버튼 스타일 */
-.preview-slide .btn {
+.slider .btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -432,51 +457,51 @@
   background-color: #cccccc40;
   cursor: pointer;
 }
-.preview-slide .prev-btn {
+.slider .prev-btn {
   left: 0.625rem;
 }
-.preview-slide .next-btn {
+.slider .next-btn {
   right: 0.625rem;
 }
 /* 나중에 꼭 빼야 할 속성 (배경만) */
 
 
 /* 페이지네이션 스타일 */
-.preview-slide ul,
-.preview-slide li {
+.slider ul,
+.slider li {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
-.preview-slide .pagination {
-  /* layout */
+.slider .pagination {
+  /* 슬라이드로 동작하기위해 필요 (스타일을 위한 친구가 아님) */
   display: flex;
-  gap: 1rem;
 
-  /* position */
+}
+/* pagination의 위치 수정하는 친구들 */
+.pagination-main{
   position: absolute;
   bottom: 0;
-  /* left:50%, translateX(-50%)를 하면 가로 가운데로 위치시킬 수 있다. */
   left: 50%;
   transform: translateX(-50%);
-}
-.preview-slide .pagination > li {
-  /* 현재 슬라이드가 아닌 것은 투명도 부여 */
-  color: #7fb5ff88;
-  cursor: pointer;
-  font-size: 25px;
-}
-.preview-slide .pagination > li.active {
-  /* 현재 슬라이드 색상은 투명도 없이 */
-  color: #7fb5ff;
+  gap: 1rem;}
+.pagination-guide{
+  position: absolute;
+  gap: 0.1rem;
+  left: 50%; 
+  transform: translateX(-50%);
 }
 
-/* ---------------공통 수정 제안. ---------------- */
-/* input Tag에 기본 Padding이 있음 (Reset에서 input태그 추가) */
-/* 추후 reset.css에 추가 */
-/* 이거 없으면 input tag 포커스 시 보더 생김 개 찐하게 */
-input:focus {
-  outline: none;
+/* pagination 리스트 속성부여 */
+.slider .pagination > li {
+  /* 현재 슬라이드가 아닌 것은 투명도 부여 */
+  color: #CECECE;
+  cursor: pointer;
+  font-size: 40px;
+}
+.slider .pagination > li.active {
+  /* 현재 슬라이드 색상은 투명도 없이 */
+  color: #69BC80;
 }
 
 /* 일기 작성, 목록 팀 ==================================================== */
@@ -533,6 +558,7 @@ color: white;
 
 /* 일기 작성 */
 
+/* register.html */
 .l-box-mini {
   width: 5.25rem;
   height: 5.25rem;
@@ -550,9 +576,15 @@ color: white;
   border-radius: 10px;
 }
 
+.reg-title-section{
+  display: flex;
+  width: 100%;
+  height: 7%;
+  justify-content: space-around;
+}
 .editor-title{
-    width: 90%;
-    height: 5%;
+    width: 80%;
+    height: 100%;
 
     border: none;
     border-width: 0;
@@ -562,7 +594,7 @@ color: white;
 }
 
 .editor-base {
-  width: 90%;
+  width: 91%;
   height: 85%;
 
   /* padding:0; */
@@ -576,8 +608,42 @@ color: white;
   /* background-color: #cecece; */
 }
 
-/* -- 작성 - guide.html */
+/* 모달 파트 */
+.reg-select-modal{
+  z-index:1;
+  position: fixed;  
+  top:0;
+  left:0;
 
+  height: 100vh;
+  width: 100vw;
+
+  display: flex;   
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+  background-color: rgba(0,0,0,0.6);
+  
+  visibility: hidden;
+  opacity: 0;  
+  transition: all 0.5s;
+}
+
+.reg-select-modal.active{  
+  opacity : 1;
+  transition: all 0.5s;
+  visibility: visible;
+}
+
+.position-fixed{
+  position: fixed;
+  top:0;
+  left:0;
+}
+
+/* -- 작성 - guide.html */
+/* 없어질지도 모름(현재 안씀) */
 .swiper-bullets{
     width:40%;
     display: flex;
@@ -587,7 +653,7 @@ color: white;
     .swiper-bullets > .active {
         background-color: #69BC80;
     }
-
+/* 없어질지도 모름(현재 안씀) */
 .swiper-bullet{
     width: 0.7rem;
     height: 0.7rem;
@@ -597,30 +663,74 @@ color: white;
     text-indent: -999rem;  
 }
 
-.guide-content{
-    width:100%;
-    height:100%;
-
-    position: relative;
-    display: flex;
-    /* flex-direction: column; */
-    flex-wrap: nowrap;
-    
-    /* box-sizing: border-box; */
-    user-select: none;
-    overflow: hidden;
-}
-
-.guide-content > .ty6{
-    width:100%;
-    height:100%;
-    flex-shrink: 0;
-    position: relative;
-    /* box-sizing: border-box; */
-}
-
 /* select-tmp.html */
-.btn1 .tmp{}
+
+.tmp-section{
+  display: flex;
+  justify-content: center;
+  /* flex-direction: column; */
+  /* align-items: center; */
+  
+  max-height: auto;
+  overflow-x: hidden;
+
+
+  /* overflow-y :scroll; */
+  /* height: fit-content; */
+}
+
+.tmps{  
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+  /* height: 40rem; */
+  height: fit-content;
+  gap: 2.5rem;
+}
+
+
+.tmp-select-box{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-evenly;  
+  align-items: center;
+
+  width: 19.5rem;
+  background-color: #f3f3f3;
+  /* height: 15rem; */
+  border-radius: 2.5rem;  
+  
+  visibility: hidden;
+  height: 0rem;
+  
+  transition: all 0.7s;   
+}
+
+.tmp-select-box.active{
+  
+  visibility: visible;
+  height: 15rem;
+}
+
+
+.tmp-btn1{
+    width: 19.5rem;
+    height: 5.5rem;
+    font-size: 1.5rem;
+    
+    background-color: #fcfcfc;
+    border-radius: 2.5rem;
+    box-shadow: 0 0.25rem 0.25rem rgba(0, 4, 4, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tmp-of-scroll{
+  min-height: 300px;
+  overflow-y: auto;
+}
+
 
 /* 통계, 설정 팀 ================================================================== */
 
@@ -789,20 +899,29 @@ color: white;
   grid-template-rows: 2fr 1fr;
   
 }
-
-.feeling-rank-box{
+.feeling-rank-box {
   display: grid;
   grid-template-rows: 3fr 1fr;
   width: 20rem;
   height: 25rem;
-  
+}
+
+.feeling-rank-box > .sub-feeling {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem;
+}
+.feeling-rank-box > .sub-feeling .rank-box {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }
 
 .feeling-rank-box > .first-feeling{
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  background-image: url(../img/happiness/happy.png);
+  
 }
 
 .feeling-rank-box > .sub-feeling{
@@ -826,81 +945,18 @@ color: white;
   
 }
 
-.sub-feeling > .disappointed{
-  background-image: url(../img/disappointed/disappointed64.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-}
-.sub-feeling > .excitement{
-  background-image: url(../img/excitement/excited64.png);
+.sub-feeling > .view-detail{
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
 }
 
-.feeling-box > .anxiety{
-  background-image: url(../img/anxiety/anxiety64.png);
+.feeling-box > .view-detail{
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
 }
 
-.feeling-box > .angry{
-  background-image: url(../img/angry/angry64.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-}
-
-.feeling-box > .disappointed{
-  background-image: url(../img/disappointed/disappointed64.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-}
-
-.feeling-box > .happy{
-  background-image: url(../img/happiness/happy64.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-}
-
-.feeling-box > .calm{
-  background-image: url(../img/calm/calm64.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-}
-
-.feeling-box > .excitement{
-  background-image: url(../img/excitement/excited64.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-}
-
-.feeling-box > .touched{
-  background-image: url(../img/anxiety/anxiety64.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-}
-
-.feeling-box > .awkward{
-  background-image: url(../img/awkward/awkward64.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-}
-
-.feeling-box > .sadness{
-  background-image: url(../img/sadness/sad64.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-}
 
 .feeling-box > .count-box{
   
