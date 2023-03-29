@@ -899,20 +899,29 @@ color: white;
   grid-template-rows: 2fr 1fr;
   
 }
-
-.feeling-rank-box{
+.feeling-rank-box {
   display: grid;
   grid-template-rows: 3fr 1fr;
   width: 20rem;
   height: 25rem;
-  
+}
+
+.feeling-rank-box > .sub-feeling {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem;
+}
+.feeling-rank-box > .sub-feeling .rank-box {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }
 
 .feeling-rank-box > .first-feeling{
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  background-image: url(../img/happiness/happy.png);
+  
 }
 
 .feeling-rank-box > .sub-feeling{
@@ -921,99 +930,17 @@ color: white;
   gap: 0.5rem;
 }
 
-.sub-feeling > .anxiety{
-  background-image: url(../img/anxiety/anxiety64.png);
+
+.feeling-box > .view-detail{
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
 }
 
-.sub-feeling > .angry{
-  background-image: url(../img/angry/angry64.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  
-}
-
-.sub-feeling > .disappointed{
-  background-image: url(../img/disappointed/disappointed64.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-}
-.sub-feeling > .excitement{
-  background-image: url(../img/excitement/excited64.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-}
-
-.feeling-box > .anxiety{
-  background-image: url(../img/anxiety/anxiety64.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-}
-
-.feeling-box > .angry{
-  background-image: url(../img/angry/angry64.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-}
-
-.feeling-box > .disappointed{
-  background-image: url(../img/disappointed/disappointed64.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-}
-
-.feeling-box > .happy{
-  background-image: url(../img/happiness/happy64.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-}
-
-.feeling-box > .calm{
-  background-image: url(../img/calm/calm64.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-}
-
-.feeling-box > .excitement{
-  background-image: url(../img/excitement/excited64.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-}
-
-.feeling-box > .touched{
-  background-image: url(../img/anxiety/anxiety64.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-}
-
-.feeling-box > .awkward{
-  background-image: url(../img/awkward/awkward64.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-}
-
-.feeling-box > .sadness{
-  background-image: url(../img/sadness/sad64.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-}
 
 .feeling-box > .count-box{
-  
+  gap: 0.2rem;
+
 }
 
 /* .collection-feeling {
