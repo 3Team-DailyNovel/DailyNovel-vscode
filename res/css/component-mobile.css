@@ -995,20 +995,65 @@ color: white;
   
 }
 
-.feeling-rank-box{
+.feeling-box > .view-detail{
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+
+.feeling-box > .count-box{
+  gap: 0.2rem;
+
+}
+
+
+
+/* ============================================ */
+
+.feeling-rank-box {
   display: grid;
   grid-template-rows: 3fr 1fr;
   width: 20rem;
   height: 25rem;
-  
 }
 
-.feeling-rank-box > .first-feeling{
+.feeling-rank-box > .sub-feeling {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem;
+}
+
+
+
+.feeling-rank-box > .sub-feeling .rank-box {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  background-image: url(../img/happiness/happy.png);
 }
+
+.feeling-rank-box > .first-feeling{
+  display: grid;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  grid-template:
+    "feeling1 feeling2 medal " 1fr
+    "feeling3 feeling4 feeling5" 1fr
+    "feeling6 feeling7 feeling8" 1fr
+    /1fr 1fr 1fr;
+}
+
+.first-feeling > .first-prize{
+
+  grid-area: medal;
+  background-image: url("data:image/svg+xml,%3Csvg width='676' height='800' viewBox='0 0 676 800' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M675.5 0H450.501L125.499 474.998H350.498L675.5 0Z' fill='%23BF392C'/%3E%3Cpath d='M0.500488 0H225.499L550.498 474.998H325.5L0.500488 0Z' fill='%23E2574C'/%3E%3Cpath d='M350.5 250C503 250 625.5 372.501 625.5 525C625.5 677.5 503 800 350.5 800C198.001 800 75.5 677.5 75.5 525C75.5 372.501 198.001 250 350.5 250Z' fill='%23EFC75E'/%3E%3Cpath d='M350.5 325C240.501 325 150.5 414.999 150.5 525.001C150.5 635.002 240.498 725.001 350.5 725.001C460.502 725.001 550.501 635.002 550.501 525.001C550.501 414.999 460.499 325 350.5 325ZM350.5 675C268 675 200.501 607.499 200.501 525.001C200.501 442.503 268.002 375.001 350.5 375.001C432.998 375.001 500.499 442.503 500.499 525.001C500.499 607.499 432.998 675 350.5 675Z' fill='%23D7B354'/%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+
+}
+
 
 .feeling-rank-box > .sub-feeling{
   display: grid;
@@ -1016,100 +1061,37 @@ color: white;
   gap: 0.5rem;
 }
 
-.sub-feeling > .anxiety{
-  background-image: url(../img/anxiety/anxiety64.png);
+.rank-box{
+  display: grid;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
+  grid-template:
+  "feeling1 feeling2 medal " 1fr
+  "feeling3 feeling4 feeling5" 1fr
+  "feeling6 feeling7 feeling8" 1fr
+  /1fr 1fr 1fr;
+}
+.rank-box > .second-prize{
+  grid-area: medal;
+  background-image: url("data:image/svg+xml,%3Csvg width='676' height='800' viewBox='0 0 676 800' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M675.5 0H450.501L125.499 474.998H350.498L675.5 0Z' fill='%23BF392C'/%3E%3Cpath d='M0.500488 0H225.499L550.498 474.998H325.5L0.500488 0Z' fill='%23E2574C'/%3E%3Cpath d='M350.5 250C503 250 625.5 372.501 625.5 525C625.5 677.5 503 800 350.5 800C198.001 800 75.5 677.5 75.5 525C75.5 372.501 198.001 250 350.5 250Z' fill='%23E4E7E7'/%3E%3Cpath d='M350.5 325C240.501 325 150.5 414.999 150.5 525.001C150.5 635.002 240.498 725.001 350.5 725.001C460.502 725.001 550.501 635.002 550.501 525.001C550.501 414.999 460.499 325 350.5 325ZM350.5 675C268 675 200.501 607.499 200.501 525.001C200.501 442.503 268.002 375.001 350.5 375.001C432.998 375.001 500.499 442.503 500.499 525.001C500.499 607.499 432.998 675 350.5 675Z' fill='%23CDCFCF'/%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+}
+.rank-box > .third-prize{
+  grid-area: medal;
+  background-image: url("data:image/svg+xml,%3Csvg width='676' height='800' viewBox='0 0 676 800' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M675.5 0H450.501L125.499 474.998H350.498L675.5 0Z' fill='%23BF392C'/%3E%3Cpath d='M0.500488 0H225.499L550.498 474.998H325.5L0.500488 0Z' fill='%23E2574C'/%3E%3Cpath d='M350.5 250C503 250 625.5 372.501 625.5 525C625.5 677.5 503 800 350.5 800C198.001 800 75.5 677.5 75.5 525C75.5 372.501 198.001 250 350.5 250Z' fill='%23ED9D5D'/%3E%3Cpath d='M350.5 325C240.501 325 150.5 414.999 150.5 525.001C150.5 635.002 240.498 725.001 350.5 725.001C460.502 725.001 550.501 635.002 550.501 525.001C550.501 414.999 460.499 325 350.5 325ZM350.5 675C268 675 200.501 607.499 200.501 525.001C200.501 442.503 268.002 375.001 350.5 375.001C432.998 375.001 500.499 442.503 500.499 525.001C500.499 607.499 432.998 675 350.5 675Z' fill='%23D58D54'/%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
 }
 
-.sub-feeling > .angry{
-  background-image: url(../img/angry/angry64.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  
-}
 
-.sub-feeling > .disappointed{
-  background-image: url(../img/disappointed/disappointed64.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-}
-.sub-feeling > .excitement{
-  background-image: url(../img/excitement/excited64.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-}
 
-.feeling-box > .anxiety{
-  background-image: url(../img/anxiety/anxiety64.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-}
 
-.feeling-box > .angry{
-  background-image: url(../img/angry/angry64.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-}
 
-.feeling-box > .disappointed{
-  background-image: url(../img/disappointed/disappointed64.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-}
 
-.feeling-box > .happy{
-  background-image: url(../img/happiness/happy64.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-}
-
-.feeling-box > .calm{
-  background-image: url(../img/calm/calm64.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-}
-
-.feeling-box > .excitement{
-  background-image: url(../img/excitement/excited64.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-}
-
-.feeling-box > .touched{
-  background-image: url(../img/anxiety/anxiety64.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-}
-
-.feeling-box > .awkward{
-  background-image: url(../img/awkward/awkward64.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-}
-
-.feeling-box > .sadness{
-  background-image: url(../img/sadness/sad64.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-}
-
-.feeling-box > .count-box{
-  
-}
 
 /* .collection-feeling {
   display: flex;
@@ -1132,62 +1114,8 @@ color: white;
   padding-top: 4.5rem;
 
 }
-.feeling-angry{
-    width: 4rem;
-    height: 4rem;
-    background-image: url(../img/angry/angry64.png);
-    justify-self: center;
-}
-.feeling-awkward{
-    width: 4rem;
-    height: 4rem;
-    background-image: url(../img/awkward/awkward64.png);
-    justify-self: center;
-}
-.feeling-calm{
-    width: 4rem;
-    height: 4rem;
-    background-image: url(../img/calm/calm64.png);
-    justify-self: center;
-}
-.feeling-disappointed{
-    width: 4rem;
-    height: 4rem;
-    background-image: url(../img/disappointed/disappointed64.png);
-    justify-self: center;
-}
 
-.feeling-anxiety{
-    width: 4rem;
-    height: 4rem;
-    background-image: url(../img/anxiety/anxiety64.png);
-    justify-self: center;
-}
-.feeling-happiness{
-    width: 4rem;
-    height: 4rem;
-    background-image: url(../img/happiness/happy64.png);
-    justify-self: center;
-}
 
-.feeling-sadness{
-    width: 4rem;
-    height: 4rem;
-    background-image: url(../img/sadness/sad64.png);
-    justify-self: center;
-}
-.feeling-touched{
-    width: 4rem;
-    height: 4rem;
-    background-image: url(../img/touched/touched64.png);
-    justify-self: center;
-}
-.feeling-excitement{
-    width: 4rem;
-    height: 4rem;
-    background-image: url(../img/excitement/excited64.png);
-    justify-self: center;
-}
 .btn-feeling {
     font-size: 1.1rem;
     width: 10rem;
