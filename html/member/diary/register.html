@@ -30,7 +30,7 @@
         <div class="box-short ">2023년 01월 27일</div>
       </div>
       <div class="lc-center">
-        <a href="../../member/main.html"><div class="icon close-btn"></div></a>
+        <div id="reg-cancel-btn" class="icon close-btn"></div>
       </div>      
     </div>
 
@@ -42,7 +42,9 @@
         </div>
         <div class="l-box-mini">
           <div class="name lc-center color-white-1">기분</div>
-          <div id="feel-value" class="value"></div>
+          <div id="feel-value" class="value happy-img">
+            <!-- <div class="feel-circle-box happy-img"></div> -->
+          </div>
         </div>
         <div class="l-box-mini">
           <div class="name lc-center color-white-1">날씨</div>
@@ -61,7 +63,7 @@
     </div> 
 
     <div class="footer lc-center pdb-2">
-      <div class="btn3 color-bg-green-2">저장하기</div>
+      <div id="reg-submit-btn" class="btn3 color-bg-green-2">저장하기</div>
     </div>
   </div>
   
@@ -71,12 +73,14 @@
 
               <div class="btn1">자유롭게</div>
 
-              <div id="simple-tmp" class="btn1">간편일기</div>      
-              <div class="tmp-select-box" style="margin-top: -1.5rem;">
-                <div class="box-short color-bg-yellow-1">감사일기</div>
-                <div class="box-short color-bg-yellow-1">밥블로그</div>
-                <div class="box-short color-bg-yellow-1">질문일기</div>
-              </div>        
+              <div>
+                <div id="simple-tmp" class="btn1">간편일기</div>      
+                <div class="tmp-select-box mgt-1" >
+                  <div class="simple-tmp-box">감사일기</div>
+                  <div class="simple-tmp-box">밥블로그</div>
+                  <div class="simple-tmp-box">질문일기</div>
+                </div>        
+              </div>
       
               <div class="btn1">영화</div>
               <div class="btn1">여행</div>
@@ -88,19 +92,58 @@
   <div id="reg-feel-modal" class="reg-select-modal">
     <div class="feel-section">      
       <div>일기를 쓰실 때의 기분은 어떠신가요?</div>
+      <div class="reg-feel-select-box">
+        <div class="feel-circle-box happy-img">행복</div>
+        <div class="feel-circle-box happy-img">신남</div>
+        <div class="feel-circle-box happy-img">감동</div>
+        <div class="feel-circle-box happy-img">화남</div>
+        <div class="feel-circle-box happy-img">불편</div>
+        <div class="feel-circle-box happy-img">실망</div>
+        <div class="feel-circle-box happy-img">불안</div>
+        <div class="feel-circle-box happy-img">평온</div>
+        <div class="feel-circle-box happy-img">슬픔</div>
+        <div class="lc-center mgt-3" style="grid-column: 2/3;">
+          <div id="modal-close-btn" class="circle-box-modal color-bg-green-2 close-btn-white">모달 종료 버튼</div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-      <div >행복</div>
-      <div>신남</div>
-      <div>감동</div>
-      <div>화남</div>
-      <div>불편</div>
-      <div>실망</div>
-      <div>불안</div>
-      <div>평온</div>
-      <div>슬픔</div>
+  <div id="reg-weather-modal" class="reg-select-modal">
+    <div class="weather-section">
+      <div class="reg-weather-select-box">
+        <div class="weather-box">맑음</div>
+        <div class="weather-box">흐림</div>
+        <div class="weather-box">눈</div>
+        <div class="weather-box">비</div>
+        <div class="weather-box">먼지/황사</div>
+      </div>
       <div id="modal-close-btn" class="circle-box-modal color-bg-green-2 close-btn-white">모달 종료 버튼</div>
     </div>
   </div>
 
+  <div id="reg-honesty-select-modal" class="reg-select-modal active">
+    <div class="reg-honesty-section">
+      <p style="text-align: center;">이번 일기를 생각할 때 <br>얼마나 진실되었다고 생각하시나요?</p>
+      <div class="reg-range-value"></div>
+      <input class="reg-honesty-test" type="range" min="0" max="100" step="10" value="100">
+      <div>바로 저장하기</div>
+    </div>
+  </div>
+
+  <div id="reg-cancel-modal" class="reg-select-modal">    
+    <div>지금 돌아가시면 지금까지 작성하신 내용은 사라집니다. 괜찮으신가요?</div>
+    <div>네</div>
+    <div>아니요, 돌아갈래요.</div>
+  </div>
 </body>
+
+<script>
+  const range = document.querySelector(".reg-honesty-test");
+  const value = document.querySelector(".reg-range-value");
+  range.addEventListener("input",()=>{
+    value.text = range.value;
+    console.log(range.value);
+  })
+</script>
 </html>
